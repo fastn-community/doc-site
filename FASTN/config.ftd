@@ -12,6 +12,8 @@ optional caption title:
 optional body body:
 boolean sidebar: false
 ftd.ui list extra-headers:
+optional string document-description:
+optional ftd.raw-image-src document-image:
 
 -- ds.page: $page.title
 site-name: Doc Site
@@ -19,6 +21,8 @@ body: $page.body
 show-footer: true
 extra-headers: $page.extra-headers
 $sidebar: *$page.sidebar
+document-description: $page.document-description
+document-image: $page.document-image
 
 -- ds.page.footer:
 
