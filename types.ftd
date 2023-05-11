@@ -1,0 +1,45 @@
+-- import: fastn-community.github.io/doc-site as ds
+-- import: fastn-community.github.io/doc-site/assets
+
+
+-- my-ds.page: Changing Typography
+
+In this section, we will learn about changing typography of `doc-site`.
+
+`doc-site` uses `fastn` default typography. If you wish to update it, choose a
+typography from our 
+[fastn-community](https://github.com/orgs/fastn-community/repositories?q=typography&type=all&sort=).
+
+-- ds.h2: How to change typography?
+
+To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
+typography dependency into it.
+
+In below example we are using https://fastn-community.github.io/roboto-typography/
+typography.
+
+Add typography dependency into your `FASTN.ftd` file as shown in below example:
+
+-- ds.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/roboto-typography
+
+-- ds.markdown:
+
+After adding typography dependency into `FASTN.ftd` import it inside your
+`.ftd` file. Then pass its `$types` typography records to page component.
+
+-- ds.code:
+lang: ftd
+
+\-- import: fastn-community.github.io/roboto-typography
+
+\-- page:
+colors: $roboto-typography.types
+
+-- ds.markdown:
+
+Done! isn't it simple? Try it.
+
+-- end: my-ds.page

@@ -1,0 +1,49 @@
+-- import: fastn-community.github.io/doc-site as ds
+-- import: fastn-community.github.io/doc-site/assets
+
+
+-- my-ds.page: Getting Started
+
+You can create your documentation web-sites using `doc-site`. `doc-site` also
+helps authors, entrepreneurs, corporate groups and bloggers to create their own
+fastn web project.
+
+
+-- ds.h2: 🌟 Creating fastn web-site using `doc-site`
+
+Please, refer [this documentation](https://fastn.com/github-pages/) to
+understand how to create fastn website repository on GitHub.
+
+-- ds.h3: How to publish a package?
+
+Watch this quick video tutorial to learn how to publish a package.
+
+-- ds.youtube:
+v: XNsTZ1s5KL8
+
+
+-- ds.h2: Whats next?
+
+`-- page` component comes with inbuit navbar, sidebar and body content area.
+Start creating new `.ftd` files inside your project and use `doc-site` `page`
+component to write your documentation, blog posts etc.
+
+✨ [Click here](https://fastn-community.github.io/doc-site/page/) to know more
+details of `page` component.
+
+✨ [Click here](https://fastn-community.github.io/doc-site/sitemap/) to learn how
+to generate better `sitemap` for navigation.
+
+✨ [Click here](https://fastn-community.github.io/doc-site/typography/) to know
+more details of inbuit `typography`.
+
+✨ [Click here](https://fastn-community.github.io/doc-site/markdown/) to know
+about markdown.
+
+✨ [Click here](https://fastn-community.github.io/doc-site/seo/) to know about
+SEO support.
+
+✨ [Click here](https://fastn-community.github.io/doc-site/assets/) to know about
+Static Assets.
+
+-- end: my-ds.page

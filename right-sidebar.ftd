@@ -1,0 +1,65 @@
+-- import: fastn-community.github.io/doc-site as ds
+-- import: fastn-community.github.io/doc-site/assets
+
+
+
+
+
+-- my-ds.page: Right Sidebar 👉🏻
+sidebar: true
+
+-- my-ds.page.extra-headers:
+
+-- ds.h3: Heading in sidebar
+
+You can call any component inside sidebar
+
+-- ds.code: Code block in sidebar
+lang: ftd
+
+\-- ftd.text: Some title here...
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+-- end: my-ds.page.extra-headers
+
+
+-- my-ds.page.body:
+
+`doc-site` have inbuilt provision of adding `right-sidebar` for additional
+components to be shown on right-side of `page` component. 
+
+Add `sidebar: true` attribute to your `page` component.
+
+-- ds.h3: How to enable right-sidebar?
+
+Just copy and paste below code into your new `.ftd` file to see right-sidebar in
+action.
+
+-- ds.code:
+lang: ftd
+download: right-sidebar.ftd
+
+\-- ds.page: Using right-sidebar feature
+$sidebar: true
+
+\-- ds.page.body:
+add some page body here.
+
+\-- ds.page.extra-headers:
+
+\-- ds.h3: Heading in sidebar
+You can call any component inside sidebar
+
+\-- ds.code: Code block in sidebar
+lang: ftd
+
+\-- ftd.text: Some title here...
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+\-- end: ds.page.extra-headers
+
+\-- end: ds.page
+
+-- end: my-ds.page

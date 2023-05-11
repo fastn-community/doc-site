@@ -1,0 +1,49 @@
+-- import: fastn-community.github.io/doc-site as ds
+-- import: fastn-community.github.io/doc-site/assets
+
+
+-- my-ds.page: Changing Color Scheme
+
+In this section, we will learn about changing color scheme of `doc-site`.
+
+`doc-site` uses `fastn` default color scheme. If you wish to update color
+scheme, choose a color scheme from our 
+[fastn-community](https://fastn.com/featured/cs/) color schemes.
+
+To choose one of featured color scheme, visit our 
+[featured color schemes](https://fastn.com/featured/cs/)
+
+-- ds.h2: How to add color scheme?
+
+To add color scheme to your fastn web sites. Edit your `FASTN.ftd` file and add
+color scheme dependency into it.
+
+In below example we are using https://fastn-community.github.io/dark-flame-cs/
+color scheme.
+
+Add https://fastn-community.github.io/dark-flame-cs/ dependency into your
+`FASTN.ftd` file as shown in below example:
+
+-- ds.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/dark-flame-cs
+
+-- ds.markdown:
+
+After adding color scheme dependency into `FASTN.ftd` import it inside your
+`.ftd` file. Then pass its `$main` color records to page component.
+
+-- ds.code:
+lang: ftd
+
+\-- import: fastn-community.github.io/dark-flame-cs as cs
+
+\-- page:
+colors: $cs.main
+
+-- ds.markdown:
+
+Done! isn't it simple? Try it.
+
+-- end: my-ds.page
