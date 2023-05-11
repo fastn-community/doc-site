@@ -2,8 +2,43 @@
 
 -- fastn.package: fastn-community.github.io/doc-site
 
--- fastn.dependency: fifthtry.github.io/doc-site as ds
--- fastn.dependency: fifthtry.github.io/bling as bling
+-- fastn.dependency: fastn-community.github.io/code-block
+-- fastn.dependency: fastn-community.github.io/typography
+-- fastn.dependency: fastn-community.github.io/roboto-typography as typo
+-- fastn.dependency: fastn-community.github.io/app-switcher
+-- fastn.dependency: fastn-community.github.io/header
+-- fastn.dependency: fastn-community.github.io/footer
+-- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 
--- fastn.auto-import: bling/chat as chat
--- fastn.auto-import: ds
+-- fastn.auto-import: fastn
+
+-- fastn.auto-import: fastn-community.github.io/code-block as cb
+-- fastn.auto-import: fastn-community.github.io/header as h
+-- fastn.auto-import: fastn-community.github.io/typography as tf
+-- fastn.auto-import: fastn-community.github.io/doc-site/FASTN/config as my-ds
+
+
+
+-- fastn.sitemap:
+
+# Home: /index.html
+
+- Overview: index.html
+- Getting Started: /getting-started/
+- Adding Favicon: /favicon/
+- Changing Color Scheme: /cs/
+- Changing Typography: /types/
+- Creating A Page: /page/
+- Adding a image: /image/
+- Markdown Primer: /markdown/
+- Understanding Sitemap: /sitemap/
+- Adding Right Sidebar: /right-sidebar/
+- Adding Footer: /footer/
+
+- Blog 🚧: /blog/
+  - Adding a new blog post 🚧: /post/
+  - Post List 🚧: /post-list/
+  - Adding Author Details 🚧: /author/
+
+# GitHub
+url: https://github.com/fastn-community/doc-site/
