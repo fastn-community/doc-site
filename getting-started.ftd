@@ -19,7 +19,13 @@ understand how to create fastn website repository on GitHub.
 Watch this quick video tutorial to learn how to publish a package.
 
 -- ds.youtube:
-v: XNsTZ1s5KL8
+v: tsHB2Vrhb2c
+
+-- ds.markdown:
+
+🛠️ Resources:
+
+- [Fastn Template](https://github.com/fastn-stack/fastn-template) 
 
 
 -- ds.h2: Whats next?
@@ -34,7 +40,7 @@ details of `page` component.
 ✨ [Click here](https://fastn-community.github.io/doc-site/sitemap/) to learn how
 to generate better `sitemap` for navigation.
 
-✨ [Click here](https://fastn-community.github.io/doc-site/typography/) to know
+✨ [Click here](https://fastn-community.github.io/doc-site/types/) to know
 more details of inbuit `typography`.
 
 ✨ [Click here](https://fastn-community.github.io/doc-site/markdown/) to know

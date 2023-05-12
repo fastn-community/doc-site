@@ -13,8 +13,41 @@ To learn more how to implement `fast.sitemap` go through this
 
 -- ds.h3: How to create clean URL using sitemap
 
-
 -- ds.youtube:
 v: 4ke75MpOEks
+
+
+-- ds.h3: Sample `fastn.sitemap` code snippet
+
+Below is a set of simple sitemap links which you will see on header and
+toc-sidebar in your `doc-site` project.
+
+Add below code inside your `FASTN.ftd` file
+
+-- ds.code:
+lang: ftd
+
+\-- fastn.sitemap:
+
+# Home: index.html
+
+- Liking fastn lang?: https://fastn.com/clean-urls/-/build/
+- My First Article: /article-1/
+
+# Star us on GitHub
+  url: https://github.com/fastn-stack/fastn
+
+-- ds.markdown:
+
+In above code snippet `Home` is a main section which will be active when you are
+on homepage of your `doc-site` project. OnClick of `Home` link it will take you
+to `index.html` which is a homepage of your `doc-site` project.
+
+Another link `/article-1/` will go to `article.ftd` file which you
+created inside root folder of your `doc-site` project. And it will be seen
+inside `toc-sidebar` as toc link to `Home` section.
+
+`Star us on GitHub` will point to `https://github.com/fastn-stack/fastn` which
+is external url.
 
 -- end: my-ds.page

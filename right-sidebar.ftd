@@ -14,12 +14,19 @@ sidebar: true
 
 You can call any component inside sidebar
 
--- ds.code: Code block in sidebar
-lang: ftd
+-- ds.compact-text: Quick links:
 
-\-- ftd.text: Some title here...
-role: $inherited.types.copy-large
-color: $inherited.colors.text
+- [Install `fastn`](install/)
+- [Create `fastn` package](create-fastn-package/)
+- [Expander Crash Course](expander/)
+
+-- ds.compact-text: Join us:
+
+We welcome you to join our [Discord](https://discord.gg/a7eBUeutWD) community
+today.
+
+We are trying to create the language for human beings and we do not believe it
+would be possible without your support. We would love to hear from you.
 
 -- end: my-ds.page.extra-headers
 
@@ -33,32 +40,42 @@ Add `sidebar: true` attribute to your `page` component.
 
 -- ds.h3: How to enable right-sidebar?
 
-Just copy and paste below code into your new `.ftd` file to see right-sidebar in
-action.
+To enable right-sidebar add `$sidebar: true` property to `ds.page` component.
+Right sidebar contain additional childrens to `ds.page.extra-headers`
+container. You can add `fastn` components inside it.
+
+To use below right-sidebar example follow these steps:
+
+- Click on download icon of below code-block. `right-sidebar.ftd` file will be
+downloaded. 
+
+- Add this file inside your `fastn` project. 
+
+- deploy or run `fastn serve` on your localhost. Access your localhost in
+  browser e.g.`http://127.0.0.1:8000/right-sidebar/`.
 
 -- ds.code:
 lang: ftd
 download: right-sidebar.ftd
 
-\-- ds.page: Using right-sidebar feature
-$sidebar: true
+\-- import: fastn-community.github.io/doc-site as ds
 
-\-- ds.page.body:
-add some page body here.
+\-- ds.page: Right Sidebar 👉🏻
+$sidebar: true
 
 \-- ds.page.extra-headers:
 
-\-- ds.h3: Heading in sidebar
-You can call any component inside sidebar
+\-- ds.compact-text: Quick links:
 
-\-- ds.code: Code block in sidebar
-lang: ftd
-
-\-- ftd.text: Some title here...
-role: $inherited.types.copy-large
-color: $inherited.colors.text
+- [Install `fastn`](install/)
+- [Create `fastn` package](create-fastn-package/)
+- [Expander Crash Course](expander/)
 
 \-- end: ds.page.extra-headers
+
+\-- ds.page.body:
+
+add your page body content here.
 
 \-- end: ds.page
 

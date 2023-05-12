@@ -12,13 +12,13 @@ web site.
 
 `page` component title will be treated as document title if `document-title`
 property is not added to `page` component. And same page title will be added
-to `<meta>` tag `og-title` in rendered html.
+to `<meta>` tag `og-title` and `twitter:title` in rendered html.
 
-If you want to add different title than `page` title then add `document-title`
+💡 If you want to add different title than `page` title then add `document-title`
 property to `page`. 
 
-If you have added `document-title` then same title will be added into `<meta>`
-`og-title`
+If you add `document-title` property to `ds.page` component, then same title
+will be added into `<meta>` `og-title` and `twitter:title`
 
 In below example we have added `document-title` which is different than page
 title.
@@ -29,69 +29,30 @@ lang: ftd
 \-- ds.page: This is page title
 document-title: Custom SEO title
 
--- ds.markdown:
-
-Result of above example in rendered html will be as below:
-
--- ds.code:
-lang: html
-
-<title>Custom SEO title.</title>
-<meta property="og:title" content="Custom SEO title">
-<meta name="twitter:title" content="Custom SEO title"> 
-
 -- ds.h2: How to add page description?
 
 To add page description use below example code.
+
+If you add `document-description` property to `ds.page` component, then same
+will be added into `<meta>` `og-description` and `twitter:description`
 
 -- ds.code:
 lang: ftd
 
 \-- ds.page: This is page title
-document-title: Custom SEO title
 document-description: Custom SEO description
-
--- ds.markdown:
-
-Result of above example in rendered html will be as below:
-
--- ds.code:
-lang: html
-
-<title>Custom SEO title.</title>
-<meta property="og:title" content="Custom SEO title">
-<meta name="twitter:title" content="Custom SEO title"> 
-<meta property="og:description" content="Custom SEO description">
-<meta name="description" content="Custom SEO description">
-<meta name="twitter:description" content="Custom SEO description">
-
 
 -- ds.h2: How to add page document-image?
 
 To add page document-image use below example code.
 
+If you add `document-image` property to `ds.page` component, then same will be
+added into `<meta>` `og-image` and `twitter:image`
+
 -- ds.code:
 lang: ftd
 
 \-- ds.page: This is page title
-document-title: Custom SEO title
-document-description: Custom SEO description
 document-image: https://fastn.com/-/fastn.com/images/featured/doc-site.png
-
--- ds.markdown:
-
-Result of above example in rendered html will be as below:
-
--- ds.code:
-lang: html
-
-<title>Custom SEO title.</title>
-<meta property="og:title" content="Custom SEO title">
-<meta name="twitter:title" content="Custom SEO title"> 
-<meta property="og:description" content="Custom SEO description">
-<meta name="description" content="Custom SEO description">
-<meta name="twitter:description" content="Custom SEO description">
-<meta property="og:image" content="https://fastn.com/-/fastn.com/images/featured/doc-site.png">
-<meta property="twitter:image" content="https://fastn.com/-/fastn.com/images/featured/doc-site.png">
 
 -- end: my-ds.page
