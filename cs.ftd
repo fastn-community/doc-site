@@ -21,29 +21,109 @@ color scheme dependency into it.
 In below example we are using https://fastn-community.github.io/dark-flame-cs/
 color scheme.
 
-Add https://fastn-community.github.io/dark-flame-cs/ dependency into your
-`FASTN.ftd` file as shown in below example:
+Add color scheme dependency into your `FASTN.ftd` file as shown in below
+example:
 
 -- ds.code:
 lang: ftd
 
+\-- fastn.dependency: fastn-community.github.io/doc-site
 \-- fastn.dependency: fastn-community.github.io/dark-flame-cs
 
+-- ds.h3: How to create a global `my-ds` page module for `doc-site`?
+
+You can create a `my-ds.ftd` module inside your `fastn` package and create your
+custom `my-ds` page component.
+
+Let's learn how to create a module:
+
+Create a new file let’s say `my-ds.ftd`. 
+
+Here’s what your `my-ds.ftd` module would look like:
+
+-- cb.code: my-ds.ftd module
+lang: ftd
+download: my-ds.ftd
+
+\-- import: fastn-community.github.io/doc-site as ds
+\-- import: fastn-community.github.io/dark-flame-cs
+
+\-- component page:
+children wrapper:
+optional caption title:
+optional body body:
+boolean sidebar: false
+
+\-- ds.page: $page.title
+site-logo: $fastn-assets.files.images.fastn.svg
+body: $page.body
+$sidebar: *$page.sidebar
+colors: $dark-flame-cs.main
+
+\-- end: ds.page.banner
+
+\-- ds.page.extra-headers:
+
+\-- ds.h3: Heading in sidebar
+
+`<You can add any component like this inside sidebar.>`
+
+\-- end: ds.page.extra-headers
+
+\-- ftd.column:
+spacing.fixed.em: 0.8
+width: fill-container
+children: $page.wrapper
+
+\-- end: ftd.column
+
+\-- end: ds.page
+
+\-- end: page
+
 -- ds.markdown:
 
-After adding color scheme dependency into `FASTN.ftd` import it inside your
-`.ftd` file. Then pass its `$main` color records to page component.
+Click on download icon of above code-block. `my-ds.ftd` file will be
+downloaded. Import this file inside your new `.ftd` file.
+
+Then use `my-ds` component to create a new page using it.
 
 -- ds.code:
 lang: ftd
+download: cs.ftd
 
-\-- import: fastn-community.github.io/dark-flame-cs as cs
+\-- import: fastn-community.github.io/doc-site as ds
+\-- import: <your fastn package name>/my-ds
 
-\-- page:
-colors: $cs.main
+\-- my-ds.page: This is page title
+
+This is body area. It contains multiple paragraphs.
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+praesentium voluptatum.
+
+\-- ds.h1: This is heading level 1
+
+This is heading level 1 optional body content.
+
+\-- ds.h2: This is heading level 2
+
+This is heading level 2 optional body content.
+
+\-- ds.h3: This is heading level 3
+
+This is heading level 3 optional body content.
+
+\-- end: my-ds.page
+
 
 -- ds.markdown:
 
-Done! isn't it simple? Try it.
+Click on download icon of above code-block. `cs.ftd` file will be downloaded.
+
+Add this file inside your `fastn` project and deploy or run `fastn serve` on
+your localhost. Access your localhost in browser
+e.g.`http://127.0.0.1:8000/cs/` you will see page colors with
+[Dark Flame CS](https://fastn-community.github.io/dark-flame-cs/)
 
 -- end: my-ds.page
