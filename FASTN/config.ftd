@@ -12,15 +12,18 @@ optional caption title:
 optional body body:
 boolean sidebar: false
 ftd.ui list extra-headers:
+optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
+optional string site-name: NULL
 
 -- ds.page: $page.title
-site-name: Doc Site
+site-name: $page.site-name
 body: $page.body
 show-footer: true
 extra-headers: $page.extra-headers
 $sidebar: *$page.sidebar
+document-title: $page.document-title
 document-description: $page.document-description
 document-image: $page.document-image
 

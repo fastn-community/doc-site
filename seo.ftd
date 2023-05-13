@@ -4,6 +4,7 @@
 -- my-ds.page: SEO
 document-description: Custom SEO description
 document-image: https://fastn.com/-/fastn.com/images/featured/doc-site.png
+site-name: NULL
 
 In this section, we will learn about `doc-site` SEO features for your `fastn`
 web site.

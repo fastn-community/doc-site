@@ -10,11 +10,11 @@
 
 
 
-
-
-
-
 -- page: Overview
+document-title: fastn Doc-Site Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+site-name: NULL
 
 ⚡️ `doc-site` will help you create a beautiful documentation site in no time.
 
@@ -54,9 +54,11 @@ into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 optional caption title:
 optional string document-title:
 optional string document-description:
-optional ftd.raw-image-src document-image:
+optional ftd.raw-image-src document-image: 
 optional body body:
 ftd.image-src site-logo: $common.site-logo
+integer logo-width: $common.logo-width
+integer logo-height: $common.logo-height
 string $site-url: $common.site-url
 optional string site-name: $common.site-name
 pr.toc-item list toc: $common.sitemap.toc
@@ -148,6 +150,8 @@ site-name: $page.site-name
 site-logo: $page.site-logo
 site-url: $page.site-url
 apps: $page.apps
+logo-height: $page.logo-height
+logo-width: $page.logo-width
 
 -- end: ftd.desktop
 
@@ -171,6 +175,8 @@ site-url: $page.site-url
 right-sidebar: $page.sidebar
 apps: $page.apps
 extra-headers: $page.extra-headers
+logo-height: $page.logo-height
+logo-width: $page.logo-width
 
 -- end: ftd.mobile
 
@@ -376,6 +382,8 @@ boolean widthfill:
 boolean login-button:
 boolean right-sidebar: false
 children wrapper:
+optional integer logo-width: 
+optional integer logo-height: 
 
 
 -- ftd.column:
@@ -396,7 +404,8 @@ toc: $doc-page-desktop.toc
 site-logo: $doc-page-desktop.site-logo
 site-url: $doc-page-desktop.site-url
 site-name: $doc-page-desktop.site-name
-logo-height: 38
+logo-height: $doc-page-desktop.logo-height
+logo-width: $doc-page-desktop.logo-width
 current-url: /
 menu-icon: $assets.files.static.header.hamburger-dark.svg
 
@@ -500,6 +509,8 @@ optional pr.toc-item current-subsection:
 boolean right-sidebar: false
 children wrapper:
 boolean login-button:
+optional integer logo-width: 
+optional integer logo-height: 
 
 -- ftd.column:
 width: fill-container
@@ -526,7 +537,8 @@ brand-site-logo: $common.brand-site-logo
 brand-site-name: $common.brand-site-name
 brand-caption: $common.brand-caption
 site-name: $doc-page-mobile.site-name
-logo-height: 38
+logo-height: $doc-page-mobile.logo-height
+logo-width: $doc-page-mobile.logo-width
 current-url: /
 menu-icon: $assets.files.static.header.hamburger.svg
 parent-brand: $common.parent-brand
