@@ -2,6 +2,7 @@
 
 
 -- my-ds.page: Adding Image
+site-name: NULL
 
 In this section, we will learn about adding image inside `page` of your `fastn`
 web site.

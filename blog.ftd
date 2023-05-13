@@ -5,6 +5,7 @@
 
 
 -- ds.page: Blog
+site-name: NULL
 
 In this section, we will learn about creating blog article page in `doc-site`.
 

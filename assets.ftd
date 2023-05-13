@@ -5,6 +5,7 @@
 
 
 -- ds.page: Adding Assets
+site-name: NULL
 
 In this section, we will learn about adding assets like images into your `fastn`
 `doc-site` web site.

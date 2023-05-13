@@ -2,7 +2,8 @@
 -- import: fastn-community.github.io/doc-site/assets
 
 
--- my-ds.page: Getting Started
+-- ds.page: Getting Started
+site-name: NULL
 
 You can create your documentation web-sites using `doc-site`. `doc-site` also
 helps authors, entrepreneurs, corporate groups and bloggers to create their own
@@ -52,4 +53,4 @@ SEO support.
 ✨ [Click here](https://fastn-community.github.io/doc-site/assets/) to know about
 Static Assets.
 
--- end: my-ds.page
+-- end: ds.page

@@ -1,3 +1,5 @@
+-- import: fastn-community.github.io/doc-site/assets
+
 -- import: fastn/processors as pr
 
 -- boolean login-button: false
@@ -18,9 +20,11 @@
 
 -- string $site-name: Doc Site
 
--- ftd.image-src $site-logo:
-light: https://www.fifthtry.com/-/fifthtry.com/images/dummy-site-logo.png
-dark: https://www.fifthtry.com/-/fifthtry.com/images/dummy-site-logo.png
+-- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
+
+-- integer logo-width: 200
+
+-- integer logo-height: 64
 
 -- ftd.image-src $brand-site-logo:
 light: https://www.fifthtry.com/-/fifthtry.com/images/dummy-site-logo.png

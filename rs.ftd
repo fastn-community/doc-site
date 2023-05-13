@@ -2,6 +2,7 @@
 
 -- ds.page: Right Sidebar 👉🏻
 $sidebar: true
+site-name: NULL
 
 -- ds.page.extra-headers:
 
