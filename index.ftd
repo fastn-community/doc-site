@@ -21,7 +21,7 @@ site-name: NULL
 It provides out-of-the-box documentation features that can be used to create any
 kind of site(personal website, blog, etc).
 
--- h2: Fast Track 🚀
+-- h2: 🚀 Fast Track 
 
 Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
 project in just 5 minutes!
@@ -29,7 +29,7 @@ project in just 5 minutes!
  [Click here](https://github.com/fastn-stack/fastn-template/) to use `doc-site`
 for your fastn project.
 
--- h2: Whats next?
+-- h2: 🌟 Whats next?
 
 Create your first page. 
 [Click here to know more](https://fastn-community.github.io/doc-site/page/).
@@ -40,7 +40,7 @@ Feel free to check [our expander course](https://fastn.com/expander/) or jump
 into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
 
--- h2: 👀 Used by?
+-- h2: 🎯 Used by?
 
 Our all documentation sites uses this `doc-site` theme.
 
