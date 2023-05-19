@@ -10,12 +10,12 @@ helps authors, entrepreneurs, corporate groups and bloggers to create their own
 fastn web project.
 
 
--- ds.h2: 🌟 Creating fastn web-site using `doc-site`
+-- ds.h2: 🎨 Creating fastn web-site using `doc-site`
 
 Please, refer [this documentation](https://fastn.com/github-pages/) to
 understand how to create fastn website repository on GitHub.
 
--- ds.h3: How to publish a package?
+-- ds.h3: 🤔 How to publish a package?
 
 Watch this quick video tutorial to learn how to publish a package.
 
@@ -29,7 +29,7 @@ v: tsHB2Vrhb2c
 - [Fastn Template](https://github.com/fastn-stack/fastn-template) 
 
 
--- ds.h2: Whats next?
+-- ds.h2: 🌟 Whats next?
 
 `-- page` component comes with inbuit navbar, sidebar and body content area.
 Start creating new `.ftd` files inside your project and use `doc-site` `page`
