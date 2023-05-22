@@ -105,6 +105,8 @@ title if { page.document-title != NULL }: $page.document-title
 title: $page.title
 og-title if { page.document-title != NULL }: $page.document-title
 og-title: $page.title
+twitter-title if { page.document-title != NULL }: $page.document-title
+twitter-title: $page.title
 description: $page.document-description
 og-image: $page.document-image
 
