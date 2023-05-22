@@ -9,8 +9,7 @@ In this section, we will learn about adding `site-logo` and `site-name` to your
 
 -- ds.h2: `site-logo` and `site-name` logic
 
-While developing `doc-site` we have added provision of adding `site-logo` and
-`site-name` both or as per your requirement.
+`doc-site` has provision of adding `site-logo` and `site-name`.
 
 Below is the logic of adding logo and site name:
 
