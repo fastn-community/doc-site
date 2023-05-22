@@ -400,6 +400,7 @@ optional integer logo-height:
 width: fill-container
 
 -- apps-switcher.app-switcher:
+if: { ftd.is_empty(doc-page-desktop.apps) }
 apps: $doc-page-desktop.apps
 
 -- h.header:
@@ -529,6 +530,7 @@ background.solid:$inherited.colors.background.base
 -- ftd.column:
 
 -- apps-switcher.app-switcher:
+if: { ftd.is_empty(doc-page-mobile.apps) }
 apps: $doc-page-mobile.apps
 
 -- end: ftd.column
@@ -640,7 +642,7 @@ anchor: parent
 right.px: 0
 top.px: 0
 background.solid: $inherited.colors.background.step-1
-z-index: 1
+z-index: 999
 padding-horizontal.px: 24
 children: $doc-page-mobile.extra-headers
 
