@@ -2,7 +2,6 @@
 
 
 -- my-ds.page: Markdown Primer
-site-name: NULL
 
 `doc-site` supports markdown. If you want to use it you can use `--
 ds.mardkdown` for inline anchor links etc.

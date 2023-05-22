@@ -5,7 +5,6 @@
 
 
 -- ds.page: Post
-site-name: NULL
 
 In this section, we will learn about creating blog post in `doc-site`.
 
