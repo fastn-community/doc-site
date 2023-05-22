@@ -8,7 +8,7 @@
 -- my-ds.page: Right Sidebar 👉🏻
 sidebar: true
 
--- my-ds.page.extra-headers:
+-- my-ds.page.right-sidebar:
 
 -- ds.h3: Heading in sidebar
 
@@ -28,7 +28,7 @@ today.
 We are trying to create the language for human beings and we do not believe it
 would be possible without your support. We would love to hear from you.
 
--- end: my-ds.page.extra-headers
+-- end: my-ds.page.right-sidebar
 
 
 -- my-ds.page.body:
@@ -38,9 +38,111 @@ components to be shown on right-side of `page` component.
 
 Add `sidebar: true` attribute to your `page` component.
 
--- ds.h3: How to enable right-sidebar?
 
-To enable right-sidebar add `$sidebar: true` property to `ds.page` component.
+
+-- ds.h3: How to create a global `my-ds` page module for `doc-site`?
+
+You can create a `my-ds.ftd` module inside your `fastn` package and create your
+custom `my-ds` page component.
+
+Let's learn how to create a module:
+
+Create a new file let’s say `my-ds.ftd`. 
+
+Here’s what your `my-ds.ftd` module would look like:
+
+-- cb.code: my-ds.ftd module
+lang: ftd
+download: my-ds.ftd
+
+\-- import: fastn-community.github.io/doc-site as ds
+\-- import: fastn-community.github.io/doc-site/common
+\-- import: fastn-community.github.io/footer
+
+\-- component page:
+children wrapper:
+optional caption title:
+optional body body:
+
+\-- ds.page: $page.title
+site-logo: $fastn-assets.files.images.fastn.svg
+body: $page.body
+show-footer: true
+
+\-- ds.page.footer:
+
+\-- footer.basic-footer:
+footer-list: $common.sitemap.sections
+site-logo: https://fastn.com/-/fastn.io/images/fastn.svg
+site-url: /
+copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
+
+\-- end: ds.page.footer
+
+\-- ds.page.body:
+
+Some page body components and content here
+
+\-- ftd.column:
+spacing.fixed.em: 0.8
+width: fill-container
+children: $page.wrapper
+
+\-- end: ftd.column
+
+\-- end: ds.page
+
+\-- end: page
+
+-- ds.markdown:
+
+Click on download icon of above code-block. `my-ds.ftd` file will be downloaded.
+Import this file inside your new `.ftd` or download below given `footer.ftd`
+file.
+
+Use `my-ds` component to create a new page using it.
+
+-- ds.code:
+lang: ftd
+download: footer.ftd
+
+\-- import: fastn-community.github.io/doc-site as ds
+\-- import: <your fastn package name>/my-ds
+
+\-- my-ds.page: This is page title
+
+This is body area. It contains multiple paragraphs.
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+praesentium voluptatum.
+
+\-- ds.h1: This is heading level 1
+
+This is heading level 1 optional body content.
+
+\-- ds.h2: This is heading level 2
+
+This is heading level 2 optional body content.
+
+\-- ds.h3: This is heading level 3
+
+This is heading level 3 optional body content.
+
+\-- end: my-ds.page
+
+-- ds.markdown:
+
+Click on download icon of above code-block. `footer.ftd` file will be
+downloaded.
+
+Add this file inside your `fastn` project and deploy or run `fastn serve` on
+your localhost. Access your localhost in browser
+e.g.`http://127.0.0.1:8000/footer/` you will see page with footer.
+
+
+-- ds.h3: How to enable right-sidebar withoud adding `my-ds` module?
+
+To enable right-sidebar add `sidebar: true` property to `ds.page` component.
 Right sidebar contain additional childrens to `ds.page.extra-headers`
 container. You can add `fastn` components inside it.
 
@@ -61,9 +163,9 @@ download: right-sidebar.ftd
 \-- import: fastn-community.github.io/doc-site as ds
 
 \-- ds.page: Right Sidebar 👉🏻
-$sidebar: true
+sidebar: true
 
-\-- ds.page.extra-headers:
+\-- ds.page.right-sidebar:
 
 \-- ds.compact-text: Quick links:
 
@@ -71,7 +173,7 @@ $sidebar: true
 - [Create `fastn` package](create-fastn-package/)
 - [Expander Crash Course](expander/)
 
-\-- end: ds.page.extra-headers
+\-- end: ds.page.right-sidebar
 
 \-- ds.page.body:
 
