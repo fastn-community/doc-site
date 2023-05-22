@@ -8,7 +8,7 @@
 
 -- boolean parent-brand: true
 
--- boolean $show-floater: false
+-- boolean show-floater: false
 
 -- boolean show-footer: true
 
@@ -18,7 +18,7 @@
 
 -- boolean is-reader: false
 
--- string $site-name: Doc Site
+-- string site-name: Doc Site
 
 -- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
 
@@ -26,17 +26,17 @@
 
 -- integer logo-height: 64
 
--- ftd.image-src $brand-site-logo:
+-- ftd.image-src brand-site-logo:
 light: https://www.fifthtry.com/-/fifthtry.com/images/dummy-site-logo.png
 dark: https://www.fifthtry.com/-/fifthtry.com/images/dummy-site-logo.png
 
--- string $brand-site-name: FifthTry
+-- string brand-site-name: FifthTry
 
--- string $brand-caption: FifthTry
+-- string brand-caption: FifthTry
 
--- string $brand-site-url: /
+-- string brand-site-url: /
 
--- string $site-url: index.html
+-- string site-url: index.html
 
 -- pr.toc-item list sections:
 
