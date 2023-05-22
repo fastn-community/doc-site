@@ -1,10 +1,10 @@
 -- import: fastn-community.github.io/doc-site as ds
 
 -- ds.page: Right Sidebar 👉🏻
-$sidebar: true
+sidebar: true
 site-name: NULL
 
--- ds.page.extra-headers:
+-- ds.page.right-sidebar:
 
 -- ds.h3: Heading in sidebar
 
@@ -24,7 +24,7 @@ today.
 We are trying to create the language for human beings and we do not believe it
 would be possible without your support. We would love to hear from you.
 
--- end: ds.page.extra-headers
+-- end: ds.page.right-sidebar
 
 -- ds.page.body:
 
