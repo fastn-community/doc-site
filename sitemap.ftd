@@ -1,7 +1,6 @@
 -- import: fastn-community.github.io/doc-site as ds
 
 -- my-ds.page: Understanding Sitemap
-site-name: NULL
 
 `doc-site` page component has inbuilt header. Just using `page` header will
 appear on your page.

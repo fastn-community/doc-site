@@ -38,7 +38,9 @@ components to be shown on right-side of `page` component.
 
 Add `sidebar: true` attribute to your `page` component.
 
-
+If you want to show right-sidebar on all pages and content of your right-sidebar
+is same for all pages then, we recommond creating a global module which helps
+you to keep all your global properties and configurations in one `.ftd` file.
 
 -- ds.h3: How to create a global `my-ds` page module for `doc-site`?
 
@@ -56,8 +58,6 @@ lang: ftd
 download: my-ds.ftd
 
 \-- import: fastn-community.github.io/doc-site as ds
-\-- import: fastn-community.github.io/doc-site/common
-\-- import: fastn-community.github.io/footer
 
 \-- component page:
 children wrapper:
@@ -68,20 +68,22 @@ optional body body:
 site-logo: $fastn-assets.files.images.fastn.svg
 body: $page.body
 show-footer: true
+sidebar: true
 
-\-- ds.page.footer:
+\-- my-ds.page.right-sidebar:
 
-\-- footer.basic-footer:
-footer-list: $common.sitemap.sections
-site-logo: https://fastn.com/-/fastn.io/images/fastn.svg
-site-url: /
-copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
+\-- ds.h3: Heading in sidebar
 
-\-- end: ds.page.footer
+You can call any component inside sidebar. 
 
-\-- ds.page.body:
+This right-sidebar will appear on all pages.
 
-Some page body components and content here
+\-- ds.code:
+lang: ftd
+
+\-- ftd.text: Hello World
+
+\-- end: my-ds.page.right-sidebar
 
 \-- ftd.column:
 spacing.fixed.em: 0.8
@@ -104,7 +106,7 @@ Use `my-ds` component to create a new page using it.
 
 -- ds.code:
 lang: ftd
-download: footer.ftd
+download: sidebar.ftd
 
 \-- import: fastn-community.github.io/doc-site as ds
 \-- import: <your fastn package name>/my-ds
@@ -132,18 +134,18 @@ This is heading level 3 optional body content.
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `footer.ftd` file will be
+Click on download icon of above code-block. `sidebar.ftd` file will be
 downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in browser
-e.g.`http://127.0.0.1:8000/footer/` you will see page with footer.
+e.g.`http://127.0.0.1:8000/sidebar/` you will see page with right-sidebar.
 
 
--- ds.h3: How to enable right-sidebar withoud adding `my-ds` module?
+-- ds.h3: How to enable right-sidebar without adding `my-ds` module?
 
 To enable right-sidebar add `sidebar: true` property to `ds.page` component.
-Right sidebar contain additional childrens to `ds.page.extra-headers`
+Right sidebar contain additional childrens to `ds.page.right-sidebar`
 container. You can add `fastn` components inside it.
 
 To use below right-sidebar example follow these steps:
