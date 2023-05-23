@@ -15,6 +15,8 @@ document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 site-name: NULL
+github-url: https://github.com/fastn-community/doc-site/
+github-icon: true
 
 ⚡️ `doc-site` will help you create a beautiful documentation site in no time.
 
@@ -637,10 +639,10 @@ $on-click$: $ftd.set-bool($a = $doc-page-mobile.open-right-sidebar-info, v = fal
 
 -- ftd.image:
 src: $assets.files.static.cross-dark.svg
-height.fixed.px: 16
+height.fixed.px: 24
 width: auto
-margin-top.px: 30
-margin-left.px: 16
+margin-top.px: 20
+margin-left.px: 12
 $on-click$: $ftd.toggle($a = $doc-page-mobile.open-right-sidebar-info)
 
 

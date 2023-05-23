@@ -26,6 +26,8 @@ sidebar: $page.sidebar
 document-title: $page.document-title
 document-description: $page.document-description
 document-image: $page.document-image
+github-url: https://github.com/fastn-community/doc-site/
+github-icon: true
 
 -- ds.page.footer:
 
