@@ -6,7 +6,6 @@
 In this section, we will learn about adding `site-logo` and `site-name` to your
 `fastn` web site.
 
-
 -- ds.h2: `site-logo` and `site-name` logic
 
 `doc-site` has provision of adding `site-logo` and `site-name`.
@@ -133,6 +132,5 @@ e.g.`http://127.0.0.1:8000/logo/` you will see page with logo.
 Change `site-name` with your site-name into `my-ds.ftd` file `string
 site-name: my fastn site` and refresh e.g.`http://127.0.0.1:8000/logo/` page,
 you will see site-name only.
-
 
 -- end: my-ds.page
