@@ -33,10 +33,7 @@ would be possible without your support. We would love to hear from you.
 
 -- my-ds.page.body:
 
-`doc-site` have inbuilt provision of adding `right-sidebar` for additional
-components to be shown on right-side of `page` component. 
-
-Add `sidebar: true` attribute to your `page` component.
+In this section, we will learn adding right-sidebar in `doc-site`.
 
 If you want to show right-sidebar on all pages and content of your right-sidebar
 is same for all pages then, we recommond creating a global module which helps
@@ -99,7 +96,7 @@ children: $page.wrapper
 -- ds.markdown:
 
 Click on download icon of above code-block. `my-ds.ftd` file will be downloaded.
-Import this file inside your new `.ftd` or download below given `footer.ftd`
+Import this file inside your new `.ftd` or download below given `sidebar.ftd`
 file.
 
 Use `my-ds` component to create a new page using it.
@@ -145,10 +142,6 @@ e.g.`http://127.0.0.1:8000/sidebar/` you will see page with right-sidebar.
 -- ds.h3: How to enable right-sidebar without adding `my-ds` module?
 
 To enable right-sidebar add `sidebar: true` property to `ds.page` component.
-Right sidebar contain additional childrens to `ds.page.right-sidebar`
-container. You can add `fastn` components inside it.
-
-To use below right-sidebar example follow these steps:
 
 - Click on download icon of below code-block. `right-sidebar.ftd` file will be
 downloaded. 
@@ -169,17 +162,19 @@ sidebar: true
 
 \-- ds.page.right-sidebar:
 
-\-- ds.compact-text: Quick links:
+\-- ds.h1: This is title 
 
-- [Install `fastn`](install/)
-- [Create `fastn` package](create-fastn-package/)
-- [Expander Crash Course](expander/)
+This is a body of h1 component.
+
+\-- ds.markdown: 
+
+You can add any component inside right-sidebar.
 
 \-- end: ds.page.right-sidebar
 
 \-- ds.page.body:
 
-add your page body content here.
+Add your page body content here.
 
 \-- end: ds.page
 
