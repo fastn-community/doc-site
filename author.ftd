@@ -13,6 +13,8 @@ Lets understand how to add author details.
 -- ds.code: Example how to add author meta
 lang: ftd
 
+\-- import: fastn-community.github.io/doc-site/common
+
 \-- common.author-meta amitu: Amit Upadhyay
 profile: CEO
 bio-url: blog-authors/amitu/
@@ -25,11 +27,12 @@ Banglore.
 
 -- ds.h3: Let's understand above code snippet:
 
-In `doc-site` we have added `blog-authors` folder. Here you can create your name
-FTD file. e.g. `amitu.ftd` file.
+Like in [doc-site](https://fastn-community.github.io/doc-site/blog-authors/amitu/) 
+we have added `blog-authors` folder. Here you can create `<your-name>.ftd` file.
+e.g. `amitu.ftd` file.
 
-✨ `-- ds.author-meta amitu: Amit Upadhyay` : in this FTD component author name
-as a title. You can change `Amit Upadhyay` with your name.
+✨ `-- common.author-meta amitu: Amit Upadhyay` : in this FTD component author
+name as a title. You can change `Amit Upadhyay` with your name.
 
 ✨ `profile:` helps add author desination
 

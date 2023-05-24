@@ -1,10 +1,13 @@
 -- import: fastn-community.github.io/doc-site as ds
 -- import: fastn-community.github.io/doc-site/assets
+-- import: fastn-community.github.io/doc-site/blog-articles/category-1/sample-post-1
+-- import: fastn-community.github.io/doc-site/blog-articles/category-1/sample-post-2 
+-- import: fastn-community.github.io/doc-site/blog-articles/category-2/sample-post-3 
+-- import: fastn-community.github.io/doc-site/blog-articles/category-2/sample-post-4
 
 
 
-
--- ds.page: Blog
+-- my-ds.page: Blog
 
 In this section, we will learn about creating blog article page in `doc-site`.
 
@@ -12,4 +15,32 @@ By following our simple blog documentation you can create a blog post. We have
 developed featured article list, blog article & authors bio pages. Lets 
 understand how to use them.
 
--- end: ds.page
+💡 [Click here](/post-list/) to create a featured blog posts page.
+
+-- ds.posts:
+
+-- ds.featured-post:
+post-data: $sample-post-2.meta
+
+
+-- ds.image-first:
+post-data: $sample-post-1.meta
+
+
+-- ds.image-in-between:
+post-data: $sample-post-3.meta
+
+
+-- ds.without-image:
+post-data: $sample-post-4.meta
+
+-- ds.image-first:
+post-data: $sample-post-1.meta
+
+
+-- ds.image-in-between:
+post-data: $sample-post-3.meta
+
+-- end: ds.posts
+
+-- end: my-ds.page

@@ -1189,17 +1189,18 @@ children container:
 -- ftd.column:
 
 -- ftd.desktop:
+
 -- ftd.row:
 children: $posts.container
 wrap: true
-spacing.fixed.px: 16
+spacing: space-between
 
 -- end: ftd.row
 
 -- end: ftd.desktop
 
-
 -- ftd.mobile:
+
 -- ftd.column:
 children: $posts.container
 spacing.fixed.px: 16
@@ -1225,16 +1226,12 @@ spacing.fixed.px: 16
 -- component image-first:
 common.post-meta post-data:
 
--- ftd.column:
-
 -- image-first-card: $image-first.post-data.title
 timestamp: $image-first.post-data.published-on
 author: $image-first.post-data.author
 image: $image-first.post-data.post-image
 url:  $image-first.post-data.post-url
 body: $image-first.post-data.body
-
--- end: ftd.column
 
 -- end: image-first
 
@@ -1260,14 +1257,14 @@ border-width.px: 1
 border-color: $inherited.colors.border
 padding-vertical.px: 24
 width: fill-container
-max-width.fixed.px if { ftd.device != "mobile" }: 344
-max-height.fixed.px if { ftd.device != "mobile" }: 550
 padding-horizontal.px: 24
 color: $inherited.colors.text
-margin-top.px : 12
+margin-top.px : 20
 margin-bottom.px : 12
 spacing.fixed.px: 12
-border-radius.px: 8
+border-radius.px: 6
+max-width.fixed.percent if { ftd.device == "desktop" }: 48
+min-height.fixed.px if { ftd.device != "mobile" }: 530
 
 -- ftd.column:
 link: $image-first-card.url
@@ -1287,7 +1284,6 @@ margin-top.px if {image-first-card.image != NULL}: 12
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 8
 margin-top.px: 8
 
 -- ftd.row:
@@ -1301,6 +1297,7 @@ link: $image-first-card.author.bio-url
 -- ftd.text: ,
 role: $inherited.types.fine-print
 color: $inherited.colors.cta-primary.border
+margin-right.px: 8
 
 -- end: ftd.row
 
@@ -1312,7 +1309,6 @@ color: $inherited.colors.cta-primary.border
 
 -- end: ftd.desktop
 
-
 -- ftd.text:
 text: $image-first-card.body
 role: $inherited.types.copy-regular
@@ -1322,6 +1318,7 @@ link: $image-first-card.url
 -- end: ftd.column
 
 -- ftd.mobile:
+
 -- ftd.column:
 width: fill-container
 spacing.fixed.px: 8
@@ -1365,16 +1362,12 @@ color: $inherited.colors.cta-primary.border
 -- component image-in-between:
 common.post-meta post-data:
 
--- ftd.column:
-
 -- image-in-between-card: $image-in-between.post-data.title
 timestamp: $image-in-between.post-data.published-on
 image: $image-in-between.post-data.post-image
 author: $image-in-between.post-data.author
 url:  $image-in-between.post-data.post-url
 body: $image-in-between.post-data.body
-
--- end: ftd.column
 
 -- end: image-in-between
 
@@ -1400,15 +1393,15 @@ border-width.px: 1
 border-color: $inherited.colors.border
 padding-vertical.px: 24
 width: fill-container
-max-width.fixed.px if { ftd.device != "mobile" }: 360
-max-height.fixed.px if { ftd.device != "mobile" }: 550
 padding-horizontal.px: 24
 color: $inherited.colors.text
-margin-top.px: 12
+margin-top.px: 20
 margin-bottom.px: 12
-margin-left.px if { ftd.device != "mobile" }: 12
 spacing.fixed.px: 8
-border-radius.px: 8
+border-radius.px: 6
+max-width.fixed.percent if { ftd.device == "desktop" }: 48
+min-height.fixed.px if { ftd.device != "mobile" }: 530
+overflow-y: auto
 
 -- ftd.text: $image-in-between-card.title
 role: $inherited.types.heading-small
@@ -1448,8 +1441,7 @@ color: $inherited.colors.cta-primary.border
 -- ftd.image:
 src: $image-in-between-card.image
 width: fill-container
-height:auto
-margin-top.px:12
+height: auto
 link: $image-in-between-card.url
 
 -- ftd.text:
@@ -1502,15 +1494,11 @@ color: $inherited.colors.cta-primary.border
 -- component without-image:
 common.post-meta post-data:
 
--- ftd.column:
-
 -- without-image-card: $without-image.post-data.title
 timestamp: $without-image.post-data.published-on
 author: $without-image.post-data.author
 url:  $without-image.post-data.post-url
 body: $without-image.post-data.body
-
--- end: ftd.column
 
 -- end: without-image
 
@@ -1535,13 +1523,10 @@ border-width.px: 1
 border-color: $inherited.colors.border
 padding-vertical.px: 24
 width: fill-container
-max-width.fixed.px if { ftd.device != "mobile" }: 344
-max-height.fixed.px: 500
 padding-horizontal.px:24
 color: $inherited.colors.text
-margin-top.px: 12
+margin-top.px: 20
 margin-bottom.px: 12
-margin-right.px if { ftd.device != "mobile" }: 12
 spacing.fixed.px: 12
 border-radius.px: 8
 
