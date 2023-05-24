@@ -26,6 +26,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 
 - Overview: index.html
 - Getting Started: /getting-started/
+- Configuring your site: /domain-setup/
 - Adding Favicon: /favicon/
 - Adding Logo & Sitename: /logo/
 - Changing Color Scheme: /cs/
