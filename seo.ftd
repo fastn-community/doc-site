@@ -8,6 +8,9 @@ document-image: https://fastn.com/-/fastn.com/images/featured/doc-site.png
 In this section, we will learn about `doc-site` SEO features for your `fastn`
 web site.
 
+-- ds.youtube:
+v: 72N7f9on8iw
+
 -- ds.h2: How to customize document title?
 
 💡 If you want to add different title than `page` title then add `document-title`
@@ -55,5 +58,8 @@ lang: ftd
 
 \-- ds.page: This is page title
 document-image: https://fastn.com/-/fastn.com/images/featured/doc-site.png
+
+
+
 
 -- end: my-ds.page
