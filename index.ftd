@@ -934,14 +934,60 @@ color if { childrens.toc.is-active }: $inherited.colors.cta-primary.base
 
 -- end: ftd.row
 
--- childrens:
+-- ftd.column:
 if: {!ftd.is_empty(childrens.toc.children) }
+width: fill-container
+margin-top.px: 24
+spacing.fixed.px: 24
+
+-- child-of-childrens:
 $loop$: $childrens.toc.children as $obj
 toc: $obj
 
 -- end: ftd.column
 
+-- end: ftd.column
+
 -- end: childrens
+
+
+
+
+
+
+
+
+
+
+-- component child-of-childrens:
+pr.toc-item toc:
+
+-- ftd.column:
+width: fill-container
+padding-left.px: 10
+spacing.fixed.px: 24
+
+-- ftd.text:
+link if { child-of-childrens.toc.url != NULL } : $child-of-childrens.toc.url
+text: $child-of-childrens.toc.title
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+color if { child-of-childrens.toc.is-active }: $inherited.colors.text-strong
+
+
+-- ftd.column:
+if: {!ftd.is_empty(child-of-childrens.toc.children) }
+width: fill-container
+
+-- child-of-childrens:
+$loop$: $child-of-childrens.toc.children as $obj
+toc: $obj
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: child-of-childrens
 
 
 
