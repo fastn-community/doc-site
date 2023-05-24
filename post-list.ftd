@@ -1,9 +1,13 @@
 -- import: fastn-community.github.io/doc-site as ds
 
 
--- ds.page: Post List
+-- my-ds.page: Post List
 
--- ds.h1: Creating posts list page
+In this section, we will learn about creating blog article listing page using
+`doc-site` blog features.
+
+
+-- ds.h2: Creating posts list page
 
 Its very common to display a list of top/latest posts as a blog home page. Our
 `doc-site` blog feature helps you to create your favorite blog posts list home 
@@ -16,36 +20,46 @@ Let's learn how to create it.
 
 -- ds.code: Example of how to use `-- ds.posts`
 lang: ftd
+download: post-list.ftd
 
-\-- import: fifthtry.github.io/doc-site as ds
-\-- import: fifthtry.github.io/doc-site/blog-articles/category-1/sample-post-1
-\-- import: fifthtry.github.io/doc-site/blog-articles/category-1/sample-post-2 
-\-- import: fifthtry.github.io/doc-site/blog-articles/category-2/sample-post-3 
-\-- import: fifthtry.github.io/doc-site/blog-articles/category-2/sample-post-4
+\-- import: fastn-community.github.io/doc-site as ds
+\-- import: fastn-community.github.io/doc-site/blog-articles/category-1/sample-post-1
+\-- import: fastn-community.github.io/doc-site/blog-articles/category-1/sample-post-2 
+\-- import: fastn-community.github.io/doc-site/blog-articles/category-2/sample-post-3 
+\-- import: fastn-community.github.io/doc-site/blog-articles/category-2/sample-post-4
 
 \-- ds.page:
 
-\--- ds.posts:
+\-- ds.posts:
 
-\--- ds.featured-post:
-post-data: $sample-post-1.meta
-
-\--- ds.image-first:
+\-- ds.featured-post:
 post-data: $sample-post-2.meta
 
-\--- ds.image-in-between:
+\-- ds.image-first:
+post-data: $sample-post-1.meta
+
+\-- ds.image-in-between:
 post-data: $sample-post-3.meta
 
-\--- ds.without-image:
+\-- ds.without-image:
 post-data: $sample-post-4.meta
 
+\-- ds.image-first:
+post-data: $sample-post-1.meta
+
+\-- ds.image-in-between:
+post-data: $sample-post-3.meta
+
+\-- end: ds.posts
+
+\-- end: ds.page
 
 -- ds.h3: Let's understand above code snippet:
 
-`-- import: fifthtry.github.io/doc-site as ds` : imports doc-site and all its
+`-- import: fastn-community.github.io/doc-site as ds` : imports doc-site and all its
 components into your `featured-post.ftd` page. 
 
-`\-- import: fifthtry.github.io/doc-site/blog-articles/category-1/sample-post-1` 
+`\-- import: fastn-community.github.io/doc-site/blog-articles/category-1/sample-post-1` 
 : imports `sample-post-1` and its all details from `/blog-articles/category-1/` 
 folder. You can add more posts imports into `featured-post.ftd` like shown in 
 above code snippet.
@@ -57,19 +71,19 @@ above components.
 featured list page ui. 
 
 `--- ds.featured-post:` : This line imports `ds.featured-post` component which 
-comes with featured post UI. [see our blog page](featured-posts/)
+comes with featured post UI. [see our blog page](blog/)
 
 `--- ds.image-first:` : `ds.image-first` component shows your post image at the 
-top then shows title of the post and other post details. [see our blog page](featured-posts/)
+top then shows title of the post and other post details. [see our blog page](blog/)
 
 `--- ds.image-in-between:` : `ds.image-in-between` component shows your post 
-image after title and post metadata then shows other post details. [see our blog page](featured-posts/)
+image after title and post metadata then shows other post details. [see our blog page](blog/)
 
 `--- ds.without-image:` : `ds.without-image` component shows your post without
 image incase your post not contains featured image. It shows only title and post
-metadata then shows other post details. [see our blog page](featured-posts/)
+metadata then shows other post details. [see our blog page](blog/)
 
 Category pages are similar to featured-posts page. You can add category related
 details into body part of `-- ds.page` page.
 
--- end: ds.page
+-- end: my-ds.page
