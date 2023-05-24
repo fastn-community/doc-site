@@ -14,7 +14,12 @@ author: $author.arpita
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
 
--- ds.page:
+
+
+
+
+
+-- my-ds.page:
 
 -- ds.post: 
 meta: $meta
@@ -58,7 +63,7 @@ color: $fastn.color.main.text-strong
 
 Here we add body for the level 1 heading. This can be multiline and has no limits.
 
-You also can use `markdown` **Bold** links [markdown cheat sheet](https://www.markdownguide.org/cheat-sheet/).
+You also can use `markdown` **Bold** links [markdown primer](markdown/).
 
 
 -- ds.h1: Sed ut perspiciatis unde omnis iste natus error
@@ -77,7 +82,4 @@ beatae vitae dicta sunt explicabo.
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
 
-
-
-
--- end: ds.page
+-- end: my-ds.page

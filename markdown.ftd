@@ -8,13 +8,26 @@ ds.mardkdown` for inline anchor links etc.
 
 `doc-site` comes with inbuit `-- ds.markdown` component.
 
--- ds.code:
-lang: ftd
+
+-- ds.rendered: Markdown
+
+-- ds.rendered.input:
 
 \-- ds.markdown:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 tempor incididunt.
+
+-- ds.rendered.output:
+
+-- ds.markdown:
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+tempor incididunt.
+
+-- end: ds.rendered.output
+
+-- end: ds.rendered
 
 -- ds.rendered: Inline links
 
@@ -22,14 +35,14 @@ tempor incididunt.
 
 \-- ds.markdown:
 
-Lorem ipsum [dolor sit](/docs/markup-support/) amet, consectetur adipiscing
+Lorem ipsum [inline link](/docs/markup-support/) amet, consectetur adipiscing
 elit, sed do eiusmod tempor incididunt.
 
 -- ds.rendered.output:
 
 -- ds.markdown:
 
-Lorem ipsum [dolor sit](/docs/markup-support/) amet, consectetur adipiscing
+Lorem ipsum [inline link](/docs/markup-support/) amet, consectetur adipiscing
 elit, sed do eiusmod tempor incididunt.
 
 -- end: ds.rendered.output
@@ -90,15 +103,15 @@ elit, sed do eiusmod tempor incididunt.
 
 \-- ds.markdown:
 
-**Lorem ipsum** dolor sit amet, *consectetur adipiscing* elit, sed do
-eiusmod tempor incididunt.
+**Bold Text** dolor sit amet, *Italic text* elit, sed do eiusmod tempor
+  incididunt.
 
 -- ds.rendered.output:
 
 -- ds.markdown:
 
-**Lorem ipsum** dolor sit amet, *consectetur adipiscing* elit, sed do eiusmod
-  tempor incididunt.
+**Bold Text** dolor sit amet, *Italic text* elit, sed do eiusmod tempor
+  incididunt.
 
 -- end: ds.rendered.output
 

@@ -21,9 +21,9 @@ Banglore.
 
 
 
--- ds.page: 
-
+-- my-ds.page: 
 
 -- ds.author-bio: 
 author: $amitu
--- end: ds.page
+
+-- end: my-ds.page
