@@ -1,5 +1,5 @@
 # Welcome to [FASTN doc-site](https://fastn-community.github.io/doc-site/)
-
+![Contributors](https://img.shields.io/github/contributors/fastn-community/doc-site?color=dark-green) [![Discord](https://img.shields.io/discord/793929082483769345)](https://discord.com/channels/793929082483769345/) ![License](https://img.shields.io/github/license/fastn-community/doc-site)
 # Overview
 
 ⚡️ [doc-site](https://fastn-community.github.io/doc-site/) will help you create a beautiful documentation site in no time.
