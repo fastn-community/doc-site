@@ -2,6 +2,7 @@
 
 ## May 24, 2023
 
+- [Added blog documentation and changelog.md](https://github.com/fastn-community/doc-site/commit/f7c92b5e51c13fe22ed9c5ea150035bfbf9cd65d)
 - [video added to SEO](https://github.com/fastn-community/doc-site/commit/31117bcddcb2074fb4a17e579b888bf4a49e123a)
 
 ## May 23, 2023
