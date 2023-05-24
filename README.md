@@ -20,6 +20,7 @@ Read our [doc-site documentation](https://fastn-community.github.io/doc-site/)
 
 Create your first page. [Click here to know more](https://fastn-community.github.io/doc-site/page/)
 
+## [Changelog](changelog.md)
 
 ## 👀 Want to learn more?
 
