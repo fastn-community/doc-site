@@ -9,7 +9,7 @@
 -- common.author-meta ganesh: Ganesh S Salunke
 profile: Sr. Manager Frontend
 bio-url:  blog-authors/ganeshs/
-image: $assets.files.static.authors.ganeshs.jpg
+image: $assets.files.static.avatar.jpg
 company: FifthTry Pvt. Ltd.
 
 I have 15+ years of expirence in Frontend technologies. Working as Sr. Manager 
@@ -23,10 +23,9 @@ day and night.
 
 
 
--- ds.page: 
-
+-- my-ds.page: 
 
 -- ds.author-bio: 
 author: $ganesh
 
--- end: ds.page
+-- end: my-ds.page
