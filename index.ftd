@@ -5,6 +5,9 @@
 -- import: fastn-community.github.io/dark-mode-switcher as dms
 -- import: fastn/processors as pr
 -- import: fastn-community.github.io/footer
+-- import: fastn-community.github.io/typography as tf
+export: markdown, h0, h1, h2, h3
+
 
 
 
@@ -2112,101 +2115,6 @@ color: $inherited.colors.cta-primary.border
 -- end: ftd.column
 
 -- end: featured-post-meta-mobile
-
-
-
-
-
-
-
-
-
-
--- component markdown:
-caption or body body:
-
--- tf.markdown:
-
-$markdown.body
-
-
--- end: markdown
-
-
-
-
-
-
--- component h0:
-caption title:
-optional body body:
-
--- tf.h0: $h0.title
-
-$h0.body
-
--- end: h0
-
-
-
-
-
-
-
-
-
--- component h1:
-caption title:
-optional body body:
-optional string id:
-
--- tf.h1: $h1.title
-id: $h1.id
-
-$h1.body
-
--- end: h1
-
-
-
-
-
-
-
-
-
--- component h2:
-caption title:
-optional body body:
-optional string id:
-
--- tf.h2: $h2.title
-id: $h2.id
-
-$h2.body
-
--- end: h2
-
-
-
-
-
-
-
-
--- component h3:
-caption title:
-optional body body:
-optional string id:
-
--- tf.h3: $h3.title
-id: $h3.id
-
-$h3.body
-
--- end: h3
-
-
 
 
 
