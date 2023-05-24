@@ -2,6 +2,7 @@
 
 ## May 24, 2023
 
+- [Third Level TOC implemented](https://github.com/fastn-community/doc-site/commit/ab1eaa9ba0e7b8351f9f619f1a6e4bb4c108e8d1)
 - [Added Configuring Your Site Page](https://github.com/fastn-community/doc-site/commit/b7ea825d8aeaea85fbdc3e943a88628c9a903d93)
 - [Added blog documentation and changelog.md](https://github.com/fastn-community/doc-site/commit/f7c92b5e51c13fe22ed9c5ea150035bfbf9cd65d)
 - [video added to SEO](https://github.com/fastn-community/doc-site/commit/31117bcddcb2074fb4a17e579b888bf4a49e123a)
