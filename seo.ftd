@@ -1,7 +1,16 @@
 -- import: fastn-community.github.io/doc-site as ds
+-- import: fastn.com/expander/ds/meta-data as ds-meta
+
+-- my-ds.page:
+document-description: Custom SEO description
+document-image: https://fastn.com/-/fastn.com/images/featured/doc-site.png
+
+-- ds-meta.show-md:
+
+-- end: my-ds.page
 
 
--- my-ds.page: SEO
+/-- my-ds.page: SEO
 document-description: Custom SEO description
 document-image: https://fastn.com/-/fastn.com/images/featured/doc-site.png
 

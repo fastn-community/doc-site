@@ -10,6 +10,9 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 -- fastn.dependency: fastn-community.github.io/header
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
+-- fastn.dependency: fastn.com
+-- fastn.dependency: gargajit.github.io/optimization
+-- fastn.dependency: fifthtry.github.io/dark-flame-cs
 
 -- fastn.auto-import: fastn
 
@@ -46,3 +49,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
   - Adding Author Details 🚧: /author/
   - Sample Post: /blog-articles/category-1/sample-post-2/
   - Sample Author Bio: /blog-authors/amitu/
+
+;; # Ajinosaurus: -/fastn.com/expander/ds/understanding-sitemap/
+
+# Ajit: -/gargajit.github.io/optimization/

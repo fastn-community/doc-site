@@ -1,11 +1,19 @@
 -- import: fastn-community.github.io/doc-site as ds
+-- import: fastn.com/expander/ds/understanding-sitemap as ds-sitemap
 
--- my-ds.page: Understanding Sitemap
+-- my-ds.page: 
+
+-- ds-sitemap.show-sm:
+
+-- end: my-ds.page
+
+/-- my-ds.page: Understanding Sitemap
 
 `doc-site` page component has inbuilt header. Just using `page` header will
 appear on your page.
 
-Header is built using [header](https://fastn-community.github.io/header) component.
+Header is built using [header](https://fastn-community.github.io/header) 
+component.
 Header uses `fastn.sitemap` which can be added insite your `FASTN.ftd` file. 
 
 
