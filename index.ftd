@@ -2535,6 +2535,72 @@ width: fill-container
 
 
 
+-- component link:
+caption title:
+string cta:
+boolean $active: false
+
+-- ftd.column:
+$on-click$: $ftd.set-bool($a= $link.active, v = true)
+spacing.fixed.rem: 0.81
+
+-- ftd.text: $link.title
+role: $inherited.types.button-small
+color: $inherited.colors.text
+color if { link.active}: $inherited.colors.accent.primary
+link: $link.cta
+style: regular
+
+-- end: ftd.column
+
+-- end: link
+
+
+
+
+
+
+
+
+
+
+-- component link-group:
+caption title:
+string cta:
+children wrapper:
+boolean $active: false
+
+-- ftd.column:
+$on-click$: $ftd.set-bool($a= $link-group.active, v = true)
+spacing.fixed.rem: 0.81
+
+-- ftd.text: $link-group.title
+role: $inherited.types.button-medium
+color: $inherited.colors.text
+color if { link-group.active}: $inherited.colors.accent.primary
+link: $link-group.cta
+style: bold
+
+-- ftd.column:
+width: fill-container
+children: $link-group.wrapper
+margin-left.rem: 1.8
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: link-group
+
+
+
+
+
+
+
+
+
+
 -- ftd.color theme-color:
 dark: #1F5E6B
 light: #1F5E6B
