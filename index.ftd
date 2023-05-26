@@ -51,7 +51,6 @@ Create your first page.
 Feel free to check [our expander course](https://fastn.com/expander/) or jump
 into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
-
 -- h2: 🎯 Used by?
 
 Our all documentation sites uses this `doc-site` theme.
@@ -465,8 +464,11 @@ padding-horizontal.px if { !doc-page-desktop.full-width }: 34
 padding-vertical.px if { !doc-page-desktop.full-width }: 25
 padding-top.px if { doc-page-desktop.full-width }: 9
 
--- tf.h0: $doc-page-desktop.title
+-- ftd.text: $doc-page-desktop.title
 if: { doc-page-desktop.title != NULL }
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+region: h1
 
 -- wall-box:
 if: { common.is-reader }
@@ -475,6 +477,7 @@ if: { common.is-reader }
 if: { !common.is-reader }
 width: fill-container
 spacing.fixed.em: 0.8
+margin-top.px: 24
 
 -- tf.markdown:
 if: { doc-page-desktop.body != NULL }
@@ -483,8 +486,10 @@ $doc-page-desktop.body
 
 -- ftd.column:
 children: $doc-page-desktop.wrapper
-spacing.fixed.em: 0.8
+spacing.fixed.px: 24
 width.fixed.percent: 100
+margin-top.px: 32
+
 
 -- end: ftd.column
 
