@@ -4,13 +4,13 @@
 
 -- my-ds.page: Changing Typography
 
-In this section, we will learn about changing typography of `doc-site`.
+In this section, we will learn about changing the typography of `doc-site`.
 
 `doc-site` uses `fastn` default typography. If you wish to update it, 
 
 -- ds.h2: fastn Typography collection:
 
-Choose a typography of font of your choice from our fastn-community.
+Choose a typography or font of your choice from our fastn-community.
 [Click here to search](https://github.com/orgs/fastn-community/repositories?q=typography&type=all&sort=).
 
 -- ds.h2: How to add a typography?
@@ -18,8 +18,8 @@ Choose a typography of font of your choice from our fastn-community.
 To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
 typography dependency into it.
 
-In below example we are using https://fastn-community.github.io/roboto-typography/
-typography.
+In the below example, we are using
+https://fastn-community.github.io/roboto-typography/ typography.
 
 Add typography dependency into your `FASTN.ftd` file as shown in below example:
 
@@ -82,10 +82,10 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `my-ds.ftd` file will be
+Click on the download icon of the above code-block. `my-ds.ftd` file will be
 downloaded. Import this file inside your new `.ftd` file.
 
-Then use `my-ds` component to create a new page using it.
+Then use the `my-ds` component to create a new page using it.
 
 -- ds.code:
 lang: ftd
@@ -118,11 +118,11 @@ This is heading level 3 optional body content.
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `typography.ftd` file will be
-downloaded.
+Click on the download icon of the above code-block. `typography.ftd` file will
+be downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
-your localhost. Access your localhost in browser
+your localhost. Access your localhost in the browser
 e.g.`http://127.0.0.1:8000/typography/` you will see page text with
 [roboto-typography](https://fastn-community.github.io/roboto-typography/) font
 sizes in [Roboto](https://fastn-community.github.io/roboto-font/) font.

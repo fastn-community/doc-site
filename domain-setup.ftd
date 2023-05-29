@@ -14,8 +14,8 @@ To register your domain on [Godaddy.com](https://www.godaddy.com/) you need to
 register with Godaddy.com, if you are not registered. If you are already 
 registered then login to your account and shop for your domain.
 
-- Registered user click on this link to Sign-In: https://sso.godaddy.com/
-- Non Registered user click this link to Sign-Up: https://sso.godaddy.com/account/create
+- Registered users click on this link to Sign-In: https://sso.godaddy.com/
+- Non-Registered users click this link to Sign-Up: https://sso.godaddy.com/account/create
 
 Once you are Signed-In then search for your desired domain name:
 
@@ -27,7 +27,7 @@ width: fill-container
 
 -- ds.markdown: 
 
-For e.g. you want to register your domain name as jonhywalker.com type
+For e.g., if you want to register your domain name as jonhywalker.com type
 `jonhywalker.com` into the above input field and click on Search Domain
 button.
 
@@ -44,19 +44,19 @@ width: fill-container
 
 Let’s understand fastn project creation in just 5 minutes by playing!
 
-With this we are also going to create our new fastn website by following the
+With this, we are also going to create our new fastn website by following the
 very short embedded tutorial.
 
 Do you have a GitHub account?
 
-Log-in with [GitHub.com](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsign-in) into your GitHub account.
+Log in with [GitHub.com](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fsign-in) into your GitHub account.
 
 Or
 
 Create your GitHub account by following simple steps by the 
 [GitHub sign-up process](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 
-Now as you signed into your GitHub account, lets start creating our first fastn 
+Now as you signed into your GitHub account, let's start creating our first fastn 
 website project on GitHub.
 
 To start with it, create a repository using fastn-template - 
@@ -70,15 +70,15 @@ width: fill-container
 
 -- ds.markdown:
 
-Click on Public to make your fastn website visible to public. You can click on
-Private in-case you want to keep it private. We recommend keeping the Public
+Click on Public to make your fastn website visible to the public. You can click
+on Private in case you want to keep it private. We recommend keeping the Public
 selected.
 
-You can also add a description of your fastn web site(optional).
+You can also add a description of your fastn website (optional).
 
 
-Once you click on `Create repository from template` button your first ever fastn
-web repository is ready.
+Once you click on the `Create repository from template` button your first ever
+fastn web repository is ready.
 
 
 -- ds.image: Figure 4: Creating GitHub repository using fastn-template
@@ -90,20 +90,20 @@ width: fill-container
 
 Edit your repository README.md file and remove default content from it. 
 
-Follow below steps to make your first `fastn` web-site live.
+Follow the below steps to make your first `fastn` website live.
 
-- Click on `Actions` tab and check for green tick, if Update README.md workflow
-  ran successfully.
+- Click on the `Actions` tab and check for the green tick, if the Update
+  README.md workflow ran successfully.
 
 
--- ds.image: Figure 5: Creating GitHub repository using fastn-template
+-- ds.image: Figure 5: Creating a GitHub repository using fastn-template
 src: $assets.files.static.domains.figure-5.png
 width: fill-container
 
 
 -- ds.markdown:
 
-- Click on `Settings` tab and follow `Step-1` to `Step-5` shown in below image:
+- Click on the `Settings` tab and follow `Step-1` to `Step-5` shown in below image:
 
 
 -- ds.image: Figure 6: On ⚙️ `Settings` tab follow Step-1 to Step-5 
@@ -113,7 +113,7 @@ width: fill-container
 
 -- ds.markdown:
 
-- Click on `Actions` tab and check for green tick, if `pages build and 
+- Click on the `Actions` tab and check for the green tick, if `pages build and 
 deployment` workflow ran successfully.
 
 
@@ -128,7 +128,7 @@ width: fill-container
 Once pages build and deployment ran successfully. Your first `fastn` website is
 live.
 
-To see your live website click on `Settings` tab and follow below steps:
+To see your live website click on the `Settings` tab and follow the below steps:
 
 -- ds.image: Figure 8: On  ⚙️ Settings → Pages → click on `Visit site` button
 src: $assets.files.static.domains.figure-8.png
@@ -141,17 +141,18 @@ We have already registered your domain using Godaddy.com. Let’s link your GitH
 repository with your website by adding DNS(Domain Name System) configurations
 to it.
 
-Follow below steps to add DNS configurations:
+Follow the below steps to add DNS configurations:
 
 - Visit GitHub documentation to update DNS configurations. 
 [Click here to open](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
 
-- Goto Step No. 5 - Keep this documentation open in browser tab
+- Go to Step No. 5 - Keep this documentation open in the browser tab
 
-- Switch to new tab OR goto Godaddy.com account dashboard and follow below
-  steps:
+- Switch to the new tab OR go to the Godaddy.com account dashboard and follow
+  below steps:
 
-- Click on your user name and select My Products link from the dropdown menu.
+- Click on your user name and select the My Products link from the dropdown
+  menu.
 
 -- ds.image: Figure 9: Click on DNS button
 src: $assets.files.static.domains.figure-9.png
@@ -162,9 +163,9 @@ width: fill-container
 
 Or
 
-- Change your .com domain name from below url: https://dcc.godaddy.com/manage/jonhywalker.com/dns
+- Change your .com domain name from the below URL: https://dcc.godaddy.com/manage/jonhywalker.com/dns
 
-And open it in browser tab you should see below screen:
+And open it in the browser tab you should see the below screen:
 
 
 -- ds.image: Figure 10: Click on Add button
@@ -174,8 +175,8 @@ width: fill-container
 
 -- ds.markdown:
 
-- Click on Add button below box will appear on screen. Click on Type and select
-  A from the dropdown menu. As shown in Step 1 and Step 2
+- Click on Add button below the box that will appear on the screen. Click on
+  Type and select A from the dropdown menu. As shown in Step 1 and Step 2
 
 
 -- ds.image: Figure 11: Follow Step 1 and Step 2
@@ -185,7 +186,7 @@ width: fill-container
 
 -- ds.markdown:
 
-- In Name field type @ 
+- In the Name field type @ 
 
 - In Value enter 185.199.108.153 ip address([refer Step No.2 from this document](https://docs.google.com/document/d/1aD_nol3-4QSQW4d5Tn9BgpwbDj58eQAMtbiBtZCB5I8/edit#bookmark=id.ohc2t8qa8z6x))
 
@@ -217,7 +218,7 @@ width: fill-container
 - Repeat Step 7 to Step 10 from this document. And select AAAA record instead of 
 A record.
 
-- Editing CNAME record: on same screen you will find CNAME record click on edit
+- Editing CNAME record: on the same screen you will find the CNAME record click on edit
   icon
 
 
@@ -228,7 +229,7 @@ width: fill-container
 
 -- ds.markdown:
 
-- You will see below CNAME record box opened for editing
+- You will see below the CNAME record box opened for editing
 
 
 -- ds.image: Figure 14: Click on Save button
@@ -238,7 +239,7 @@ width: fill-container
 
 -- ds.markdown:
 
-- Update Value as shown in above image and click on save. CNAME value is always 
+- Update the Value shown in the above image and click save. CNAME value is always 
 your GitHub username and github.io
 
 - So if your GitHub username is johnywalker75 then your CNAME value will be
@@ -246,7 +247,7 @@ your GitHub username and github.io
 
 - Your Godaddy domain configuration is ready. 
 
-- Goto your GitHub repository and click on Add file dropdown and select Create
+- Go to your GitHub repository and click on Add file dropdown and select Create
   new file,
 
 -- ds.image: Figure 15: Follow Step 1 and Step 2
@@ -266,11 +267,12 @@ width: fill-container
 
 -- ds.markdown:
 
-- Click on Commit new file button. CNAME file will be created on your repository 
-root directory.
+- Click on the Commit new file button. A CNAME file will be created on your
+  repository root directory.
 
-- Click on ⚙️ Settings and select Pages link from left sidebar. Scroll down to
-  Custom domain section and add your domain name into custom domain input box,
+- Click on ⚙️ Settings and select the Pages link from the left sidebar. Scroll
+  down to Custom domain section and add your domain name into the  custom
+  domain input box,
 
 
 -- ds.image: Figure 17: Follow Step 1 and Step 2
@@ -280,8 +282,8 @@ width: fill-container
 
 -- ds.markdown:
 
-- Click on Save button and Once DNS check is done you can click to enforce HTTPS
-  for your domain.
+- Click on the Save button and Once the DNS check is done you can click to
+  enforce HTTPS for your domain.
 
 
 Congratulations! your `www.johnywalker.com` domain is now public live.
