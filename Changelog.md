@@ -1,5 +1,10 @@
 # Doc-Site Change Log
 
+## May 29, 2023
+
+- [Added link and link group component](https://github.com/fastn-community/doc-site/commit/0273909856e1d92acd0b492b7c64584e7e2851ee)
+- [Updated creating a page docs](https://github.com/fastn-community/doc-site/commit/fafed071e3b42efe4af33bd4f22f7b9fe53d8485)
+
 ## May 24, 2023
 
 - [Third Level TOC implemented](https://github.com/fastn-community/doc-site/commit/ab1eaa9ba0e7b8351f9f619f1a6e4bb4c108e8d1)
