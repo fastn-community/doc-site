@@ -11,12 +11,12 @@ can use other fastn components, or markdown.
 
 -- ds.h3: 💡 How to create a new page?
 
-Create a new `.ftd` file into your `fastn` project. Add `page` component inside
+Create a new `.ftd` file into your `fastn` project. Add a `page` component inside
 `.ftd` file as shown below.
 
-Click on download icon of below code-block. `sample.ftd` file will be
+Click on the download icon of the below code-block. `sample.ftd` file will be
 downloaded. Add this file inside your `fastn` project and deploy or run `fastn
-serve` on your localhost. Access your localhost in browser
+serve` on your localhost. Access your localhost in the browser
 e.g.`http://127.0.0.1:8000/sample/` you will see `ds.page` output in your
 browser.
 
@@ -50,7 +50,7 @@ This is heading level 3 optional body content.
 
 \-- ds. markdown:
 
-This is additional component called as markdown. Where you can add more content.
+This is an additional component called markdown. Where you can add more content.
 
 \-- end: ds.page
 

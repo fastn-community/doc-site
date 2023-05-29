@@ -4,23 +4,23 @@
 -- my-ds.page: Adding Site-logo and Site-name
 
 In this section, we will learn about adding `site-logo` and `site-name` to your
-`fastn` web site.
+`fastn` website.
 
 -- ds.h2: `site-logo` and `site-name` logic
 
-`doc-site` has provision of adding `site-logo` and `site-name`.
+`doc-site` has the provision of adding `site-logo` and `site-name`.
 
-Below is the logic of adding logo and site name:
+Below is the logic for adding a logo and site name:
 
 - if you add `site-name: NULL` and `site-logo: <your-logo-image-file-path>`
-  properties to `-- ds.page` component then it shows logo only.
-- if you add `site-name: Your Site Name` property to `-- ds.page` component then
-  shows `site-name` only.
+  properties to the `-- ds.page` component then it shows the logo only.
+- if you add the `site-name: Your Site Name` property to the `-- ds.page`
+  component then shows `site-name` only.
 
 -- ds.h2: Adding logo or site-name 
 
-`page` component has `site-logo` and `site-name` properties. You can pass these
-properties to `-- ds.page` component.
+The `page` component has `site-logo` and `site-name` properties. You can pass
+these properties to `-- ds.page` component.
 
 -- ds.code: Adding site-logo
 lang: ftd
@@ -49,7 +49,7 @@ Some body content of the page.
 
 -- ds.markdown:
 
-We recommond creating a global module which helps you to keep all your global
+We recommend creating a global module that helps you to keep all your global
 properties and configurations in one `.ftd` file.
 
 Let's learn how to create a global module:
@@ -87,10 +87,10 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `my-ds.ftd` file will be downloaded.
-Import this file inside your new `.ftd`.
+Click on the download icon of the above code-block. `my-ds.ftd` file will be
+downloaded. Import this file inside your new `.ftd`.
 
-Use `my-ds` component to create a new page using it.
+Use the `my-ds` component to create a new page using it.
 
 -- ds.code:
 lang: ftd
@@ -122,14 +122,14 @@ This is heading level 3 optional body content.
 
 -- ds.markdown:
 
-Click on download icon of above code-block. `logo.ftd` file will be
+Click on the download icon of the above code-block. `logo.ftd` file will be
 downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
-your localhost. Access your localhost in browser
-e.g.`http://127.0.0.1:8000/logo/` you will see page with logo.
+your localhost. Access your localhost in the browser
+e.g.`http://127.0.0.1:8000/logo/` you will see a page with a logo.
 
-Change `site-name` with your site-name into `my-ds.ftd` file `string
+Change `site-name` with your site-name into the `my-ds.ftd` file `string
 site-name: my fastn site` and refresh e.g.`http://127.0.0.1:8000/logo/` page,
 you will see site-name only.
 

@@ -3,18 +3,18 @@
 
 -- my-ds.page: Post List
 
-In this section, we will learn about creating blog article listing page using
+In this section, we will learn about creating a blog article listing page using
 `doc-site` blog features.
 
 
 -- ds.h2: Creating posts list page
 
-Its very common to display a list of top/latest posts as a blog home page. Our
+It's very common to display a list of top/latest posts as a blog home page. Our
 `doc-site` blog feature helps you to create your favorite blog posts list home 
 page.
 
-Its very simple to create your top/latest featured posts using `-- ds.posts` which
-can be added insite `-- ds.page`.
+It's very simple to create your top/latest featured posts using `-- ds.posts` which
+can be added inside `-- ds.page`.
 
 Let's learn how to create it.
 
@@ -67,23 +67,23 @@ above code snippet.
 {ds.yellowmarker: e.g. -- ds.page, --- ds.posts} and all components mentioned in 
 above components.
 
-`--- ds.posts:` : This line imports `ds.posts` component which helps to create
-featured list page ui. 
+`--- ds.posts:` : This line imports the `ds.posts` component which helps to create
+featured list page ui.
 
-`--- ds.featured-post:` : This line imports `ds.featured-post` component which 
+`--- ds.featured-post:` : This line imports the `ds.featured-post` component which 
 comes with featured post UI. [see our blog page](blog/)
 
-`--- ds.image-first:` : `ds.image-first` component shows your post image at the 
-top then shows title of the post and other post details. [see our blog page](blog/)
+`--- ds.image-first:` : The `ds.image-first` component shows your post image at the 
+top then shows the title of the post and other post details. [see our blog page](blog/)
 
-`--- ds.image-in-between:` : `ds.image-in-between` component shows your post 
-image after title and post metadata then shows other post details. [see our blog page](blog/)
+`--- ds.image-in-between:` : The `ds.image-in-between` component shows your post 
+image after the title and post metadata then shows other post details. [see our blog page](blog/)
 
-`--- ds.without-image:` : `ds.without-image` component shows your post without
-image incase your post not contains featured image. It shows only title and post
+`--- ds.without-image:` : The `ds.without-image` component shows your post without
+image in case your post does not contain the featured image. It shows only the title and post
 metadata then shows other post details. [see our blog page](blog/)
 
-Category pages are similar to featured-posts page. You can add category related
-details into body part of `-- ds.page` page.
+Category pages are similar to the featured posts page. You can add category related
+details into the body part of the `-- ds.page` page.
 
 -- end: my-ds.page

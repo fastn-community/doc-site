@@ -7,16 +7,16 @@
 -- ds.page: Adding Assets
 
 In this section, we will learn about adding assets like images into your `fastn`
-`doc-site` web site.
+`doc-site` website.
 
-To add assets into `doc-site` project add folder inside it. You can also keep
-your image assets into root directory. We recommend adding all your images into
-a seperate folder to maintain your images at one place.
+To add assets to the `doc-site` project add a folder inside it. You can also
+keep your image assets into the root directory. We recommend adding all your
+images into a separate folder to maintain your images in one place.
 
 -- ds.h2: How to link image assets?
 
-Let's say you have created a folder name `<images>` into your fastn project. And
-you added a image `sample.jpg` inside it. 
+Let's say you created a folder named `<images>` into your fastn project. And
+you added an image `sample.jpg` inside it. 
 
 -- ds.code:
 lang: ftd
@@ -26,15 +26,15 @@ src: $assets.files.images.sample.jpg
 
 -- ds.markdown:
 
-- In above code snippet `$assets.files` refers to your `fastn` project root
+- In the above code snippet `$assets.files` refers to your `fastn` project root
   folder.
 
 - `.images` refers to your `<images>` folder you created inside your `fastn`
   project.
 
-- `.sample.jpg` is the image inside `<images>` folder.
+- `.sample.jpg` is the image inside the `<images>` folder.
 
-You can add as many image assets into your `fastn` project you wish to and
-refers them as we seen above.
+You can add as many image assets into your `fastn` project as you wish to and
+refers to them as we see above.
 
 -- end: ds.page
