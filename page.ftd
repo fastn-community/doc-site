@@ -5,8 +5,8 @@
 
 In this section, we will learn about creating pages in `doc-site`.
 
-The `page` component empowers you to create **one-off standalone pages**. You can
-use other fastn components, or markdown.
+The `page` component empowers you to create **one-off standalone pages**. You
+can use other fastn components, or markdown.
 
 
 -- ds.h3: 💡 How to create a new page?
@@ -17,7 +17,8 @@ Create a new `.ftd` file into your `fastn` project. Add `page` component inside
 Click on download icon of below code-block. `sample.ftd` file will be
 downloaded. Add this file inside your `fastn` project and deploy or run `fastn
 serve` on your localhost. Access your localhost in browser
-e.g.`http://127.0.0.1:8000/sample/` you will see below page output.
+e.g.`http://127.0.0.1:8000/sample/` you will see `ds.page` output in your
+browser.
 
 -- ds.code: 
 lang: ftd
@@ -28,8 +29,8 @@ download: sample.ftd
 This is body area. It contains multiple paragraphs.
 
 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-excepturi sint occaecati cupiditate non provident.
+praesentium voluptatum deleniti atque corrupti quos dolores et quas
+molestias excepturi sint occaecati cupiditate non provident.
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
@@ -46,5 +47,17 @@ This is heading level 2 optional body content.
 \-- ds.h3: This is heading level 3
 
 This is heading level 3 optional body content.
+
+\-- ds. markdown:
+
+This is additional component called as markdown. Where you can add more content.
+
+\-- end: ds.page
+
+-- ds.markdown:
+
+Inside `-- ds.page` `body` and child components such as `h1, h2, h3` and
+`markdown` you can add markdown syntax which is documented in 
+[markdown primer](markdown/).
 
 -- end: my-ds.page
