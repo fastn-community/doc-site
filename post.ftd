@@ -6,12 +6,12 @@
 
 -- my-ds.page: Adding a new blog post
 
-In this section, we will learn about creating blog post in `doc-site`.
+In this section, we will learn about creating a blog post in `doc-site`.
 
 -- ds.h2: Writing a post 
 
 To write a post/article add your post meta and post details. Below code snippet
-shows how to write post meta and create your post. 
+shows how to write a post meta and create your post. 
 
 [see sample post](blog-articles/category-1/sample-post-2/)
 
@@ -38,50 +38,50 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
 ✨ `-- import: fastn-community.github.io/doc-site as ds` : imports doc-site and
 all its components into your `.ftd` page. 
 
-✨ `-- import: fastn-community.github.io/doc-site/assets` : helps to import
-assets from `doc-site`. For ex. this assets import helps you to add images into
+✨ `-- import: fastn-community.github.io/doc-site/assets`: helps to import
+assets from `doc-site`. For ex., this assets import helps you to add images into
 your `.ftd` pages.
 
-✨ `-- import: fastn-community.github.io/doc-site/common` : helps to import
-common properties and blog related rcords from `doc-site`. These blog property
-and records helps you to add `post-meta` and `author-meta` records into your
+✨ `-- import: fastn-community.github.io/doc-site/common`: helps to import
+common properties and blog-related records from `doc-site`. These blog property
+and records help you to add `post-meta` and `author-meta` records into your
 `.ftd` pages.
 
 ✨ `-- import: fastn-community.github.io/doc-site/blog-authors/amitu as author`
-imports author meta data. You can add author details into `blog-authors/`. 
+import author metadata. You can add author details into `blog-authors/`. 
 
-In above example we have added `amitu` which links to `amitu.ftd` file from 
+In the above example, we have added `amitu` which links to `amitu.ftd` file from 
 `blog-authors/` folder.
 
-✨ `-- common.post-meta meta` : helps you to add details of your blog post. 
+✨ `-- common.post-meta meta`: helps you to add details of your blog post. 
 
-✨ Using `published-on` property you can add your post timestamp. 
+✨ Using the `published-on` property you can add your post timestamp.
 
-✨ fastn uses a specific format to add image assets you see in above `post-image`
-property. `$assets.files.static.image-placeholder.png` in this `$assets.files.`
-is default.
+✨ fastn uses a specific format to add image assets you see in the above
+`post-image` property. `$assets.files.static.image-placeholder.png` in this
+`$assets.files.` is default.
 
-fastn format to add a asset. `static` is a folder name, which you can see in
+fastn format to add an asset. `static` is a folder name, which you can see in
 your `doc-site` folder structure. `image-placeholder.png` image file name, in
-this case we have added `png` format image. 
+this case we have added a `png` format image. 
 
-You can add any image format in it. e.g. `image-placeholder.jpg` or 
+You can add any image format to it. e.g. `image-placeholder.jpg` or 
 `image-placeholder.jpeg` or `image-placeholder.gif` etc.
 
-✨ `post-url` property will help you to add your `post.ftd` file. In this case
-`/blog-articles/category-1/sample-post-1/` is this path of our sample post
+✨ The `post-url` property will help you to add your `post.ftd` file. In this
+case `/blog-articles/category-1/sample-post-1/` is the path of our sample post
 `.ftd` file `sample-post-1.ftd` which is stored inside `/blog-articles/` is
 folder and `category-1` is a category folder. You can rename it with your
 desired name.
 
-✨ `author` attribute helps to add author details. `$author.amitu` in this
+✨ The `author` attribute helps to add author details. `$author.amitu` in this
 `$author` is imported via `-- import:
 fastn-community.github.io/doc-site/blog-authors/amitu as author` line into your
-blog post. `amitu` is a record type inside `amitu.ftd` file which contains
+blog post. `amitu` is a record type inside the `amitu.ftd` file which contains
 author details.
 
-✨ At the last of above code snippet you can add few lines from your post. This
-is called as body of the post in fastn. These lines will be added as featured
-text inside `post-list` page.
+✨ At the last of the above code snippet, you can add a few lines from your post.
+This is called the body of the post in fastn. These lines will be added as
+featured text inside the `post-list` page.
 
 -- end: my-ds.page

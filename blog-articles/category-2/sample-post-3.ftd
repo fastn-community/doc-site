@@ -63,7 +63,8 @@ color: $fastn.color.main.text-strong
 
 -- ds.h1: Some title of the level 1 heading
 
-Here we add body for the level 1 heading. This can be multiline and has no limits.
+Here we add a body for the level 1 heading. This can be multiline and has no
+limits.
 
 You also can use `markdown` **Bold** links [markdown primer](markdown/).
 

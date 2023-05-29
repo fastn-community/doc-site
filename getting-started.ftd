@@ -4,8 +4,8 @@
 
 -- my-ds.page: Getting Started
 
-You can create your documentation web-sites using `doc-site`. `doc-site` also
-helps authors, entrepreneurs, corporate groups and bloggers to create their own
+You can create your documentation websites using `doc-site`. `doc-site` also
+helps authors, entrepreneurs, corporate groups, and bloggers to create their own
 fastn web project.
 
 
@@ -30,21 +30,21 @@ v: tsHB2Vrhb2c
 
 -- ds.h2: 🌟 Whats next?
 
-`-- page` component comes with inbuit navbar, sidebar and body content area.
+The `-- page` component comes with an inbuilt navbar, sidebar, and body content area.
 Start creating new `.ftd` files inside your project and use `doc-site` `page`
-component to write your documentation, blog posts etc.
+component to write your documentation, blog posts, etc.
 
 ✨ [Click here](https://fastn-community.github.io/doc-site/domain-setup/) to
-learn how to configure your fastn web site.
+learn how to configure your fastn website.
 
 ✨ [Click here](https://fastn-community.github.io/doc-site/page/) to know more
-details of `page` component.
+details of the `page` component.
 
 ✨ [Click here](https://fastn-community.github.io/doc-site/sitemap/) to learn how
-to generate better `sitemap` for navigation.
+to generate a better `sitemap` for navigation.
 
-✨ [Click here](https://fastn-community.github.io/doc-site/types/) to know
-more details of inbuit `typography`.
+✨ :sparkles: [Click here](https://fastn-community.github.io/doc-site/types/) to
+know more details of inbuilt `typography`.
 
 ✨ [Click here](https://fastn-community.github.io/doc-site/markdown/) to know
 about markdown.
