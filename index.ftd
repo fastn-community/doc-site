@@ -1052,7 +1052,7 @@ optional ftd.resizing height:
 
 -- ftd.column:
 width: fill-container
-align-content: center
+align-content if { image.alignment != NULL }: $image.alignment
 height: $image.height
 
 -- ftd.image:
@@ -1061,7 +1061,6 @@ width: auto
 width if { image.width != NULL }: $image.width
 max-width: fill-container
 height: auto
-align-self: center
 
 -- ftd.text:
 if: { image.caption != NULL }
@@ -1078,7 +1077,9 @@ text-align: center
 -- ftd.column:
 if: { image.body != NULL }
 margin-top.px: 20
-align-self: start
+align-content if { image.alignment != NULL }: $image.alignment
+width: auto
+width if { image.width != NULL }: $image.width
 
 -- tf.markdown:
 body: $image.body

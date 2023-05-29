@@ -16,6 +16,8 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 
 -- fastn.auto-import: fastn
 
+-- fastn.auto-import: fastn-community.github.io/doc-site/assets
+
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
 -- fastn.auto-import: fastn-community.github.io/header as h
 -- fastn.auto-import: fastn-community.github.io/typography as tf
@@ -36,7 +38,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 - Changing Typography: /types/
 - Creating A Page: /page/
 - Adding a image: /image/
-- Adding Assets: /assets/
+;; - Adding Assets: /assets/
 - Markdown Primer: /markdown/
 - Understanding Sitemap: /sitemap/
 - Adding Right Sidebar: /right-sidebar/
