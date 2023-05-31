@@ -12,10 +12,12 @@ In this section, we will learn about adding `site-logo` and `site-name` to your
 
 Below is the logic for adding a logo and site name:
 
-- if you add `site-name: NULL` and `site-logo: <your-logo-image-file-path>`
+- if you add `site-logo: <your-logo-image-file-path>`
   properties to the `-- ds.page` component then it shows the logo only.
 - if you add the `site-name: Your Site Name` property to the `-- ds.page`
   component then shows `site-name` only.
+- if you add both site-logo and site-name into your `ds.page` component then it
+  shows both.
 
 -- ds.h2: Adding logo or site-name 
 
@@ -29,7 +31,6 @@ lang: ftd
 
 \-- ds.page: Page title
 site-logo: $assets.files.static.ipsum-logo.svg
-site-name: NULL
 
 Some body content of the page.
 
@@ -71,7 +72,6 @@ optional body body:
 
 \-- ds.page: $page.title
 site-logo: $assets.files.static.ipsum-logo.svg
-site-name: NULL
 body: $page.body
 
 \-- ftd.column:
