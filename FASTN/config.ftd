@@ -15,7 +15,7 @@ ftd.ui list right-sidebar:
 optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
-optional string site-name: NULL
+optional string site-name: 
 
 -- ds.page: $page.title
 site-name: $page.site-name
