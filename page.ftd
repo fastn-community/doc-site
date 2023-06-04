@@ -27,7 +27,7 @@ optional caption title:
 optional body body:
 
 \-- ds.page: $page.title
-site-logo: $fastn-assets.files.images.fastn.svg
+site-logo: https://fastn.com/-/fastn.io/images/fastn.svg
 body: $page.body
 
 \-- ftd.column:
@@ -84,7 +84,7 @@ downloaded.
 
 Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in the browser
-e.g.`http://127.0.0.1:8000/page/` you will see a page with a right-sidebar.
+e.g.`http://127.0.0.1:8000/page/`.
 
 -- ds.h3: Adding global footer to `my-ds` module
 
@@ -111,7 +111,7 @@ optional caption title:
 optional body body:
 
 \-- ds.page: $page.title
-site-logo: $fastn-assets.files.images.fastn.svg
+site-logo: https://fastn.com/-/fastn.io/images/fastn.svg
 body: $page.body
 show-footer: true
 
@@ -142,9 +142,7 @@ children: $page.wrapper
 -- ds.h3: Adding global right-sidebar to `my-ds` module
 
 If you want to show [right-sidebar](right-sidebar/) on all pages and the content
-of your [right-sidebar](right-sidebar/) is the same for all pages then, we
-recommend creating a global module that helps you to keep all your global
-properties and configurations in one `.ftd` file.
+of your [right-sidebar](right-sidebar/) is the same for all pages.
 
 Just add `sidebar` property in `ds.page` component and pass its value as
 `true`. 
@@ -166,7 +164,7 @@ optional body body:
 boolean sidebar: true
 
 \-- ds.page: $page.title
-site-logo: $fastn-assets.files.images.fastn.svg
+site-logo: https://fastn.com/-/fastn.io/images/fastn.svg
 body: $page.body
 show-footer: true
 sidebar: $page.sidebar
@@ -208,5 +206,9 @@ children: $page.wrapper
 \-- end: ds.page
 
 \-- end: page
+
+-- ds.markdown: 
+
+To change `site-logo` and `site-name` [read `site-logo`](logo/) documentation.
 
 -- end: my-ds.page
