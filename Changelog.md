@@ -1,5 +1,9 @@
 # Doc-Site Change Log
 
+## June 04, 2023
+
+- [Updating page documentation](https://github.com/fastn-community/doc-site/commit/ff6733a65de1112d80e93dd1568bf3ca5f88de21)
+
 ## May 29, 2023
 
 - [Added link and link group component](https://github.com/fastn-community/doc-site/commit/0273909856e1d92acd0b492b7c64584e7e2851ee)
