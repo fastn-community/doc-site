@@ -90,7 +90,7 @@ e.g.`http://127.0.0.1:8000/page/`.
 
 You can add our footer component and change its properties as per your web site
 details. [Click here](https://fastn-community.github.io/footer/) to read footer 
-documentation to select which footer is suitable for your project.
+documentation and select a footer for your project.
 
 Just add `show-footer` property in `ds.page` component and pass its value as
 `true`. 
