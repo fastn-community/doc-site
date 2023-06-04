@@ -115,9 +115,9 @@ site-logo: $fastn-assets.files.images.fastn.svg
 body: $page.body
 show-footer: true
 
--- ds.page.footer:
+\-- ds.page.footer:
 
--- footer.social-sideline-footer:
+\-- footer.social-sideline-footer:
 social: true
 site-logo: https://fastn.com/-/fastn.io/images/fastn.svg
 site-url: index.html
@@ -125,7 +125,7 @@ twitter-url: https://twitter.com/FifthTryHQ
 discord-url: https://discord.gg/bucrdvptYd
 copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
--- end: ds.page.footer
+\-- end: ds.page.footer
 
 \-- ftd.column:
 spacing.fixed.em: 0.8
