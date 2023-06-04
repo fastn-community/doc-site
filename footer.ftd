@@ -62,10 +62,6 @@ copyright: Copyright © 2023 - [FifthTry.com](https://www.fifthtry.com/)
 
 \-- end: ds.page.footer
 
-\-- ds.page.body:
-
-Some page body components and content here
-
 \-- ftd.column:
 spacing.fixed.em: 0.8
 width: fill-container
