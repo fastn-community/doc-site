@@ -1,8 +1,10 @@
 # Overview
 
-⚡️ [doc-site](https://fastn-community.github.io/doc-site/) will help you create a beautiful documentation site in no time.
+[doc-site](https://fastn-community.github.io/doc-site/) will help you create
+a beautiful documentation site in no time.
 
-It provides out-of-the-box documentation features that can be used to create any kind of site(personal website, blog, etc).
+It provides out-of-the-box documentation features that can be used to create any
+kind of site(personal website, blog, etc).
 
 # Preview
 
@@ -16,7 +18,9 @@ It provides out-of-the-box documentation features that can be used to create any
 
 # See it in Action!
 
-Explore websites and projects that have utilized this component/template **[here](https://fastn-community.github.io/doc-site/#dart-used-by)** for inspiration.
+Explore websites and projects that have utilized this component/template 
+**[here](https://fastn-community.github.io/doc-site/#dart-used-by)** for
+inspiration.
 
 ## [Changelog](Changelog.md)
 
