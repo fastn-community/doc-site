@@ -2,6 +2,9 @@
 -- import: fastn-community.github.io/doc-site/assets
 
 
+
+
+
 -- my-ds.page: Configuring your site
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -22,11 +25,9 @@ registered then login to your account and shop for your domain.
 
 Once you are Signed-In then search for your desired domain name:
 
-
 -- ds.image: Figure 1:  Search for your desired domain
 src: $assets.files.static.domains.figure-1.png
 width: fill-container
-
 
 -- ds.markdown: 
 
@@ -36,7 +37,6 @@ button.
 
 If `jonhywalker.com` is available for registration then it will show below
 screen:
-
 
 -- ds.image: Figure 2: Search for your desired domain
 src: $assets.files.static.domains.figure-2.png
@@ -65,11 +65,9 @@ website project on GitHub.
 To start with it, create a repository using fastn-template - 
 [Click here](https://github.com/fastn-stack/fastn-template/generate)
 
-
 -- ds.image: Figure 3: How to create new repository using fastn-template
 src: $assets.files.static.domains.figure-3.png
 width: fill-container
-
 
 -- ds.markdown:
 
@@ -79,15 +77,12 @@ selected.
 
 You can also add a description of your fastn website (optional).
 
-
 Once you click on the `Create repository from template` button your first ever
 fastn web repository is ready.
-
 
 -- ds.image: Figure 4: Creating GitHub repository using fastn-template
 src: $assets.files.static.domains.figure-4.png
 width: fill-container
-
 
 -- ds.markdown:
 
@@ -98,33 +93,27 @@ Follow the below steps to make your first `fastn` website live.
 - Click on the `Actions` tab and check for the green tick, if the Update
   README.md workflow ran successfully.
 
-
 -- ds.image: Figure 5: Creating a GitHub repository using fastn-template
 src: $assets.files.static.domains.figure-5.png
 width: fill-container
 
-
 -- ds.markdown:
 
-- Click on the `Settings` tab and follow `Step-1` to `Step-5` shown in below image:
-
+- Click on the `Settings` tab and follow `Step-1` to `Step-5` shown in below
+  image:
 
 -- ds.image: Figure 6: On ⚙️ `Settings` tab follow Step-1 to Step-5 
 src: $assets.files.static.domains.figure-6.png
 width: fill-container
-
 
 -- ds.markdown:
 
 - Click on the `Actions` tab and check for the green tick, if `pages build and 
 deployment` workflow ran successfully.
 
-
-
 -- ds.image: Figure 7: pages build and deployment workflow should run successfully
 src: $assets.files.static.domains.figure-7.png
 width: fill-container
-
 
 -- ds.markdown:
 
@@ -161,7 +150,6 @@ Follow the below steps to add DNS configurations:
 src: $assets.files.static.domains.figure-9.png
 width: fill-container
 
-
 -- ds.markdown:
 
 Or
@@ -170,22 +158,18 @@ Or
 
 And open it in the browser tab you should see the below screen:
 
-
 -- ds.image: Figure 10: Click on Add button
 src: $assets.files.static.domains.figure-10.png
 width: fill-container
-
 
 -- ds.markdown:
 
 - Click on Add button below the box that will appear on the screen. Click on
   Type and select A from the dropdown menu. As shown in Step 1 and Step 2
 
-
 -- ds.image: Figure 11: Follow Step 1 and Step 2
 src: $assets.files.static.domains.figure-11.png
 width: fill-container
-
 
 -- ds.markdown:
 
@@ -198,7 +182,6 @@ width: fill-container
 -- ds.image: Figure 12: Follow Step 1 to Step 6
 src: $assets.files.static.domains.figure-12.png
 width: fill-container
-
 
 -- ds.markdown:
 
@@ -224,21 +207,17 @@ A record.
 - Editing CNAME record: on the same screen you will find the CNAME record click on edit
   icon
 
-
 -- ds.image: Figure 13: Click on edit icon
 src: $assets.files.static.domains.figure-13.png
 width: fill-container
-
 
 -- ds.markdown:
 
 - You will see below the CNAME record box opened for editing
 
-
 -- ds.image: Figure 14: Click on Save button
 src: $assets.files.static.domains.figure-14.png
 width: fill-container
-
 
 -- ds.markdown:
 
@@ -257,7 +236,6 @@ your GitHub username and github.io
 src: $assets.files.static.domains.figure-15.png
 width: fill-container
 
-
 -- ds.markdown:
 
 - Enter filename as CNAME (without any extension)
@@ -265,8 +243,6 @@ width: fill-container
 -- ds.image: Figure 16: Creating CNAME file
 src: $assets.files.static.domains.figure-16.png
 width: fill-container
-
-
 
 -- ds.markdown:
 
@@ -277,17 +253,14 @@ width: fill-container
   down to Custom domain section and add your domain name into the  custom
   domain input box,
 
-
 -- ds.image: Figure 17: Follow Step 1 and Step 2
 src: $assets.files.static.domains.figure-17.png
 width: fill-container
-
 
 -- ds.markdown:
 
 - Click on the Save button and Once the DNS check is done you can click to
   enforce HTTPS for your domain.
-
 
 Congratulations! your `www.johnywalker.com` domain is now public live.
 

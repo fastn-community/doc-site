@@ -1,6 +1,8 @@
 -- import: fastn-community.github.io/doc-site as ds
 
 
+
+
 -- my-ds.page: Adding Favicon
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -11,7 +13,6 @@ In this section, we will learn about adding a favicon to your `fastn` website.
 A favicon (short for "favorite icon") is a small icon that is associated with a
 website or web page. It typically appears in the web browser's address bar,
 next to the page title, and in the bookmarks or favorites list.
-
 
 -- ds.h2: How to add favicon?
 

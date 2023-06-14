@@ -1,9 +1,16 @@
 -- import: fastn-community.github.io/doc-site as ds
 -- import: fastn-community.github.io/footer
 
+
+
+
+
 -- ftd.image-src fastn-logo:
 light: https://fastn.com/-/fastn.com/images/fastn.svg
 dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
+
+
+
 
 
 -- component page:

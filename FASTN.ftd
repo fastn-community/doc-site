@@ -12,17 +12,16 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 -- fastn.dependency: fastn.com
 -- fastn.dependency: gargajit.github.io/optimization
--- fastn.dependency: fifthtry.github.io/dark-flame-cs
+-- fastn.dependency: fastn-community.github.io/dark-flame-cs
 
 -- fastn.auto-import: fastn
-
 -- fastn.auto-import: fastn-community.github.io/doc-site/assets
-
-
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
 -- fastn.auto-import: fastn-community.github.io/header as h
 -- fastn.auto-import: fastn-community.github.io/typography as tf
 -- fastn.auto-import: fastn-community.github.io/doc-site/FASTN/config as my-ds
+
+
 
 
 

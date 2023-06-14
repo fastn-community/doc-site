@@ -7,6 +7,8 @@
 
 
 
+
+
 -- my-ds.page: Blog
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -25,21 +27,17 @@ understand how to use them.
 -- ds.featured-post:
 post-data: $sample-post-2.meta
 
-
 -- ds.image-first:
 post-data: $sample-post-1.meta
 
-
 -- ds.image-in-between:
 post-data: $sample-post-3.meta
-
 
 -- ds.without-image:
 post-data: $sample-post-4.meta
 
 -- ds.image-first:
 post-data: $sample-post-1.meta
-
 
 -- ds.image-in-between:
 post-data: $sample-post-3.meta

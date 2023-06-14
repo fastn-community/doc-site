@@ -5,8 +5,10 @@
 
 
 
-; Change below details for your new blog post
 
+
+
+;; Change below details for your new blog post
 -- common.post-meta meta: What are front-end technologies we have?
 published-on: July 22, 2014 at 10:02 pm
 post-image: $assets.files.static.image-placeholder.png
@@ -15,7 +17,6 @@ author: $author.ganesh
 
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-
 
 
 
@@ -51,7 +52,6 @@ doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
 beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas 
 sit aspernatur aut odit aut f.
 
-
 `Duis aute irure dolor` in reprehenderit in voluptate velit esse cillum dolore eu.
 
 -- ds.code: `Duis aute irure dolor` code
@@ -67,7 +67,6 @@ Here we add a body for the level 1 heading. This can be multiline and has no
 limits.
 
 You also can use `markdown` **Bold** links [markdown primer](markdown/).
-
 
 -- ds.h1: Sed ut perspiciatis unde omnis iste natus error
 

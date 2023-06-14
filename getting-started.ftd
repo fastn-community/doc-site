@@ -2,6 +2,9 @@
 -- import: fastn-community.github.io/doc-site/assets
 
 
+
+
+
 -- my-ds.page: Getting Started
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -10,7 +13,6 @@ document-image: https://fastn-community.github.io/doc-site/-/fastn-community.git
 You can create your documentation websites using `doc-site`. `doc-site` also
 helps authors, entrepreneurs, corporate groups, and bloggers to create their own
 fastn web project.
-
 
 -- ds.h2: 🎨 Creating fastn web-site using `doc-site`
 
@@ -29,7 +31,6 @@ v: tsHB2Vrhb2c
 🛠️ Resources:
 
 - [Fastn Template](https://github.com/fastn-stack/fastn-template) 
-
 
 -- ds.h2: 🌟 Whats next?
 
