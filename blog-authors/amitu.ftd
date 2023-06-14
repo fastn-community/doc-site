@@ -8,7 +8,7 @@
 
 
 -- common.author-meta amitu: Amit Upadhyay
-profile: CEO
+profile: Founder & CEO
 bio-url: blog-authors/amitu/
 image: $assets.files.static.authors.amitu.jpg
 company: FifthTry Pvt. Ltd.
@@ -22,6 +22,8 @@ Combinators. A Bangalore-based start-up with having development center at
 
 
 -- my-ds.page: 
+document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
 -- ds.author-bio: 
 author: $amitu

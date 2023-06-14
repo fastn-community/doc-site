@@ -2,6 +2,9 @@
 
 
 -- my-ds.page: Markdown Primer
+document-title: fastn Doc-Site Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
 `doc-site` supports markdown. If you want to use it you can use `--
 ds.markdown for inline anchor links etc.

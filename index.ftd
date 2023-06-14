@@ -856,8 +856,14 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 24
-margin-bottom.rem: 0.5
 ;;$on-click$: $ftd.toggle($a = $toc-instance.toc-clone.is-open)
+background.solid if { toc-instance.toc.is-active  }: $inherited.colors.background.base
+background.solid if { toc-instance.hover && !toc-instance.toc-clone.is-open }: $inherited.colors.background.step-2
+;;background.solid if { toc-instance.toc-clone.is-open }: $inherited.colors.background.step-2
+padding-horizontal.px: 12
+padding-vertical.px: 6
+border-radius.px: 4
+margin-bottom.px: 6
 
 -- ftd.image:
 if: { toc-instance.toc.font-icon != NULL }
@@ -870,7 +876,7 @@ link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.copy-small
 color: $inherited.colors.text
-color if { toc-instance.toc.is-active || toc-instance.hover }: $inherited.colors.cta-primary.base
+color if { toc-instance.toc.is-active || toc-instance.toc-clone.is-open }: $inherited.colors.cta-primary.base
 width: fill-container
 $on-mouse-enter$: $ftd.set-bool($a = $toc-instance.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $toc-instance.hover, v = false)
@@ -895,8 +901,6 @@ align-self: center
 margin-left.px: 12
 padding-left.px: 10
 padding-top.rem: 0
-spacing.fixed.rem: 1
-;;if: { !ftd.is_empty(toc-instance.toc.children) && toc-instance.toc-clone.is-open }
 
 -- childrens:
 $loop$: $toc-instance.toc.children as $obj
@@ -922,10 +926,18 @@ pr.toc-item toc:
 boolean $hover: false
 
 -- ftd.column:
+width: fill-container
 
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 8
+background.solid if { childrens.toc.is-active }: $inherited.colors.background.base
+background.solid if { childrens.hover && !childrens.toc.is-open }: $inherited.colors.background.step-2
+;;background.solid if { childrens.toc.is-open }: $inherited.colors.background.step-2
+padding-horizontal.px: 12
+padding-vertical.px: 6
+border-radius.px: 4
+margin-bottom.px: 6
 
 -- ftd.image:
 if: {childrens.toc.font-icon != NULL}
@@ -938,7 +950,7 @@ link if { childrens.toc.url != NULL } : $childrens.toc.url
 text: $childrens.toc.title
 role: $inherited.types.copy-small
 color: $inherited.colors.text
-color if { childrens.toc.is-active || childrens.hover }: $inherited.colors.cta-primary.base
+color if { childrens.toc.is-active || childrens.toc.is-open }: $inherited.colors.cta-primary.base
 $on-mouse-enter$: $ftd.set-bool($a = $childrens.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $childrens.hover, v = false)
 
@@ -947,8 +959,6 @@ $on-mouse-leave$: $ftd.set-bool($a = $childrens.hover, v = false)
 -- ftd.column:
 if: {!ftd.is_empty(childrens.toc.children) }
 width: fill-container
-margin-top.px: 24
-spacing.fixed.px: 24
 
 -- child-of-childrens:
 $loop$: $childrens.toc.children as $obj
@@ -971,11 +981,27 @@ toc: $obj
 
 -- component child-of-childrens:
 pr.toc-item toc:
+optional boolean $hover: false
 
 -- ftd.column:
 width: fill-container
 padding-left.px: 10
-spacing.fixed.px: 24
+
+-- ftd.row:
+width: fill-container
+background.solid if { child-of-childrens.toc.is-active }: $inherited.colors.background.base
+background.solid if { child-of-childrens.hover }: $inherited.colors.background.step-2
+background.solid if { child-of-childrens.toc.is-open }: $inherited.colors.background.step-2
+padding-horizontal.px: 12
+padding-vertical.px: 6
+border-radius.px: 4
+margin-bottom.px: 6
+
+-- ftd.image:
+if: {child-of-childrens.toc.font-icon != NULL}
+src: $child-of-childrens.toc.font-icon
+height.fixed.px: 14
+width: auto
 
 -- ftd.text:
 link if { child-of-childrens.toc.url != NULL } : $child-of-childrens.toc.url
@@ -983,6 +1009,10 @@ text: $child-of-childrens.toc.title
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 color if { child-of-childrens.toc.is-active }: $inherited.colors.cta-primary.base
+$on-mouse-enter$: $ftd.set-bool($a = $child-of-childrens.hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $child-of-childrens.hover, v = false)
+
+-- end: ftd.row
 
 -- ftd.column:
 if: {!ftd.is_empty(child-of-childrens.toc.children) }
@@ -1022,13 +1052,12 @@ width.fixed.percent: 20
 align-content: top-left
 background.solid: $inherited.colors.background.step-1
 border-radius.px: 8
-padding-left.px: 24
+padding-left.px: 12
 padding-top.px: 16
-padding-right.px: 16
+padding-right.px: 12
 padding-bottom.px: 32
 margin-top.px: 25
 margin-bottom.px: 25
-spacing.fixed.rem: 0.5
 
 -- toc-instance:
 $loop$: $render-toc.toc-obj as $obj
