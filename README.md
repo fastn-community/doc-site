@@ -32,6 +32,8 @@ Discover more of fastn here.
 - [Video Tutorials](https://fastn.com/expander/hello-world/-/build/)
 - [Explore more Templates/ Components/ Package](https://fastn.com/featured/)
 
+## [Contribute](https://fastn-community.github.io/doc-site/contribute/)
+
 ## Become a fastn Contributor
 
 1.  Finish the [Expander Crash Course](https://fastn.com/expander/)
