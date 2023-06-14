@@ -1,5 +1,24 @@
 # Doc-Site Change Log
 
+## June 13, 2023
+
+- [Sidenav UI review and docs updated](https://github.com/fastn-community/doc-site/commit/6538bb134f9c97a843ffb39d70b1f05a36ab240b)
+- [Update README.md](https://github.com/fastn-community/doc-site/commit/b90807fad5b5ce8225c17b94a9cf9288cc7a1ba5)
+- [Added contribute link to README](https://github.com/fastn-community/doc-site/commit/38c2f8a9f2b9dd68cbba4435b30253c534894d95)
+- [Added contribute page](https://github.com/fastn-community/doc-site/commit/d5a3dff446f7b107a4411f8e3bed352f3ddb6a04)
+
+## June 13, 2023
+
+- [Update README.md](https://github.com/fastn-community/doc-site/commit/0cf2212f5e71a2155d306c3c5b605d8c43a2e0ad)
+
+## June 12, 2023
+
+- [minor change](https://github.com/fastn-community/doc-site/commit/f4e7d63e4ff092599bccaa3d6f6c3989a3ec9c9c)
+- [Update README.md](https://github.com/fastn-community/doc-site/commit/589497904e1d6b131b8aa56f4e1b7f8d4d9181cd)
+- [Minor changes into Readme](https://github.com/fastn-community/doc-site/commit/312d68e110227d278b92362403b52948d619dbd8)
+- [Update README.md](https://github.com/fastn-community/doc-site/commit/27f912a33f21224b76975bbb55d6a47a7a851c9a)
+- [Added mouse-over feature into toc items](https://github.com/fastn-community/doc-site/commit/9c40da30ecf9e91dd7084d359c0934815411c07c)
+
 ## June 04, 2023
 
 - [Updating page documentation](https://github.com/fastn-community/doc-site/commit/ff6733a65de1112d80e93dd1568bf3ca5f88de21)
