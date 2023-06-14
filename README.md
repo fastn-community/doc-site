@@ -24,6 +24,8 @@ inspiration.
 
 ## [Changelog](Changelog.md)
 
+## [Contribute](https://fastn-community.github.io/doc-site/contribute/)
+
 ## fastn and Curious?
 
 Discover more of fastn here.
@@ -31,8 +33,6 @@ Discover more of fastn here.
 - [Expander Crash Course](https://fastn.com/expander/)
 - [Video Tutorials](https://fastn.com/expander/hello-world/-/build/)
 - [Explore more Templates/ Components/ Package](https://fastn.com/featured/)
-
-## [Contribute](https://fastn-community.github.io/doc-site/contribute/)
 
 ## Become a fastn Contributor
 
