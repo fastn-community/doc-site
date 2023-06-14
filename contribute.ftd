@@ -1,5 +1,8 @@
 -- import: fastn-community.github.io/doc-site as ds
 
+
+
+
 -- my-ds.page: Contribute to doc-site
 document-description: Contribute to doc-site development and documentation
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
@@ -12,7 +15,6 @@ built one contribution at a time by community members just like you. You can
 contribute for `doc-site` in many forms beyond just writing code, from
 reporting an issue or suggesting a new feature to improving documentation or
 providing feedback on proposed changes.
-
 
 -- ds.h2: Code of Conduct
 
@@ -37,7 +39,5 @@ that we expect participants to adhere to.
 - [🎉 | #start-here](https://discord.gg/6JD7BRUjTe)
 - [💼 | #Share-your-work](https://discord.gg/Um6KX3VYnh)
 - [💡 | #ideas-and-feedback](https://discord.gg/7hwRSsxJUt)
-
-
 
 -- end: my-ds.page

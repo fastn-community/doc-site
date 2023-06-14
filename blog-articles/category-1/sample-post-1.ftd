@@ -4,8 +4,10 @@
 -- import: fastn-community.github.io/doc-site/blog-authors/arpita as author
 
 
-; Change below details for your new blog post
 
+
+
+;; Change below details for your new blog post
 -- common.post-meta meta: A day in a city of dreams
 published-on: July 22, 2014 at 10:02 pm
 post-image: $assets.files.static.image-placeholder.png

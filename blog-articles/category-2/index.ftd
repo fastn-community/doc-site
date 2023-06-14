@@ -5,6 +5,8 @@
 
 
 
+
+
 -- my-ds.page: Category title - Technology & Learning
 
 Write some information about this category here. Change the title according to
@@ -14,7 +16,6 @@ the category of your blog.
 
 -- ds.featured-post:
 post-data: $sample-post-3.meta
-
 
 -- ds.without-image:
 post-data: $sample-post-4.meta

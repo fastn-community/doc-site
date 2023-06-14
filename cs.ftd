@@ -2,6 +2,9 @@
 -- import: fastn-community.github.io/doc-site/assets
 
 
+
+
+
 -- my-ds.page: Changing Color Scheme
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -118,7 +121,6 @@ This is heading level 2 optional body content.
 This is heading level 3 optional body content.
 
 \-- end: my-ds.page
-
 
 -- ds.markdown:
 

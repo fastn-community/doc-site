@@ -1,6 +1,8 @@
 -- import: fastn-community.github.io/doc-site as ds
 
 
+
+
 -- my-ds.page: Creating A Page
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -10,7 +12,6 @@ In this section, we will learn about creating pages in `doc-site`.
 
 The `page` component empowers you to create **one-off standalone pages**. You
 can use other fastn components, or markdown.
-
 
 -- ds.h3: 💡 How to create `page` module?
 
@@ -140,7 +141,6 @@ children: $page.wrapper
 \-- end: ds.page
 
 \-- end: page
-
 
 -- ds.h3: Adding global right-sidebar to `my-ds` module
 

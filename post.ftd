@@ -4,6 +4,7 @@
 
 
 
+
 -- my-ds.page: Adding a new blog post
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
@@ -16,7 +17,6 @@ To write a post/article add your post meta and post details. Below code snippet
 shows how to write a post meta and create your post. 
 
 [see sample post](blog-articles/category-1/sample-post-2/)
-
 
 -- ds.code: Example of how to create blog post 
 lang: ftd

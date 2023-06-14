@@ -19,7 +19,6 @@ exposing: rendered
 
 
 
-
 -- page: Overview
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -259,7 +258,6 @@ if: { !floater.open }
 src: $floater.side-logo
 height.fixed.px: 89
 width.fixed.px: 27
-;;move-down: 250
 $on-click$: $ftd.set-bool($a = $floater.open, v = true)
 
 -- ftd.column:
@@ -289,7 +287,7 @@ width: fill-container
 
 -- ftd.text: $floater.about-text
 link: $floater.about-text-url
-;;role: $small-bold
+role: $inherited.types.button-medium
 width: fill-container
 color: $inherited.colors.text-strong
 
@@ -308,7 +306,7 @@ overflow-y: auto
 
 -- ftd.text: $floater.edit-text
 link: $floater.edit-text-url
-;;role: $fine-print
+role: $inherited.types.fine-print
 color: $light-green
 
 -- end: ftd.column
@@ -340,7 +338,7 @@ max-width.fixed.px: 127
 
 -- ftd.column:
 width: fill-container
-;;id:floater-container
+id: floater-container
 background.solid:$inherited.colors.background.step-1
 padding-vertical.px: 8
 padding-horizontal.px: 16
@@ -414,7 +412,6 @@ optional integer logo-height:
 boolean github-icon: false
 optional string github-url: 
 
-
 -- ftd.column:
 width: fill-container
 
@@ -436,7 +433,7 @@ site-url: $doc-page-desktop.site-url
 site-name: $doc-page-desktop.site-name
 logo-height: $doc-page-desktop.logo-height
 logo-width: $doc-page-desktop.logo-width
-current-url: /
+current-url: $doc-page-desktop.site-url
 menu-icon: $assets.files.static.header.hamburger-dark.svg
 github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
@@ -489,7 +486,6 @@ children: $doc-page-desktop.wrapper
 spacing.fixed.px: 24
 width.fixed.percent: 100
 margin-top.px: 32
-
 
 -- end: ftd.column
 
@@ -651,7 +647,6 @@ width: fill-container
 height.fixed.calc: 100% - 0px
 $on-click$: $ftd.set-bool($a = $doc-page-mobile.open-right-sidebar-info, v = false)
 
-
 -- ftd.image:
 src: $assets.files.static.cross-dark.svg
 height.fixed.px: 24
@@ -659,7 +654,6 @@ width: auto
 margin-top.px: 20
 margin-left.px: 12
 $on-click$: $ftd.toggle($a = $doc-page-mobile.open-right-sidebar-info)
-
 
 -- end: ftd.column
 
@@ -685,9 +679,7 @@ children: $doc-page-mobile.extra-headers
 if: { !ftd.is_empty(doc-page-mobile.footer-toc) }
 footer-toc: $doc-page-mobile.footer-toc
 
-
 -- end: ftd.column
-
 
 -- end: doc-page-mobile
 
@@ -771,7 +763,6 @@ footer-toc: $footer.footer-toc
 
 -- end: ftd.desktop
 
-
 -- ftd.mobile:
 
 -- footer-mobile:
@@ -809,6 +800,7 @@ footer-toc: $obj
 -- end: ftd.row
 
 -- end: footer-desktop
+
 
 
 
@@ -856,10 +848,8 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 24
-;;$on-click$: $ftd.toggle($a = $toc-instance.toc-clone.is-open)
 background.solid if { toc-instance.toc.is-active  }: $inherited.colors.background.base
 background.solid if { toc-instance.hover && !toc-instance.toc-clone.is-open }: $inherited.colors.background.step-2
-;;background.solid if { toc-instance.toc-clone.is-open }: $inherited.colors.background.step-2
 padding-horizontal.px: 12
 padding-vertical.px: 6
 border-radius.px: 4
@@ -880,20 +870,6 @@ color if { toc-instance.toc.is-active || toc-instance.toc-clone.is-open }: $inhe
 width: fill-container
 $on-mouse-enter$: $ftd.set-bool($a = $toc-instance.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $toc-instance.hover, v = false)
-
-/-- ftd.image:
-if: { !ftd.is_empty(toc-instance.toc.children) && toc-instance.toc-clone.is-open}
-src: $assets.files.static.open.svg
-height.fixed.px: 24
-width: auto
-align-self: center
-
-/-- ftd.image:
-if: { !ftd.is_empty(toc-instance.toc.children) && !toc-instance.toc-clone.is-open}
-src: $assets.files.static.close.svg
-height.fixed.px: 24
-width: auto
-align-self: center
 
 -- end: ftd.row
 
@@ -933,7 +909,6 @@ width: fill-container
 spacing.fixed.px: 8
 background.solid if { childrens.toc.is-active }: $inherited.colors.background.base
 background.solid if { childrens.hover && !childrens.toc.is-open }: $inherited.colors.background.step-2
-;;background.solid if { childrens.toc.is-open }: $inherited.colors.background.step-2
 padding-horizontal.px: 12
 padding-vertical.px: 6
 border-radius.px: 4
@@ -1134,7 +1109,6 @@ body: $image.body
 
 
 
-
 -- component wall-box:
 
 -- ftd.column:
@@ -1306,7 +1280,6 @@ spacing.fixed.px: 16
 -- end: ftd.column
 
 -- end: posts
-
 
 
 
@@ -1585,6 +1558,7 @@ color: $inherited.colors.cta-primary.border
 
 
 
+
 -- component without-image:
 common.post-meta post-data:
 
@@ -1693,6 +1667,7 @@ color: $inherited.colors.cta-primary.border
 -- end: ftd.column
 
 -- end: without-image-card
+
 
 
 
@@ -1827,11 +1802,10 @@ role: $inherited.types.copy-small
 text: $author-bio-desktop.body
 role: $inherited.types.copy-regular
 
-
-
 -- end: ftd.column
 
 -- end: author-bio-desktop
+
 
 
 
@@ -1861,7 +1835,6 @@ src: $author-bio-mobile.avatar
 width.fixed.px: 132
 height.fixed.px: 132
 border-radius.px: 500
-;;align-content: center
 
 -- ftd.column:
 align-content: center
@@ -1908,7 +1881,6 @@ spacing.fixed.px: 8
 role:$inherited.types.label-small
 link: $footer-list.url
 color: $inherited.colors.text-strong
-;;open-in-new-tab: true
 
 -- ftd.row:
 margin-top.px: 8
@@ -2212,6 +2184,10 @@ color: $inherited.colors.cta-primary.border
 
 
 
+
+
+
+
 -- component iframe:
 string src:
 
@@ -2222,6 +2198,8 @@ width: fill-container
 margin-bottom.px: 34
 
 -- end: iframe
+
+
 
 
 
@@ -2298,7 +2276,6 @@ background.solid: $inherited.colors.background.base
 
 
 
-
 -- component highlight:
 caption title:
 
@@ -2358,7 +2335,6 @@ role: $inherited.types.copy-large
 $tip.body
 
 -- end: ftd.column
-
 
 -- end: ftd.column
 
@@ -2540,7 +2516,6 @@ region: h4
 
 -- ftd.column:
 width: fill-container
-;; margin-bottom.px if { compact-text.body != NULL }: -26
 
 -- ftd.text:
 if: { compact-text.body != NULL }
@@ -2652,4 +2627,3 @@ dark: #262626
 -- ftd.color light-green:
 light: #0DCEAB
 dark: #0DCEAB
-
