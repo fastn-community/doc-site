@@ -18,6 +18,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 
 -- fastn.auto-import: fastn-community.github.io/doc-site/assets
 
+
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
 -- fastn.auto-import: fastn-community.github.io/header as h
 -- fastn.auto-import: fastn-community.github.io/typography as tf
@@ -51,3 +52,5 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
   - Adding Author Details 🚧: /author/
   - Sample Post: /blog-articles/category-1/sample-post-2/
   - Sample Author Bio: /blog-authors/amitu/
+
+- Contribute: /contribute/
