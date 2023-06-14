@@ -2,7 +2,9 @@
 -- import: fastn-community.github.io/doc-site/common
 
 
--- ds.page: Adding Author Details
+-- my-ds.page: Adding Author Details
+document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
 In this section, we will learn about adding author details.
 
@@ -44,4 +46,4 @@ name as a title. You can change `Amit Upadhyay` with your name.
 
 ✨ You can add the author bio as a body at the last of the above code snippet.
 
--- end: ds.page
+-- end: my-ds.page
