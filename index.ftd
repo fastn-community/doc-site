@@ -848,8 +848,9 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 24
-background.solid if { toc-instance.toc.is-active  }: $inherited.colors.background.base
-background.solid if { toc-instance.hover && !toc-instance.toc-clone.is-open }: $inherited.colors.background.step-2
+;; background.solid if { toc-instance.toc.is-active  }: $inherited.colors.background.step-1
+;; background.solid if { toc-instance.hover && !toc-instance.toc-clone.is-open }: $inherited.colors.background.step-2
+background.solid if { toc-instance.hover }: $inherited.colors.background.step-2
 padding-horizontal.px: 12
 padding-vertical.px: 6
 border-radius.px: 4
@@ -907,8 +908,9 @@ width: fill-container
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 8
-background.solid if { childrens.toc.is-active }: $inherited.colors.background.base
-background.solid if { childrens.hover && !childrens.toc.is-open }: $inherited.colors.background.step-2
+;; background.solid if { childrens.toc.is-active }: $inherited.colors.background.step-1
+;; background.solid if { childrens.hover && !childrens.toc.is-open }: $inherited.colors.background.step-2
+background.solid if { childrens.hover }: $inherited.colors.background.step-2
 padding-horizontal.px: 12
 padding-vertical.px: 6
 border-radius.px: 4
@@ -932,7 +934,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $childrens.hover, v = false)
 -- end: ftd.row
 
 -- ftd.column:
-if: {!ftd.is_empty(childrens.toc.children) }
+if: { !ftd.is_empty(childrens.toc.children) }
 width: fill-container
 
 -- child-of-childrens:
@@ -964,22 +966,22 @@ padding-left.px: 10
 
 -- ftd.row:
 width: fill-container
-background.solid if { child-of-childrens.toc.is-active }: $inherited.colors.background.base
+;; background.solid if { child-of-childrens.toc.is-active }: $inherited.colors.background.step-1
 background.solid if { child-of-childrens.hover }: $inherited.colors.background.step-2
-background.solid if { child-of-childrens.toc.is-open }: $inherited.colors.background.step-2
+;; background.solid if { child-of-childrens.toc.is-open }: $inherited.colors.background.step-2
 padding-horizontal.px: 12
 padding-vertical.px: 6
 border-radius.px: 4
 margin-bottom.px: 6
 
 -- ftd.image:
-if: {child-of-childrens.toc.font-icon != NULL}
+if: { child-of-childrens.toc.font-icon != NULL }
 src: $child-of-childrens.toc.font-icon
 height.fixed.px: 14
 width: auto
 
 -- ftd.text:
-link if { child-of-childrens.toc.url != NULL } : $child-of-childrens.toc.url
+link: $child-of-childrens.toc.url
 text: $child-of-childrens.toc.title
 role: $inherited.types.copy-small
 color: $inherited.colors.text
@@ -990,7 +992,7 @@ $on-mouse-leave$: $ftd.set-bool($a = $child-of-childrens.hover, v = false)
 -- end: ftd.row
 
 -- ftd.column:
-if: {!ftd.is_empty(child-of-childrens.toc.children) }
+if: { !ftd.is_empty(child-of-childrens.toc.children) }
 width: fill-container
 
 -- child-of-childrens:
