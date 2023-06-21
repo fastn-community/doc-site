@@ -1,9 +1,8 @@
--- import: fastn-community.github.io/doc-site as ds
 
 
 
 
--- my-ds.page: Adding Image
+-- ds.page: Adding Image
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
@@ -162,4 +161,4 @@ src: $assets.files.static.sample.jpg
 You can add as many image assets into your `fastn` project you wish to and
 refers them as we seen above.
 
--- end: my-ds.page
+-- end: ds.page

@@ -1,17 +1,16 @@
--- import: fastn-community.github.io/doc-site as ds
 -- import: fastn-community.github.io/doc-site/assets
 
 
 
 
 
--- my-ds.page: Right Sidebar 👉🏻
+-- ds.page: Right Sidebar 👉🏻
 sidebar: true
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
--- my-ds.page.right-sidebar:
+-- ds.page.right-sidebar:
 
 -- ds.h3: Heading in sidebar
 
@@ -31,9 +30,9 @@ today.
 We are trying to create a language for human beings and we do not believe it
 would be possible without your support. We would love to hear from you.
 
--- end: my-ds.page.right-sidebar
+-- end: ds.page.right-sidebar
 
--- my-ds.page.body:
+-- ds.page.body:
 
 In this section, we will learn to add right-sidebar in `doc-site`.
 
@@ -44,18 +43,18 @@ one `.ftd` file.
 
 -- ds.h3: How to create a global `my-ds` page module for `doc-site`?
 
-You can create a `my-ds.ftd` module inside your `fastn` package and create your
+You can create a `ds.ftd` module inside your `fastn` package and create your
 custom `my-ds` page component.
 
 Let's learn how to create a module:
 
-Create a new file let’s say `my-ds.ftd`. 
+Create a new file let’s say `ds.ftd`. 
 
-Here’s what your `my-ds.ftd` module would look like:
+Here’s what your `ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module
+-- cb.code: ds.ftd module
 lang: ftd
-download: my-ds.ftd
+download: ds.ftd
 
 \-- import: fastn-community.github.io/doc-site as ds
 
@@ -99,7 +98,7 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `my-ds.ftd` file will be
+Click on the download icon of the above code-block. `ds.ftd` file will be
 downloaded. Import this file inside your new `.ftd` or download below given
 `sidebar.ftd` file.
 
@@ -112,7 +111,7 @@ download: sidebar.ftd
 \-- import: fastn-community.github.io/doc-site as ds
 \-- import: <your fastn package name>/my-ds
 
-\-- my-ds.page: This is page title
+\-- ds.page: This is page title
 
 This is body area. It contains multiple paragraphs.
 
@@ -131,7 +130,7 @@ This is heading level 2 optional body content.
 
 This is heading level 3 optional body content.
 
-\-- end: my-ds.page
+\-- end: ds.page
 
 -- ds.markdown:
 
@@ -142,4 +141,4 @@ Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in the browser
 e.g.`http://127.0.0.1:8000/sidebar/` you will see a page with a right-sidebar.
 
--- end: my-ds.page
+-- end: ds.page

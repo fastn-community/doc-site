@@ -1,9 +1,8 @@
--- import: fastn-community.github.io/doc-site as ds
 
 
 
 
--- my-ds.page: Creating A Page
+-- ds.page: Creating A Page
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
@@ -15,13 +14,13 @@ can use other fastn components, or markdown.
 
 -- ds.h3: 💡 How to create `page` module?
 
-Create a new file into your fastn project let’s say `my-ds.ftd`. 
+Create a new file into your fastn project let’s say `ds.ftd`. 
 
-Here’s what your `my-ds.ftd` module would look like:
+Here’s what your `ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module
+-- cb.code: ds.ftd module
 lang: ftd
-download: my-ds.ftd
+download: ds.ftd
 
 \-- import: fastn-community.github.io/doc-site as ds
 
@@ -47,7 +46,7 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `my-ds.ftd` file will be
+Click on the download icon of the above code-block. `ds.ftd` file will be
 downloaded. Import this file inside your new `.ftd` or download below given
 `page.ftd` file.
 
@@ -60,7 +59,7 @@ download: page.ftd
 \-- import: fastn-community.github.io/doc-site as ds
 \-- import: <your fastn package name>/my-ds
 
-\-- my-ds.page: This is page title
+\-- ds.page: This is page title
 
 This is body area. It contains multiple paragraphs.
 
@@ -79,7 +78,7 @@ This is heading level 2 optional body content.
 
 This is heading level 3 optional body content.
 
-\-- end: my-ds.page
+\-- end: ds.page
 
 -- ds.markdown:
 
@@ -99,11 +98,11 @@ documentation and select a footer for your project.
 Just add `show-footer` property in `ds.page` component and pass its value as
 `true`. 
 
-Here’s what your `my-ds.ftd` module would look like:
+Here’s what your `ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module
+-- cb.code: ds.ftd module
 lang: ftd
-download: my-ds.ftd
+download: ds.ftd
 
 \-- import: fastn-community.github.io/doc-site as ds
 \-- import: fastn-community.github.io/doc-site/common
@@ -150,11 +149,11 @@ of your [right-sidebar](right-sidebar/) is the same for all pages.
 Just add `sidebar` property in `ds.page` component and pass its value as
 `true`. 
 
-Here’s what your `my-ds.ftd` module would look like:
+Here’s what your `ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module
+-- cb.code: ds.ftd module
 lang: ftd
-download: my-ds.ftd
+download: ds.ftd
 
 \-- import: fastn-community.github.io/doc-site as ds
 \-- import: fastn-community.github.io/doc-site/common
@@ -214,4 +213,4 @@ children: $page.wrapper
 
 To change `site-logo` and `site-name` [read `site-logo`](logo/) documentation.
 
--- end: my-ds.page
+-- end: ds.page

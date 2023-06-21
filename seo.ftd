@@ -1,15 +1,14 @@
--- import: fastn-community.github.io/doc-site as ds
 -- import: fastn.com/expander/ds/meta-data as ds-meta
 
 
 
 
 
--- my-ds.page:
+-- ds.page:
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
 -- ds-meta.show-md:
 
--- end: my-ds.page
+-- end: ds.page

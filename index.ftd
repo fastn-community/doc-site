@@ -7,25 +7,20 @@
 -- import: fastn-community.github.io/footer
 
 
--- import: fastn-community.github.io/typography as tf
-export: markdown, h0, h1, h2, h3
-exposing: markdown, h0, h1, h2, h3
+-- import: fastn-community.github.io/typography
+export: markdown,h0,h1,h2,h3
+exposing: h2
 
--- import: fastn-community.github.io/code-block as cb
-export: code, rendered
-exposing: rendered
-
+-- import: fastn-community.github.io/code-block
+export: code,rendered
 
 
 
 
--- page: Overview
+-- ds.page: Overview
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
-site-name: NULL
-github-url: https://github.com/fastn-community/doc-site/
-github-icon: true
 
 ⚡️ `doc-site` will help you create a beautiful documentation site in no time.
 
@@ -57,7 +52,7 @@ Our all documentation sites use this `doc-site` theme.
 - [fastn.com](https://fastn.com/home/)
 - [FifthTry.com](https://www.fifthtry.com/)
 
--- end: page
+-- end: ds.page
 
 
 
@@ -74,7 +69,7 @@ optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image: 
 optional body body:
-ftd.image-src site-logo: $common.site-logo
+optional ftd.image-src site-logo:
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 string site-url: $common.site-url
