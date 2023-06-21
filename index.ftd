@@ -8,8 +8,17 @@
 
 
 
+-- import: fastn-community.github.io/typography
+export: markdown,h0,h1,h2,h3
 
+-- import: ds
+export: page
 
+-- import: fastn-community.github.io/code-block
+export: code,rendered
+
+-- import: fastn-community.github.io/doc-site
+export: youtube,iframe,image,compact-text,author-bio,posts,featured-post,image-first,image-in-between,without-image,post
 
 
 -- ds.page: Overview
