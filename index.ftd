@@ -7,23 +7,15 @@
 -- import: fastn-community.github.io/footer
 
 
--- import: fastn-community.github.io/typography as tf
-export: markdown, h0, h1, h2, h3
-exposing: markdown, h0, h1, h2, h3
-
--- import: fastn-community.github.io/code-block as cb
-export: code, rendered
-exposing: rendered
 
 
 
 
 
--- page: Overview
+-- ds.page: Overview
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
-site-name: NULL
 github-url: https://github.com/fastn-community/doc-site/
 github-icon: true
 
@@ -32,7 +24,7 @@ github-icon: true
 It provides out-of-the-box documentation features that can be used to create any
 kind of site(personal website, blog, etc).
 
--- h2: 🚀 Fast Track 
+-- ds.h2: 🚀 Fast Track 
 
 Create your first fastn [website](https://fastn.com/expander/hello-world/-/build/) 
 project in just 5 minutes!
@@ -40,24 +32,24 @@ project in just 5 minutes!
 [Click here](https://github.com/fastn-stack/fastn-template/) to use `doc-site`
 for your fastn project.
 
--- h2: 🌟 Whats next?
+-- ds.h2: 🌟 Whats next?
 
 Create your first page. 
 [Click here to know more](https://fastn-community.github.io/doc-site/page/).
 
--- h2: 👀 Want to learn more?
+-- ds.h2: 👀 Want to learn more?
 
 Feel free to check [our expander course](https://fastn.com/expander/) or jump
 into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
 
--- h2: 🎯 Used by?
+-- ds.h2: 🎯 Used by?
 
 Our all documentation sites use this `doc-site` theme.
 
 - [fastn.com](https://fastn.com/home/)
 - [FifthTry.com](https://www.fifthtry.com/)
 
--- end: page
+-- end: ds.page
 
 
 
@@ -74,7 +66,7 @@ optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image: 
 optional body body:
-ftd.image-src site-logo: $common.site-logo
+optional ftd.image-src site-logo:
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 string site-url: $common.site-url

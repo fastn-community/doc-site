@@ -1,4 +1,3 @@
--- import: fastn-community.github.io/doc-site as ds
 -- import: fastn-community.github.io/doc-site/assets
 -- import: fastn-community.github.io/doc-site/common
 
@@ -23,9 +22,9 @@ day and night.
 
 
 
--- my-ds.page: 
+-- ds.page: 
 
 -- ds.author-bio: 
 author: $ganesh
 
--- end: my-ds.page
+-- end: ds.page

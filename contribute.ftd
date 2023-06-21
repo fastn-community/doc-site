@@ -1,9 +1,8 @@
--- import: fastn-community.github.io/doc-site as ds
 
 
 
 
--- my-ds.page: Contribute to doc-site
+-- ds.page: Contribute to doc-site
 document-description: Contribute to doc-site development and documentation
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
@@ -40,4 +39,4 @@ that we expect participants to adhere to.
 - [💼 | #Share-your-work](https://discord.gg/Um6KX3VYnh)
 - [💡 | #ideas-and-feedback](https://discord.gg/7hwRSsxJUt)
 
--- end: my-ds.page
+-- end: ds.page

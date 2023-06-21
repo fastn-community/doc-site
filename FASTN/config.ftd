@@ -1,13 +1,20 @@
--- import: fastn-community.github.io/doc-site as ds
+-- import: fastn-community.github.io/doc-site
 -- import: fastn-community.github.io/footer
+-- import: fastn-community.github.io/doc-site/common
 
+-- import: fastn-community.github.io/typography
+export: markdown,h0,h1,h2,h3
 
+-- import: fastn-community.github.io/code-block
+export: code,rendered
 
-
+-- import: fastn-community.github.io/doc-site
+export: youtube,iframe,image,compact-text,author-bio,posts,featured-post,image-first,image-in-between,without-image,post
 
 -- ftd.image-src fastn-logo:
 light: https://fastn.com/-/fastn.com/images/fastn.svg
 dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
+
 
 
 
@@ -22,10 +29,14 @@ ftd.ui list right-sidebar:
 optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
-optional string site-name: 
+optional string site-name: Doc Site
+optional ftd.image-src site-logo:
+boolean github-icon: false
+optional string github-url: 
 
--- ds.page: $page.title
+-- doc-site.page: $page.title
 site-name: $page.site-name
+site-logo: $page.site-logo
 body: $page.body
 show-footer: true
 right-sidebar: $page.right-sidebar
@@ -33,10 +44,10 @@ sidebar: $page.sidebar
 document-title: $page.document-title
 document-description: $page.document-description
 document-image: $page.document-image
-github-url: https://github.com/fastn-community/doc-site/
-github-icon: true
+github-url: $page.github-url
+github-icon: $page.github-icon
 
--- ds.page.footer:
+-- doc-site.page.footer:
 
 -- footer.fastn-footer:
 copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
@@ -44,7 +55,7 @@ site-logo: $fastn-logo
 powered-by-text: Powered by
 powered-by-link: https://fastn.com/
 
--- end: ds.page.footer
+-- end: doc-site.page.footer
 
 -- ftd.column:
 spacing.fixed.em: 0.8
@@ -53,6 +64,6 @@ children: $page.wrapper
 
 -- end: ftd.column
 
--- end: ds.page
+-- end: doc-site.page
 
 -- end: page

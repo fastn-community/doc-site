@@ -1,10 +1,9 @@
--- import: fastn-community.github.io/doc-site as ds
 
 
 
 
 
--- my-ds.page: Post List
+-- ds.page: Post List
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
@@ -90,4 +89,4 @@ metadata then shows other post details. [see our blog page](blog/)
 Category pages are similar to the featured posts page. You can add category related
 details into the body part of the `-- ds.page` page.
 
--- end: my-ds.page
+-- end: ds.page

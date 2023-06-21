@@ -1,4 +1,3 @@
--- import: fastn-community.github.io/doc-site as ds
 -- import: fastn-community.github.io/doc-site/assets
 -- import: fastn-community.github.io/doc-site/common
 
@@ -21,9 +20,9 @@ Currently, building a new language FTD and its package manager FASTN day and nig
 
 
 
--- my-ds.page: 
+-- ds.page: 
 
 -- ds.author-bio: 
 author:$arpita
 
--- end: my-ds.page
+-- end: ds.page

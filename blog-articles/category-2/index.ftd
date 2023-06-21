@@ -7,7 +7,7 @@
 
 
 
--- my-ds.page: Category title - Technology & Learning
+-- ds.page: Category title - Technology & Learning
 
 Write some information about this category here. Change the title according to
 the category of your blog.
@@ -22,4 +22,4 @@ post-data: $sample-post-4.meta
 
 -- end: ds.posts
 
--- end: my-ds.page
+-- end: ds.page
