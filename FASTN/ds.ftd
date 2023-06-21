@@ -7,11 +7,7 @@ export: markdown,h0,h1,h2,h3,code,rendered,output,image,iframe,youtube,compact-t
 light: https://fastn.com/-/fastn.com/images/fastn.svg
 dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
 
--- import: fastn-community.github.io/typography
-export: markdown,h0,h1,h2,h3
 
--- import: fastn-community.github.io/code-block
-export: code,rendered
 
 
 
