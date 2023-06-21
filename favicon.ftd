@@ -1,9 +1,8 @@
--- import: fastn-community.github.io/doc-site as ds
 
 
 
 
--- my-ds.page: Adding Favicon
+-- ds.page: Adding Favicon
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
@@ -25,4 +24,4 @@ lang: ftd
 \-- fastn.package: fastn-package-name
 favicon: /-/fastn-package-name/favicon.svg
 
--- end: my-ds.page
+-- end: ds.page

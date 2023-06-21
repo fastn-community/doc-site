@@ -1,5 +1,4 @@
 -- import: fastn-community.github.io/doc-site/assets
--- import: fastn-community.github.io/doc-site as ds
 -- import: fastn-community.github.io/doc-site/blog-articles/category-1/sample-post-1
 -- import: fastn-community.github.io/doc-site/blog-articles/category-1/sample-post-2 
 
@@ -7,7 +6,7 @@
 
 
 
--- my-ds.page: Category title - News & Culture
+-- ds.page: Category title - News & Culture
 
 Write some information about this category here. Change the title according to
 the category of your blog.
@@ -22,4 +21,4 @@ post-data: $sample-post-2.meta
 
 -- end: ds.posts
 
--- end: my-ds.page
+-- end: ds.page

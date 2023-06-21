@@ -1,11 +1,10 @@
--- import: fastn-community.github.io/doc-site as ds
 -- import: fastn-community.github.io/doc-site/assets
 
 
 
 
 
--- my-ds.page: Getting Started
+-- ds.page: Getting Started
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
@@ -59,4 +58,4 @@ SEO support.
 ✨ [Click here](https://fastn-community.github.io/doc-site/image/) to know about
 Static Assets.
 
--- end: my-ds.page
+-- end: ds.page

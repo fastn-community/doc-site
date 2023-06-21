@@ -20,7 +20,7 @@
 
 -- string site-name: Doc Site
 
--- ftd.image-src site-logo: $assets.files.static.ipsum-logo.svg
+-- ftd.image-src site-logo: null
 
 -- integer logo-width: 200
 

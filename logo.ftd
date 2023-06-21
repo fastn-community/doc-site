@@ -1,9 +1,8 @@
--- import: fastn-community.github.io/doc-site as ds
 
 
 
 
--- my-ds.page: Adding Site-logo and Site-name
+-- ds.page: Adding Site-logo and Site-name
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
@@ -60,13 +59,13 @@ properties and configurations in one `.ftd` file.
 
 Let's learn how to create a global module:
 
-Create a new file let’s say `my-ds.ftd`. 
+Create a new file let’s say `ds.ftd`. 
 
-Here’s what your `my-ds.ftd` module would look like:
+Here’s what your `ds.ftd` module would look like:
 
--- cb.code: my-ds.ftd module with logo only
+-- cb.code: ds.ftd module with logo only
 lang: ftd
-download: my-ds.ftd
+download: ds.ftd
 
 \-- import: fastn-community.github.io/doc-site as ds
 
@@ -92,7 +91,7 @@ children: $page.wrapper
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `my-ds.ftd` file will be
+Click on the download icon of the above code-block. `ds.ftd` file will be
 downloaded. Import this file inside your new `.ftd`.
 
 Use the `my-ds` component to create a new page using it.
@@ -104,7 +103,7 @@ download: logo.ftd
 \-- import: fastn-community.github.io/doc-site as ds
 \-- import: <your fastn package name>/my-ds
 
-\-- my-ds.page: This is page title
+\-- ds.page: This is page title
 
 This is body area. It contains multiple paragraphs.
 
@@ -123,7 +122,7 @@ This is heading level 2 optional body content.
 
 This is heading level 3 optional body content.
 
-\-- end: my-ds.page
+\-- end: ds.page
 
 -- ds.markdown:
 
@@ -134,8 +133,8 @@ Add this file inside your `fastn` project and deploy or run `fastn serve` on
 your localhost. Access your localhost in the browser
 e.g.`http://127.0.0.1:8000/logo/` you will see a page with a logo.
 
-Change `site-name` with your site-name into the `my-ds.ftd` file `string
+Change `site-name` with your site-name into the `ds.ftd` file `string
 site-name: my fastn site` and refresh e.g.`http://127.0.0.1:8000/logo/` page,
 you will see site-name only.
 
--- end: my-ds.page
+-- end: ds.page

@@ -19,7 +19,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 -- fastn.auto-import: fastn-community.github.io/code-block as cb
 -- fastn.auto-import: fastn-community.github.io/header as h
 -- fastn.auto-import: fastn-community.github.io/typography as tf
--- fastn.auto-import: fastn-community.github.io/doc-site/FASTN/config as my-ds
+-- fastn.auto-import: fastn-community.github.io/doc-site/FASTN/ds
 
 
 
