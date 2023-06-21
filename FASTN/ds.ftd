@@ -18,8 +18,8 @@ optional string document-description:
 optional ftd.raw-image-src document-image:
 optional string site-name: Doc Site
 optional ftd.image-src site-logo:
-boolean github-icon: false
-optional string github-url: 
+boolean github-icon: true
+optional string github-url: https://github.com/fastn-community/doc-site/
 
 -- doc-site.page: $page.title
 site-name: $page.site-name
