@@ -7,9 +7,9 @@
 -- import: fastn-community.github.io/footer
 
 
-
 -- import: fastn-community.github.io/typography
 export: markdown,h0,h1,h2,h3
+exposing: h2
 
 -- import: fastn-community.github.io/code-block
 export: code,rendered
