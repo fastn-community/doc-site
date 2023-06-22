@@ -5,7 +5,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 
 -- fastn.dependency: fastn-community.github.io/code-block
 -- fastn.dependency: fastn-community.github.io/typography
--- fastn.dependency: fastn-community.github.io/roboto-typography as typo
+-- fastn.dependency: fastn-community.github.io/roboto-typography
 -- fastn.dependency: fastn-community.github.io/app-switcher
 -- fastn.dependency: fastn-community.github.io/header
 -- fastn.dependency: fastn-community.github.io/footer
@@ -20,6 +20,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 -- fastn.auto-import: fastn-community.github.io/header as h
 -- fastn.auto-import: fastn-community.github.io/typography as tf
 -- fastn.auto-import: fastn-community.github.io/doc-site/FASTN/ds
+-- fastn.auto-import: fastn-community.github.io/doc-site/common
 
 
 
@@ -37,18 +38,56 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 - Changing Color Scheme: /cs/
 - Changing Typography: /types/
 - Creating A Page: /page/
-- Adding a image: /image/
-- Markdown Primer: /markdown/
+- Doc-Site Components: /components/
+  - author-bio: /components/author-bio/
+  skip: true
+  - code: /components/code/
+  skip: true
+  - compact-text: /components/compact-text/
+  skip: true
+  - featured-post: /components/featured-post/
+  skip: true
+  - h0, h1, h2, h3: /components/headers/
+  skip: true
+  - iframe: /components/iframe/
+  skip: true
+  - image: /components/image/
+  skip: true
+  - image-first: /components/image-first/
+  skip: true
+  - image-in-between: /components/image-in-between/
+  skip: true
+  - link & link-group: /components/link/
+  skip: true
+  - markdown: /components/markdown/
+  skip: true
+  - not-found-1: /components/404-1/
+  skip: true
+  - not-found-2: /components/404-2/
+  skip: true
+  - output: /components/output/
+  skip: true
+  - post: /components/post/
+  skip: true
+  - posts: /components/posts/
+  skip: true
+  - rendered: /components/rendered/
+  skip: true
+  - tip: /components/tip/
+  skip: true
+  - without-image: /components/without-image/
+  skip: true
+  - youtube: /components/youtube/
+  skip: true
+
 - Understanding Sitemap: /sitemap/
 - Adding Right Sidebar: /right-sidebar/
 - Adding Footer: /footer/
 - SEO: /seo/
 
 - Blog 🚧: /blog/
-  - Adding a new blog post 🚧: /post/
   - Post List 🚧: /post-list/
-  - Adding Author Details 🚧: /author/
   - Sample Post: /blog-articles/category-1/sample-post-2/
-  - Sample Author Bio: /blog-authors/amitu/
+  - Sample Author Bio: /blog-authors/john-doe/
 
 - Contribute: /contribute/

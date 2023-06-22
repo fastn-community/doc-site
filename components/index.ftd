@@ -1,0 +1,228 @@
+-- import: fastn.com/ftd/utils as appendix
+
+-- ds.page: Doc-Site Components
+document-title: fastn Doc-Site Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+
+In this section, we will learn about buit-in components inside doc-site. 
+
+Components are designed to serve specific functions or display particular
+content. They are modular building blocks that can be combined or customized to
+create a complete document.
+
+-- ds.h1: Index
+
+We have listed all doc-site components below, click on a component name to
+learn more about it.
+
+-- appendix.letter-stack:
+height.fixed.px if { ftd.device != "mobile" }: 1000
+height: fill-container
+contents-a: $letter-contents-a
+contents-c: $letter-contents-c
+contents-f: $letter-contents-f
+contents-h: $letter-contents-h
+contents-i: $letter-contents-i
+contents-l: $letter-contents-l
+contents-m: $letter-contents-m
+contents-n: $letter-contents-n
+contents-o: $letter-contents-o
+contents-p: $letter-contents-p
+contents-r: $letter-contents-r
+contents-t: $letter-contents-t
+contents-w: $letter-contents-w
+contents-y: $letter-contents-y
+
+-- end: ds.page
+
+
+
+
+
+
+
+
+
+
+;; APPENDIX ------------------------------------------------------------
+
+-- appendix.letter-data list letter-contents-a:
+
+-- appendix.letter-data: author-bio
+link: components/author-bio/
+
+-- end: letter-contents-a
+
+-- appendix.letter-data list letter-contents-c:
+
+-- appendix.letter-data: code
+link: components/code/
+
+-- appendix.letter-data: compact-text
+link: components/compact-text/
+
+-- end: letter-contents-c
+
+-- appendix.letter-data list letter-contents-f:
+
+-- appendix.letter-data: featured-post
+link: components/featured-post/
+
+-- end: letter-contents-f
+
+-- appendix.letter-data list letter-contents-h:
+
+-- appendix.letter-data: h0, h1, h2, h3
+link: components/headers/
+
+-- end: letter-contents-h
+
+-- appendix.letter-data list letter-contents-i:
+
+-- appendix.letter-data: iframe
+link: components/iframe/
+
+-- appendix.letter-data: image
+link: components/image/
+
+-- appendix.letter-data: image-first
+link: components/image-first/
+
+-- appendix.letter-data: image-in-between
+link: components/image-in-between/
+
+-- end: letter-contents-i
+
+-- appendix.letter-data list letter-contents-l:
+
+-- appendix.letter-data: link & link-group
+link: components/link/
+
+-- end: letter-contents-l
+
+-- appendix.letter-data list letter-contents-m:
+
+-- appendix.letter-data: markdown
+link: components/markdown/
+
+-- end: letter-contents-m
+
+-- appendix.letter-data list letter-contents-n:
+
+-- appendix.letter-data: not-found-1
+link: components/404-1/
+-- appendix.letter-data: not-found-2
+link: components/404-2/
+
+-- end: letter-contents-n
+
+-- appendix.letter-data list letter-contents-o:
+
+-- appendix.letter-data: output
+link: components/output/
+
+-- end: letter-contents-o
+
+-- appendix.letter-data list letter-contents-p:
+
+/-- appendix.letter-data: page
+link: components/page/
+
+-- appendix.letter-data: post
+link: components/post/
+
+-- appendix.letter-data: posts
+link: components/posts/
+
+-- end: letter-contents-p
+
+-- appendix.letter-data list letter-contents-r:
+
+-- appendix.letter-data: rendered
+link: components/rendered/
+
+-- end: letter-contents-r
+
+-- appendix.letter-data list letter-contents-t:
+
+-- appendix.letter-data: tip
+link: components/tip/
+
+-- end: letter-contents-t
+
+-- appendix.letter-data list letter-contents-w:
+
+-- appendix.letter-data: without-image
+link: components/without-image/
+
+-- end: letter-contents-w
+
+-- appendix.letter-data list letter-contents-y:
+
+-- appendix.letter-data: youtube
+link: components/youtube/
+
+-- end: letter-contents-y
+
+
+
+
+
+
+
+
+
+
+-- component sidebar-index:
+
+-- ftd.column:
+width: fill-container
+
+-- ds.h3: Index
+
+🏠 [Doc-Site Components](components/)
+
+☞ [author-bio](components/author-bio/)
+
+☞ [code](components/code/)
+
+☞ [compact-text](components/compact-text/)
+
+☞ [featured-post](components/featured-post/)
+
+☞ [h0, h1, h2, h3](components/headers/)
+
+☞ [iframe](components/iframe/)
+
+☞ [image](components/image/)
+
+☞ [image-first](components/image-first/)
+
+☞ [image-in-between](components/image-in-between/)
+
+☞ [link & link-group](components/link/)
+
+☞ [markdown](components/markdown/)
+
+☞ [not-found-1](components/404-1/)
+
+☞ [not-found-2](components/404-2/)
+
+☞ [output](components/output/)
+
+☞ [post](components/post/)
+
+☞ [posts](components/posts/)
+
+☞ [rendered](components/rendered/)
+
+☞ [tip](components/tip/)
+
+☞ [without-image](components/without-image/)
+
+☞ [youtube](components/youtube/)
+
+-- end: ftd.column
+
+-- end: sidebar-index
