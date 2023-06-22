@@ -1,3 +1,4 @@
+-- import: fastn-community.github.io/doc-site/components
 
 
 
@@ -6,6 +7,15 @@
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
 
 `doc-site` supports markdown. If you want to use it you can use `--
 ds.markdown for inline anchor links etc.
@@ -38,14 +48,14 @@ tempor incididunt.
 
 \-- ds.markdown:
 
-Lorem ipsum [inline link](/docs/markup-support/) amet, consectetur adipiscing
-elit, sed do eiusmod tempor incididunt.
+Lorem ipsum [inline link](components/markdown/) amet, consectetur 
+adipiscing elit, sed do eiusmod tempor incididunt.
 
 -- ds.rendered.output:
 
 -- ds.markdown:
 
-Lorem ipsum [inline link](/docs/markup-support/) amet, consectetur adipiscing
+Lorem ipsum [inline link](components/markdown/) amet, consectetur adipiscing
 elit, sed do eiusmod tempor incididunt.
 
 -- end: ds.rendered.output

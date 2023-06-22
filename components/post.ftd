@@ -1,21 +1,32 @@
--- import: fastn-community.github.io/doc-site/assets
+-- import: fastn-community.github.io/doc-site/components
 
 
 
 
 
--- ds.page: Adding a new blog post
+-- ds.page: post
+document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+sidebar: true
 
-In this section, we will learn about creating a blog post in `doc-site`.
+-- ds.page.right-sidebar:
 
--- ds.h2: Writing a post 
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+In this section, we will learn about creating a blog post in `doc-site` using
+`ds.post` component.
+
+-- ds.h2: Example:
+
+[Click here to see example post](blog-articles/category-1/sample-post-2/)
 
 To write a post/article add your post meta and post details. Below code snippet
 shows how to write a post meta and create your post. 
-
-[see sample post](blog-articles/category-1/sample-post-2/)
 
 -- ds.code: Example of how to create blog post 
 lang: ftd

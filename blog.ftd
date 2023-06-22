@@ -19,7 +19,7 @@ By following our simple blog documentation you can create a blog post. We have
 developed featured article list, blog article & author's bio pages. Lets 
 understand how to use them.
 
-💡 [Click here](/post-list/) to create a featured blog posts page.
+💡 [Click here](components/posts/) to learn more about posts page.
 
 -- ds.posts:
 

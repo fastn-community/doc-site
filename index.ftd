@@ -2187,12 +2187,15 @@ color: $inherited.colors.cta-primary.border
 
 -- component iframe:
 string src:
+optional ftd.resizing width:
+optional ftd.resizing height:
 
 -- ftd.iframe:
 src: $iframe.src
-height.fixed.px: 400
-width: fill-container
-margin-bottom.px: 34
+height: $iframe.height
+width: $iframe.width
+min-height.fixed.px: 400
+margin-bottom.px: 24
 
 -- end: iframe
 
@@ -2207,12 +2210,15 @@ margin-bottom.px: 34
 
 -- component youtube:
 caption v:
+optional ftd.resizing width: fill-container
+optional ftd.resizing height:
 
 -- ftd.iframe:
 youtube: $youtube.v
-height.fixed.px: 400
-width: fill-container
-margin-bottom.px: 34
+min-height.fixed.px: 400
+width: $youtube.width
+height: $youtube.height
+margin-bottom.px: 24
 
 -- end: youtube
 
@@ -2302,11 +2308,13 @@ border-radius.px: 3
 width: fill-container
 background.solid: $inherited.colors.background.base
 color: $inherited.colors.text
+margin-vertical.px: 24
 
 -- ftd.column:
-width.fixed.px: 5
+width: fill-container
 height:  fill-container
-background.solid: $inherited.colors.background.base
+border-left-width.px: 5
+border-color: $inherited.colors.background.step-2
 
 -- ftd.column:
 width: fill-container
@@ -2314,14 +2322,17 @@ padding.px: 10
 spacing.fixed.px: 10
 
 -- ftd.row:
+width: fill-container
 spacing.fixed.px: 5
 
--- ftd.text: Tip
-role: $inherited.types.label-large
+-- ftd.text: 💡 Tip:
+role: $inherited.types.button-medium
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $tip.title
 if: {tip.title != NULL}
 role: $inherited.types.label-large
+color: $inherited.colors.text-strong
 
 -- end: ftd.row
 
@@ -2555,6 +2566,8 @@ boolean $active: false
 -- ftd.column:
 $on-click$: $ftd.set-bool($a= $link.active, v = true)
 spacing.fixed.rem: 0.81
+$on-mouse-enter$: $ftd.set-bool($a= $link.active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a= $link.active, v = false)
 
 -- ftd.text: $link.title
 role: $inherited.types.button-small
@@ -2592,6 +2605,8 @@ color: $inherited.colors.text
 color if { link-group.active}: $inherited.colors.accent.primary
 link: $link-group.cta
 style: bold
+$on-mouse-enter$: $ftd.set-bool($a= $link-group.active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a= $link-group.active, v = false)
 
 -- ftd.column:
 width: fill-container
