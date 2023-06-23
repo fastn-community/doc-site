@@ -4,10 +4,15 @@
 
 
 
--- ds.page:
+-- ds.page: SEO
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+
+In this section, we will learn more about how fastn SEO helps to boost your
+search engine optimization with its buit-in features.
+
+
 
 -- ds-meta.show-md:
 

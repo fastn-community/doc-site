@@ -1,7 +1,4 @@
 
-
-
-
 -- ds.page: Adding Site-logo and Site-name
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -23,60 +20,72 @@ Below is the logic for adding a logo and site name:
 - if you add both site-logo and site-name into your `ds.page` component then it
   shows both.
 
--- ds.h2: Adding logo or site-name 
+Modify `FASTN/ds.ftd` module `site-name` & `site-logo` properties value with
+your site name and logo image asset.
 
-The `page` component has `site-logo` and `site-name` properties. You can pass
-these properties to `-- ds.page` component.
-
--- ds.code: Adding site-logo
+-- ds.code: Scroll down to view full code, click on download icon to download this code
 lang: ftd
-
-\-- import: fastn-community.github.io/doc-site as ds
-
-\-- ds.page: Page title
-site-logo: $assets.files.static.ipsum-logo.svg
-
-Some body content of the page.
-
-\-- end: ds.page 
-
--- ds.code: Adding site-name
-lang: ftd
-
-\-- import: fastn-community.github.io/doc-site as ds
-
-\-- ds.page: Page title
-site-name: fastn
-
-Some body content of the page.
-
-\-- end: ds.page 
-
--- ds.markdown:
-
-We recommend creating a global module that helps you to keep all your global
-properties and configurations in one `.ftd` file.
-
-Let's learn how to create a global module:
-
-Create a new file let’s say `ds.ftd`. 
-
-Here’s what your `ds.ftd` module would look like:
-
--- cb.code: ds.ftd module with logo only
-lang: ftd
+max-height.fixed.px: 300
 download: ds.ftd
-
-\-- import: fastn-community.github.io/doc-site as ds
 
 \-- component page:
 children wrapper:
 optional caption title:
 optional body body:
+boolean sidebar: false
+optional string document-title:
+optional string document-description:
+optional ftd.raw-image-src document-image:
+optional string site-name: Your site name
+optional ftd.image-src site-logo: $asset.files.assets.logo-image.png
+boolean github-icon: true
+optional string github-url: https://github.com/fastn-community/doc-site/
+boolean full-width: false
+ftd.type-data types: $typo.types
+ftd.color-scheme colors: $ftd.default-colors
+integer logo-width: $common.logo-width
+integer logo-height: $common.logo-height
+boolean show-footer: true
+boolean show-banner: false
+ftd.ui list right-sidebar:
+ftd.ui list banner:
+fastn.app-ui apps: $common.apps
+boolean login-button: $common.login-button
+string site-url: $common.site-url
 
-\-- ds.page: $page.title
-site-logo: $assets.files.static.ipsum-logo.svg
+\-- ftd.ui list page.footer:
+
+\-- footer.fastn-footer:
+copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
+site-logo: $fastn-logo
+powered-by-text: Powered by
+powered-by-link: https://fastn.com/
+
+\-- end: page.footer
+
+\-- doc-site.page: $page.title
+site-logo: $page.site-logo
 body: $page.body
+colors: $page.colors
+sidebar: $page.sidebar
+full-width: $page.full-width
+types: $page.types
+show-banner: $page.show-banner
+show-footer: $page.show-footer
+site-name: $page.site-name
+logo-height: $page.logo-height
+logo-width: $page.logo-width
+github-icon: $page.github-icon
+github-url: $page.github-url
+right-sidebar: $page.right-sidebar
+footer: $page.footer
+banner: $page.banner
+document-title: $page.document-title
+document-description: $page.document-description
+document-image: $page.document-image
+apps: $page.apps
+login-button: $page.login-button
+site-url: $page.site-url
 
 \-- ftd.column:
 spacing.fixed.em: 0.8
@@ -85,56 +94,14 @@ children: $page.wrapper
 
 \-- end: ftd.column
 
-\-- end: ds.page
+\-- end: doc-site.page
 
 \-- end: page
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `ds.ftd` file will be
-downloaded. Import this file inside your new `.ftd`.
-
-Use the `my-ds` component to create a new page using it.
-
--- ds.code:
-lang: ftd
-download: logo.ftd
-
-\-- import: fastn-community.github.io/doc-site as ds
-\-- import: <your fastn package name>/my-ds
-
-\-- ds.page: This is page title
-
-This is body area. It contains multiple paragraphs.
-
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-praesentium voluptatum.
-
-\-- ds.h1: This is heading level 1
-
-This is heading level 1 optional body content.
-
-\-- ds.h2: This is heading level 2
-
-This is heading level 2 optional body content.
-
-\-- ds.h3: This is heading level 3
-
-This is heading level 3 optional body content.
-
-\-- end: ds.page
-
--- ds.markdown:
-
-Click on the download icon of the above code-block. `logo.ftd` file will be
-downloaded.
-
-Add this file inside your `fastn` project and deploy or run `fastn serve` on
-your localhost. Access your localhost in the browser
-e.g.`http://127.0.0.1:8000/logo/` you will see a page with a logo.
-
-Change `site-name` with your site-name into the `ds.ftd` file `string
-site-name: my fastn site` and refresh e.g.`http://127.0.0.1:8000/logo/` page,
-you will see site-name only.
+Change `site-name` and `site-logo` as per your need. Then deploy or run `fastn
+serve` on your localhost. Access your localhost in the browser
+e.g.`http://127.0.0.1:8000/`.
 
 -- end: ds.page

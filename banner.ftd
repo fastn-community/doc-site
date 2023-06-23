@@ -1,74 +1,77 @@
 -- import: fastn-community.github.io/doc-site/assets
+-- import: fastn-community.github.io/banner
 
 
 
 
-
--- ds.page: Right Sidebar 👉🏻
+-- ds.page: Banner
 sidebar: true
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+show-banner: true
 
--- ds.page.right-sidebar:
+-- ds.page.banner:
 
--- ds.h3: Heading in sidebar
+-- banner.banner:
 
-You can call any component inside sidebar
+If you like fastn, give it a ⭐️ star on [GitHub.](https://github.com/fastn-stack/fastn/) 
+Also, follow us on [Twitter](https://twitter.com/FifthTryHQ), 
+[Linkedin](https://www.linkedin.com/company/fastn-stack/),
+[Instagram](https://www.instagram.com/fastn_stack/)
 
--- ds.compact-text: Quick links:
-
-- [Install `fastn`](install/)
-- [Create `fastn` package](create-fastn-package/)
-- [Expander Crash Course](expander/)
-
--- ds.compact-text: Join us:
-
-We welcome you to join our [Discord](https://discord.gg/a7eBUeutWD) community
-today.
-
-We are trying to create a language for human beings and we do not believe it
-would be possible without your support. We would love to hear from you.
-
--- end: ds.page.right-sidebar
+-- end: ds.page.banner
 
 -- ds.page.body:
 
-In this section, we will learn to add right-sidebar in `doc-site`.
+In this section, we will learn to add [banner](https://fastn-community.github.io/banner/) 
+in `doc-site` page.
 
--- ds.h2: How to enable right-sidebar on a page?
+Banners are an important element of website design and can be used to enhance
+the user experience, increase engagement, and drive conversions.
 
-If you want to add `ds.page.right-sidebar` inside your page then refer below
+🌟 Ex.g. Look at the top of this page.
+
+[Click here](https://fastn-community.github.io/banner/) to learn more about banner
+component.
+
+A [banner](https://fastn-community.github.io/banner/) is typically a horizontal 
+bar that appears at the very top of a webpage, often referred to as a "top banner" 
+or "header banner". 
+
+It usually contains important information or calls to action that are designed
+to catch the user's attention and encourage them to take action.
+
+-- ds.h2: How to enable banner on a page?
+
+If you want to add `ds.page.banner` inside your page then refer below
 code snippet.
+
+-- ds.code: Add banner dependency into your FASTN.ftd file
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/banner
 
 -- ds.code: Scroll down to view full code, click on download icon to download this code
 lang: ftd
 max-height.fixed.px: 300
 download: page.ftd
 
+\-- import: fastn-community.github.io/banner
+
 \-- ds.page:
 sidebar: true
 
-\-- ds.page.right-sidebar:
+\-- ds.page.banner:
 
-\-- ds.h3: Heading in sidebar
+\-- banner.banner:
 
-You can call any component inside sidebar
+If you like fastn, give it a ⭐️ star on [GitHub.](https://github.com/fastn-stack/fastn/) 
+Also, follow us on [Twitter](https://twitter.com/FifthTryHQ), 
+[Linkedin](https://www.linkedin.com/company/fastn-stack/),
+[Instagram](https://www.instagram.com/fastn_stack/)
 
-\-- ds.compact-text: Quick links:
-
-- [Install `fastn`](install/)
-- [Create `fastn` package](create-fastn-package/)
-- [Expander Crash Course](expander/)
-
-\-- ds.compact-text: Join us:
-
-We welcome you to join our [Discord](https://discord.gg/a7eBUeutWD) community today.
-
-We are trying to create a language for human beings and we do not 
-believe it would be possible without your support. We would love to hear from you.
-
-\-- end: ds.page.right-sidebar
+\-- end: ds.page.banner
 
 \-- ds.page.body:
 
@@ -83,14 +86,20 @@ downloaded.
 
 Then deploy or run `fastn serve` on your localhost. Access your localhost in the
 browser and open `http://127.0.0.1:8000/page/` url, you will see page with a
-right-sidebar as seen in 👉🏻 right side of this page.
+banner as seen on top of this page.
 
--- ds.h2: How to enable right-sidebar on all pages?
+-- ds.h2: How to enable banner on all pages?
 
-If you want to show right-sidebar on all pages and the content of your
-right-sidebar is same on all pages then, we recommend modifying `FASTN/ds.ftd`
-global module that helps you to keep all your global properties and
-configurations in one `.ftd` file.
+If you want to show [banner](https://fastn-community.github.io/banner/) on all 
+pages and the content of your banner is same on all pages then, we recommend 
+modifying `FASTN/ds.ftd` global module that helps you to keep all your global 
+properties and configurations in one `.ftd` file.
+
+-- ds.code: Add banner dependency into your FASTN.ftd file
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/banner
+
 
 -- ds.h3: How to modify `FASTN/ds.ftd` module of `doc-site`?
 
@@ -99,16 +108,18 @@ You can modify a `FASTN/ds.ftd` module which is already added inside your
 
 Let's learn how to modify `FASTN/ds.ftd` module:
 
-- Edit `FASTN/ds.ftd` module and enable `sidebar: true`
+- Edit `FASTN/ds.ftd` module and enable `show-banner: true`
 
-- Then remove `ftd.ui list right-sidebar:` property from `page` component and add
-`-- ftd.ui list page.right-sidebar` and its content inside your `FASTN/ds.ftd`
+- Then remove `ftd.ui list banner:` property from `page` component and add
+`-- ftd.ui list page.banner` and its content inside your `FASTN/ds.ftd`
 file below `-- end: page.footer` as shown in below code snippet.
 
 -- ds.code: Scroll down to view full code, click on download icon to download this code
 lang: ftd
 max-height.fixed.px: 300
 download: ds.ftd
+
+\-- import: fastn-community.github.io/banner
 
 \-- component page:
 children wrapper:
@@ -144,26 +155,16 @@ powered-by-link: https://fastn.com/
 
 \-- end: page.footer
 
-\-- ftd.ui list page.right-sidebar:
+\-- ftd.ui list page.banner:
 
-\-- ds.h3: Heading in sidebar
+\-- banner.banner:
 
-You can call any component inside sidebar
+If you like fastn, give it a ⭐️ star on [GitHub.](https://github.com/fastn-stack/fastn/) 
+Also, follow us on [Twitter](https://twitter.com/FifthTryHQ), 
+[Linkedin](https://www.linkedin.com/company/fastn-stack/),
+[Instagram](https://www.instagram.com/fastn_stack/)
 
-\-- ds.compact-text: Quick links:
-
-- [Install `fastn`](install/)
-- [Create `fastn` package](create-fastn-package/)
-- [Expander Crash Course](expander/)
-
-\-- ds.compact-text: Join us:
-
-We welcome you to join our [Discord](https://discord.gg/a7eBUeutWD) community today.
-
-We are trying to create a language for human beings and we do not 
-believe it would be possible without your support. We would love to hear from you.
-
-\-- end: page.right-sidebar
+\-- end: page.banner
 
 \-- doc-site.page: $page.title
 site-logo: $page.site-logo
@@ -210,6 +211,9 @@ project.
 
 Then deploy or run `fastn serve` on your localhost. Access your localhost in the
 browser e.g.`http://127.0.0.1:8000/` you will see all your pages with a
-right-sidebar.
+banner on top of every page.
+
+[Click here](https://fastn-community.github.io/banner/) to learn more about banner
+component.
 
 -- end: ds.page
