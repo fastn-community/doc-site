@@ -126,7 +126,7 @@ link: components/output/
 
 -- appendix.letter-data list letter-contents-p:
 
-/-- appendix.letter-data: page
+-- appendix.letter-data: page
 link: components/page/
 
 -- appendix.letter-data: post
@@ -210,6 +210,8 @@ width: fill-container
 ☞ [not-found-2](components/404-2/)
 
 ☞ [output](components/output/)
+
+☞ [page](components/page/)
 
 ☞ [post](components/post/)
 

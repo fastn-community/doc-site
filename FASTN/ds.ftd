@@ -9,10 +9,8 @@ light: https://fastn.com/-/fastn.com/images/fastn.svg
 dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
 
 -- component page:
-children wrapper:
 optional caption title:
 optional body body:
-boolean sidebar: false
 optional string document-title:
 optional string document-description:
 optional ftd.raw-image-src document-image:
@@ -26,12 +24,12 @@ ftd.color-scheme colors: $ftd.default-colors
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
 boolean show-footer: true
-boolean show-banner: true
-ftd.ui list right-sidebar:
-ftd.ui list banner:
-fastn.app-ui apps: $common.apps
-boolean login-button: $common.login-button
 string site-url: $common.site-url
+boolean sidebar: false
+ftd.ui list right-sidebar:
+boolean show-banner: false
+ftd.ui list banner:
+children wrapper:
 
 -- ftd.ui list page.footer:
 
@@ -63,8 +61,6 @@ banner: $page.banner
 document-title: $page.document-title
 document-description: $page.document-description
 document-image: $page.document-image
-apps: $page.apps
-login-button: $page.login-button
 site-url: $page.site-url
 
 -- ftd.column:

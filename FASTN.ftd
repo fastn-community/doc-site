@@ -8,6 +8,8 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 -- fastn.dependency: fastn-community.github.io/roboto-typography
 -- fastn.dependency: fastn-community.github.io/app-switcher
 -- fastn.dependency: fastn-community.github.io/header
+-- fastn.dependency: fastn-community.github.io/banner
+-- fastn.dependency: fastn-community.github.io/bling
 -- fastn.dependency: fastn-community.github.io/footer
 -- fastn.dependency: fastn-community.github.io/dark-mode-switcher
 -- fastn.dependency: fastn.com
@@ -37,7 +39,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 - Adding Logo & Sitename: /logo/
 - Changing Color Scheme: /cs/
 - Changing Typography: /types/
-- Creating A Page: /page/
+- Adding Banner: /banner/
 - Doc-Site Components: /components/
   - author-bio: /components/author-bio/
   skip: true
@@ -67,6 +69,8 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
   skip: true
   - output: /components/output/
   skip: true
+  - page: /components/page/
+  skip: true
   - post: /components/post/
   skip: true
   - posts: /components/posts/
@@ -82,7 +86,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 
 - Understanding Sitemap: /sitemap/
 - Adding Right Sidebar: /right-sidebar/
-- Adding Footer: /footer/
+- Updating Footer: /footer/
 - SEO: /seo/
 
 - Blog 🚧: /blog/

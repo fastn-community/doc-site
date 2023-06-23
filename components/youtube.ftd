@@ -52,10 +52,20 @@ height.fixed.px: 450
 
     For e.g. the YouTube link of above example video is
     `https://www.youtube.com/watch?v=UzAC8aOf2is` in this link `v=UzAC8aOf2is`
-    version value is the value `v` property.
+    version value is the value of `v` property.
 - **width** - `type: ftd.resizing` It’s used to add width to `ds.youtube`
     component.
 - **height** - `type: ftd.resizing` It’s used to add height to `ds.youtube`
     component.
 
+
+
 -- end: ds.page
+
+
+
+
+
+
+
+
