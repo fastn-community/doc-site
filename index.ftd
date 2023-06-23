@@ -2567,9 +2567,10 @@ $on-click$: $ftd.set-bool($a= $link.active, v = true)
 spacing.fixed.rem: 0.81
 $on-mouse-enter$: $ftd.set-bool($a= $link.active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a= $link.active, v = false)
+align-content: center
 
 -- ftd.text: $link.title
-role: $inherited.types.button-small
+role: $inherited.types.button-medium
 color: $inherited.colors.text
 color if { link.active}: $inherited.colors.accent.primary
 link: $link.cta
