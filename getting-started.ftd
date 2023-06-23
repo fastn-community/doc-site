@@ -40,7 +40,7 @@ component to write your documentation, blog posts, etc.
 ✨ [Click here](https://fastn-community.github.io/doc-site/domain-setup/) to
 learn how to configure your fastn website.
 
-✨ [Click here](https://fastn-community.github.io/doc-site/page/) to know more
+✨ [Click here](https://fastn-community.github.io/doc-site/components/page/) to know more
 details of the `page` component.
 
 ✨ [Click here](https://fastn-community.github.io/doc-site/sitemap/) to learn how
@@ -49,13 +49,13 @@ to generate a better `sitemap` for navigation.
 ✨ [Click here](https://fastn-community.github.io/doc-site/types/) to
 know more details of inbuilt `typography`.
 
-✨ [Click here](https://fastn-community.github.io/doc-site/markdown/) to know
+✨ [Click here](https://fastn-community.github.io/doc-site/components/markdown/) to know
 about markdown.
 
 ✨ [Click here](https://fastn-community.github.io/doc-site/seo/) to know about
 SEO support.
 
-✨ [Click here](https://fastn-community.github.io/doc-site/image/) to know about
+✨ [Click here](https://fastn-community.github.io/doc-site/components/image/) to know about
 Static Assets.
 
 -- end: ds.page
