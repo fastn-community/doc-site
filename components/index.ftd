@@ -178,53 +178,82 @@ link: components/youtube/
 
 -- ftd.column:
 width: fill-container
+spacing.fixed.px: 16
 
 -- ds.h3: Index
 
-🏠 [Doc-Site Components](components/)
+-- ds.link: 🏠 Doc-Site Components
+cta: components/
 
-☞ [author-bio](components/author-bio/)
+-- ds.link: ☞ author-bio
+cta: components/author-bio/
 
-☞ [code](components/code/)
+-- ds.link: ☞ code
+cta: components/code/
 
-☞ [compact-text](components/compact-text/)
+-- ds.link: ☞ compact-text
+cta: components/compact-text/
 
-☞ [featured-post](components/featured-post/)
+-- ds.link: ☞ featured-post
+cta: components/featured-post/
 
-☞ [h0, h1, h2, h3](components/headers/)
+-- ds.link: ☞ h0, h1, h2, h3
+cta: components/headers/
 
-☞ [iframe](components/iframe/)
+-- ds.link: ☞ iframe
+cta: components/iframe/
 
-☞ [image](components/image/)
+-- ds.link: ☞ image
+cta: components/image/
 
-☞ [image-first](components/image-first/)
+-- ds.link: ☞ image-first
+cta: components/image-first/
 
-☞ [image-in-between](components/image-in-between/)
+-- ds.link: ☞ image-in-between
+cta: components/image-in-between/
 
-☞ [link & link-group](components/link/)
+-- ds.link: ☞ link & link-group
+cta: components/link/
 
-☞ [markdown](components/markdown/)
+-- ds.link: ☞ markdown
+cta: components/markdown/
 
-☞ [not-found-1](components/404-1/)
+-- ds.link: ☞ not-found-1
+cta: components/404-1/
 
-☞ [not-found-2](components/404-2/)
+-- ds.link: ☞ not-found-2
+cta: components/404-2/
 
-☞ [output](components/output/)
+-- ds.link: ☞ output
+cta: components/output/
 
-☞ [page](components/page/)
+-- ds.link: ☞ page
+cta: components/page/
 
-☞ [post](components/post/)
+-- ds.link: ☞ post
+cta: components/post/
 
-☞ [posts](components/posts/)
+-- ds.link: ☞ posts
+cta: components/posts/
 
-☞ [rendered](components/rendered/)
+-- ds.link: ☞ rendered
+cta: components/rendered/
 
-☞ [tip](components/tip/)
+-- ds.link: ☞ tip
+cta: components/tip/
 
-☞ [without-image](components/without-image/)
+-- ds.link: ☞ without-image
+cta: components/without-image/
 
-☞ [youtube](components/youtube/)
+-- ds.link: ☞ youtube
+cta: components/youtube/
 
 -- end: ftd.column
 
 -- end: sidebar-index
+
+
+
+
+
+
