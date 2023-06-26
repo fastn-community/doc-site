@@ -28,7 +28,7 @@ any other web resource.
 -- ds.rendered.input:
 
 \-- cb.code:
-lang: java
+lang: ftd
 
 \-- ds.iframe:
 src: https://fastn.com/home/

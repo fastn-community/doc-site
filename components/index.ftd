@@ -5,11 +5,13 @@ document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
-In this section, we will learn about buit-in components inside doc-site. 
+In this section, we will learn about built-in components inside doc-site. 
 
-Components are designed to serve specific functions or display particular
-content. They are modular building blocks that can be combined or customized to
-create a complete document.
+Components are like Lego blocks for building websites. They are pre-designed 
+building blocks that serve specific purposes or display specific content, 
+allowing you to easily create a complete webpage by combining and customizing 
+them.
+
 
 -- ds.h1: Index
 

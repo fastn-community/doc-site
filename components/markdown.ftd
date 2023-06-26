@@ -16,7 +16,7 @@ sidebar: true
 -- ds.page.body:
 
 `doc-site` supports markdown. If you want to use it you can use `--
-ds.markdown for inline anchor links etc.
+ds.markdown` for inline anchor links etc.
 
 `doc-site` comes with inbuilt `-- ds.markdown` component.
 
