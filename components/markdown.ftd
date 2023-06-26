@@ -1,8 +1,6 @@
 -- import: fastn-community.github.io/doc-site/components
 
 
-
-
 -- ds.page: Markdown Primer
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -61,6 +59,9 @@ elit, sed do eiusmod tempor incididunt.
 -- end: ds.rendered.output
 
 -- end: ds.rendered
+
+
+
 
 -- ds.rendered: Markdown List
 
@@ -131,3 +132,4 @@ elit, sed do eiusmod tempor incididunt.
 -- end: ds.rendered
 
 -- end: ds.page
+
