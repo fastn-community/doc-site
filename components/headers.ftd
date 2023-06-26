@@ -28,7 +28,7 @@ with `ds.h0` being the highest level and `ds.h3` being the lowest level.
 -- ds.rendered.input:
 
 \-- cb.code:
-lang: java
+lang: ftd
 
 \-- ds.h0: Title of the h0
 

@@ -15,8 +15,8 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `-- ds.compact-text` component and its
-usage.
+In this section, we will learn more about `-- ds.compact-text` component and 
+it's usage.
 
 -- ds.h2: Example:
 
@@ -32,8 +32,8 @@ usage.
 Enjoying `fastn`? Please consider giving us a star ⭐️ on
 [GitHub](https://github.com/fastn-stack/fastn) to show your support!
 
-Using `ds.compact-text.inner` property you can add any component inside 
-it, like below author-bio.
+Using `ds.compact-text.inner` property you can add any component inside it, 
+like below author-bio.
 
 \-- ds.compact-text.inner:
 
