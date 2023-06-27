@@ -9,9 +9,6 @@ document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
-In this section, we will learn about how to configure your domain and publish
-your fastn web site.
-
 -- ds.h2: 1: Registering your domain on [Godaddy.com](https://www.godaddy.com/)
 id: step-1
 
@@ -135,7 +132,7 @@ to it.
 Follow the below steps to add DNS configurations:
 
 - Visit GitHub documentation to update DNS configurations. 
-[Click here to open](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
+To open - [Click here](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
 
 - Go to Step No. 5 - Keep this documentation open in the browser tab
 

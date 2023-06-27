@@ -37,25 +37,18 @@ The `-- page` component comes with an inbuilt navbar, sidebar, and body content 
 Start creating new `.ftd` files inside your project and use `doc-site` `page`
 component to write your documentation, blog posts, etc.
 
-✨ [Click here](https://fastn-community.github.io/doc-site/domain-setup/) to
-learn how to configure your fastn website.
+✨ To learn how to configure your fastn website - [Click here](https://fastn-community.github.io/doc-site/domain-setup/).
 
-✨ [Click here](https://fastn-community.github.io/doc-site/components/page/) to know more
-details of the `page` component.
+✨ To know more details of the `page` component - [Click here](https://fastn-community.github.io/doc-site/components/page/).
 
-✨ [Click here](https://fastn-community.github.io/doc-site/sitemap/) to learn how
-to generate a better `sitemap` for navigation.
+✨ To learn how to generate a better `sitemap` for navigation -  [Click here](https://fastn-community.github.io/doc-site/sitemap/).
 
-✨ [Click here](https://fastn-community.github.io/doc-site/types/) to
-know more details of inbuilt `typography`.
+✨ To know more details of inbuilt `typography` [Click here](https://fastn-community.github.io/doc-site/types/).
 
-✨ [Click here](https://fastn-community.github.io/doc-site/components/markdown/) to know
-about markdown.
+✨ To know more about markdown - [Click here](https://fastn-community.github.io/doc-site/components/markdown/).
 
-✨ [Click here](https://fastn-community.github.io/doc-site/seo/) to know about
-SEO support.
+✨ To know about SEO support - [Click here](https://fastn-community.github.io/doc-site/seo/).
 
-✨ [Click here](https://fastn-community.github.io/doc-site/components/image/) to know about
-Static Assets.
+✨ To know about Static Assets - [Click here](https://fastn-community.github.io/doc-site/components/image/).
 
 -- end: ds.page

@@ -17,7 +17,7 @@ sidebar: true
 -- ds.page.body:
 
 `ds.featured-post` can be used to show blog/article meta as a featured-post.
-[Click here](blog/) to see it in action.
+To see it in action - [Click here](blog/).
 
 -- ds.h2: Example:
 
@@ -56,7 +56,7 @@ post-data: $sample-post-2.meta
 
 - **post-data** - `type: record` use `common.post-meta` record to create
     featured post of your blog post as shown in below code snippet. 
-    [Click here](blog/) to see sample featured posts page.
+    To see it in featured posts page - [Click here](blog/).
 
 -- ds.code:
 lang: ftd

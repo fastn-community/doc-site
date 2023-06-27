@@ -16,11 +16,6 @@ sidebar: true
 
 -- end: ds.page.right-sidebar
 
--- ds.page.body:
-
-In this section, we will learn about adding `site-logo` and `site-name` to your
-`fastn` website.
-
 -- ds.h2: `site-logo` and `site-name` logic
 
 `doc-site` has the provision of adding `site-logo` and `site-name`.

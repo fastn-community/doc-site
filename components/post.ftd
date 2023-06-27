@@ -20,7 +20,7 @@ sidebar: true
 
 -- ds.h2: Example:
 
-[Click here to see example post](blog-articles/category-1/sample-post-2/)
+To see example post - [Click here](blog-articles/category-1/sample-post-2/)
 
 To write a post/article add your post meta and post details. Below code snippet
 shows how to write a post meta and create your post. 

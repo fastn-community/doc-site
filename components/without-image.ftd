@@ -17,7 +17,7 @@ sidebar: true
 -- ds.page.body:
 
 `ds.without-image` can be used to show blog/article meta as a featured-post with
-without-image layout. [Click here](blog/) to see it in action.
+without-image layout. To see it in action - [Click here](blog/).
 
 -- ds.h2: Example:
 
@@ -59,7 +59,7 @@ post-data: $sample-post-2.meta
 
 - **post-data** - `type: record` use `common.post-meta` record to create
     image post of your blog post as shown in below code snippet. 
-    [Click here](blog/) to see sample featured posts page.
+    To see sample featured posts page - [Click here](blog/).
 
 -- ds.code:
 lang: ftd

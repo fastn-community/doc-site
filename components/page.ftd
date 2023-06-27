@@ -44,29 +44,25 @@ It’s used to add body content to `ds.page` component.
 remove-gap: true
 info-right: Learn more: [SEO](seo/)
 
-It’s used to add meta title to `ds.page` component. [Click here](seo/) to learn
-more on SEO in fastn.
+It’s used to add meta title to `ds.page` component. To learn more - [Click here](seo/).
 
 -- collapse.collapse: **document-description** *type:* `string` `optional`
 remove-gap: true 
 info-right: Learn more: [SEO](seo/)
 
-It’s used to add meta description to `ds.page` component. [Click here](seo/) to
-learn more on SEO in fastn.
+It’s used to add meta description to `ds.page` component. To learn more -[Click here](seo/).
 
 -- collapse.collapse: **document-image** - *type:* `ftd.raw-image-src` `optional`
 remove-gap: true
 info-right: Learn more: [SEO](seo/)
 
-It’s used to add meta `og-image` to `ds.page` component. [Click here](seo/) to
-learn more on SEO in fastn.
+It’s used to add meta `og-image` to `ds.page` component. To learn more [Click here](seo/).
 
 -- collapse.collapse: **site-name** - *type:* `string` `optional`
 remove-gap: true
 info-right: Learn more: [site-name](logo/) | [fastn assets](components/image/#how-to-link-image-from-fastn-assets)
 
-It’s used to add `site-name` to `ds.page` component. [Click here](logo/) to
-learn more on site-name in fastn.
+It’s used to add `site-name` to `ds.page` component. To learn more [Click here](logo/).
 
 Learn more: [site-name](logo/) | [fastn assets](components/image/#how-to-link-image-from-fastn-assets)
 
@@ -74,8 +70,7 @@ Learn more: [site-name](logo/) | [fastn assets](components/image/#how-to-link-im
 remove-gap: true
 info-right: Learn more: [site-logo](logo/) | [fastn assets](components/image/#how-to-link-image-from-fastn-assets)
 
-It’s used to add `site-logo` to `ds.page` component. [Click here](logo/) to
-learn more on site-logo in fastn.
+It’s used to add `site-logo` to `ds.page` component. To learn more [Click here](logo/).
 
 Learn more: [site-logo](logo/) | [fastn assets](components/image/#how-to-link-image-from-fastn-assets)
 
@@ -129,7 +124,7 @@ typography with typography you want. You need to edit `FASTN/ds.ftd` to change
 it. [roboto-typography](https://fastn-community.github.io/roboto-typography/) 
 is defaut typography.
 
-[Click here](types/) to learn how to change typography.
+To learn more [Click here](types/).
 
 -- collapse.collapse: **colors** - *type:* `ftd.color-scheme` `optional` 
 remove-gap: true
@@ -139,7 +134,7 @@ It’s used to add change color scheme of doc-site, you can change default
 color-scheme with color scheme of your choice. You need to edit `FASTN/ds.ftd`
 to change it.
 
-[Click here](types/) to learn how to change color scheme.
+To learn more [Click here](types/).
 
 -- collapse.collapse: **logo-width** - *type:* `integer` `optional` 
 remove-gap: true
@@ -162,8 +157,8 @@ info-right: Learn more: [Updating Footer](footer/)
 It’s used to show footer on your pages.  Defaut value is `true`, change it with
 `false` if you want to hide footer on your pages. 
 
-[Click here](footer/) to learn more about how to update footer into
-`FASTN/ds.ftd` file.
+To learn more about how to update footer into
+`FASTN/ds.ftd` file - [Click here](footer/).
 
 -- collapse.collapse: **site-url** - *type:* `string` `optional`
 remove-gap: true
@@ -184,8 +179,8 @@ info-right: Learn more: [right-sidebar](right-sidebar/)
 
 It’s used to enable `ds.page.right-sidebar` container of `ds.page` component.
 Defaut value is `false` change it with `true` and add `ds.page.right-sidebar`
-to show it inside `ds.page` component. [Click here](right-sidebar/) to learn
-how to add right-sidebar.
+to show it inside `ds.page` component. To learn
+how to add right-sidebar - [Click here](right-sidebar/).
 
 -- collapse.collapse: **show-banner** - *type:* `boolean` 
 remove-gap: true
@@ -193,8 +188,8 @@ info-right: Learn more: [Banner](banner/)
 
 It’s used to enable `ds.page.banner` container of `ds.page` component. Defaut
 value is `false` change it with `true` and add `ds.page.banner` to show it
-inside `ds.page` component. [Click here](banner/) to learn how to add banner
-into your pages.
+inside `ds.page` component. To learn how to add banner
+into your pages - [Click here](banner/).
 
 -- end: ds.page
 
