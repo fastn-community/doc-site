@@ -8,6 +8,9 @@
 
 
 -- ds.page: Category title - Technology & Learning
+document-title: fastn Doc-Site Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
 Write some information about this category here. Change the title according to
 the category of your blog.

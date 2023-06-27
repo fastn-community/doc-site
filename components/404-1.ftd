@@ -14,9 +14,6 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `-- ds.not-found-1` component and its
-usage.
-
 `ds.not-found-1` represents to a 404 page, also known as a "404 error page"
 or "Page Not Found" page, is a standard response displayed by a web server when
 a user requests a web page that cannot be found or accessed. It is an HTTP

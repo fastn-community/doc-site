@@ -46,10 +46,10 @@ lang: ftd
 
 -- ds.markdown:
 
-Now modify `FASTN/ds.ftd` module which is already added inside your `fastn`
+Now modify `FASTN/ds.ftd` module which is already added inside your fastn
 package.
 
-Replace below line of `FASTN/ds.ftd`
+Replace below line of `FASTN/ds.ftd` file:
 
 -- ds.code:
 lang: ftd
@@ -68,7 +68,7 @@ lang: ftd
 -- ds.markdown:
 
 Deploy or run `fastn serve` on your localhost. Access your localhost in the
-browser e.g.`http://127.0.0.1:8000/` you will see page colors with
-[Dark Flame CS](https://fastn-community.github.io/dark-flame-cs/)
+browser e.g.`http://127.0.0.1:8000/` you will see page typography is changed
+with [inter-typography](https://fastn-community.github.io/inter-typography/)
 
 -- end: ds.page

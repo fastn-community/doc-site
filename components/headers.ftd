@@ -14,9 +14,6 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `-- ds.h0`, `-- ds.h1`, `-- ds.h2`,
-`-- ds.h3` components and their usage.
-
 The `ds.h0` to `ds.h3` components are used to define headings with varying
 levels of importance. These components represent different levels of heading,
 with `ds.h0` being the highest level and `ds.h3` being the lowest level. 

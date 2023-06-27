@@ -14,8 +14,6 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `ds.iframe` component and its usage.
-
 The `ds.iframe` component creates a rectangular region in your page where the
 embedded content will be displayed. You specify the source of the content using
 the src property, which can be a URL to another web page, an image, a video, or

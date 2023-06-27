@@ -4,7 +4,7 @@
 
 
 
--- ds.page: Banner
+-- ds.page: Adding Banner
 sidebar: true
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -23,9 +23,6 @@ Also, follow us on [Twitter](https://twitter.com/FifthTryHQ),
 -- end: ds.page.banner
 
 -- ds.page.body:
-
-In this section, we will learn to add [banner](https://fastn-community.github.io/banner/) 
-in `doc-site` page.
 
 Banners are an important element of website design and can be used to enhance
 the user experience, increase engagement, and drive conversions.
