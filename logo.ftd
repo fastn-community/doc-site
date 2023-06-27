@@ -1,8 +1,22 @@
+-- import: fastn-community.github.io/doc-site/components
 
--- ds.page: Adding Site-logo and Site-name
+
+
+
+
+-- ds.page: Adding Site logo & Site name
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
 
 In this section, we will learn about adding `site-logo` and `site-name` to your
 `fastn` website.
