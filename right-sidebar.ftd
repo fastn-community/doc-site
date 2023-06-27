@@ -1,4 +1,4 @@
--- import: fastn-community.github.io/doc-site/assets
+-- import: fastn-community.github.io/doc-site/components
 
 
 
@@ -12,29 +12,17 @@ document-image: https://fastn-community.github.io/doc-site/-/fastn-community.git
 
 -- ds.page.right-sidebar:
 
--- ds.h3: Heading in sidebar
-
-You can call any component inside sidebar
-
--- ds.compact-text: Quick links:
-
-- [Install `fastn`](install/)
-- [Create `fastn` package](create-fastn-package/)
-- [Expander Crash Course](expander/)
-
--- ds.compact-text: Join us:
-
-We welcome you to join our [Discord](https://discord.gg/a7eBUeutWD) community
-today.
-
-We are trying to create a language for human beings and we do not believe it
-would be possible without your support. We would love to hear from you.
+-- components.sidebar-index:
 
 -- end: ds.page.right-sidebar
 
 -- ds.page.body:
 
-In this section, we will learn to add right-sidebar in `doc-site`.
+`-- ds.page.right-sidebar` in a doc-site refers to a vertical column that is
+typically positioned on the right-hand side of the `ds.page` content area. It
+is a common design element used in web layouts to provide additional
+information, navigation options, or supplementary content alongside the main
+content.
 
 -- ds.h2: How to enable right-sidebar on a page?
 
@@ -110,6 +98,12 @@ lang: ftd
 max-height.fixed.px: 300
 download: ds.ftd
 
+\-- import: fastn-community.github.io/footer
+\-- import: fastn-community.github.io/doc-site/common
+\-- import: fastn-community.github.io/roboto-typography as typo
+\-- import: fastn-community.github.io/doc-site
+export: author-bio,code,compact-text,featured-post,h0,h1,h2,h3,iframe,image,image-first,image-in-between,link,link-group,markdown,not-found-1,not-found-2,output,post,posts,rendered,tip,without-image,youtube
+
 \-- component page:
 children wrapper:
 optional caption title:
@@ -138,7 +132,7 @@ string site-url: $common.site-url
 
 \-- footer.fastn-footer:
 copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
-site-logo: $fastn-logo
+site-logo: $common.fastn-logo
 powered-by-text: Powered by
 powered-by-link: https://fastn.com/
 

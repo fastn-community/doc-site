@@ -1,30 +1,38 @@
--- import: fastn-community.github.io/doc-site/assets
+-- import: fastn-community.github.io/doc-site/components
 
 
 
 
 
 -- ds.page: Changing Color Scheme
+sidebar: true
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
-In this section, we will learn about changing the color scheme of `doc-site`.
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
+
+Color scheme plays a crucial role in shaping the website's overall aesthetic,
+user experience, and branding. It helps convey the website's personality, evoke
+emotions, and guide users' attention to important elements.
 
 `doc-site` uses `fastn` default color scheme. If you wish to update the color
 scheme, choose a color scheme from our 
 [fastn-community](https://fastn.com/featured/cs/) color schemes.
-
-To choose one of the featured color schemes, visit our 
-[featured color schemes](https://fastn.com/featured/cs/)
 
 -- ds.h2: How to add a color scheme?
 
 To add color scheme to your fastn web sites. Edit your `FASTN.ftd` file and add
 color scheme dependency into it.
 
-In the below example, we are using
-https://fastn-community.github.io/dark-flame-cs/ color scheme.
+In the below example, we are using [dark-flame-cs](https://fastn-community.github.io/dark-flame-cs/)
+color scheme.
 
 Add color scheme dependency into your `FASTN.ftd` file as shown in below
 example:
@@ -32,103 +40,45 @@ example:
 -- ds.code:
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/doc-site
 \-- fastn.dependency: fastn-community.github.io/dark-flame-cs
-
--- ds.h3: How to create a global `my-ds` page module for `doc-site`?
-
-You can create a `ds.ftd` module inside your `fastn` package and create your
-custom `my-ds` page component.
-
-Let's learn how to create a module:
-
-Create a new file let’s say `ds.ftd`. 
-
-Here’s what your `ds.ftd` module would look like:
-
--- cb.code: ds.ftd module
-lang: ftd
-download: ds.ftd
-
-\-- import: fastn-community.github.io/doc-site as ds
-\-- import: fastn-community.github.io/dark-flame-cs
-
-\-- component page:
-children wrapper:
-optional caption title:
-optional body body:
-boolean sidebar: false
-
-\-- ds.page: $page.title
-site-logo: $fastn-assets.files.images.fastn.svg
-body: $page.body
-$sidebar: *$page.sidebar
-colors: $dark-flame-cs.main
-
-\-- end: ds.page.banner
-
-\-- ds.page.extra-headers:
-
-\-- ds.h3: Heading in sidebar
-
-`<You can add any component like this inside sidebar.>`
-
-\-- end: ds.page.extra-headers
-
-\-- ftd.column:
-spacing.fixed.em: 0.8
-width: fill-container
-children: $page.wrapper
-
-\-- end: ftd.column
-
-\-- end: ds.page
-
-\-- end: page
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `ds.ftd` file will be
-downloaded. Import this file inside your new `.ftd` file.
+Now modify `FASTN/ds.ftd` module which is already added inside your `fastn`
+package.
 
-Then use `my-ds` component to create a new page using it.
+Import `dark-flame-cs` dependency into `FASTN/ds.ftd`
 
 -- ds.code:
 lang: ftd
-download: cs.ftd
 
-\-- import: fastn-community.github.io/doc-site as ds
-\-- import: <your fastn package name>/my-ds
-
-\-- ds.page: This is page title
-
-This is body area. It contains multiple paragraphs.
-
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-praesentium voluptatum.
-
-\-- ds.h1: This is heading level 1
-
-This is heading level 1 optional body content.
-
-\-- ds.h2: This is heading level 2
-
-This is heading level 2 optional body content.
-
-\-- ds.h3: This is heading level 3
-
-This is heading level 3 optional body content.
-
-\-- end: ds.page
+\-- import: fastn-community.github.io/dark-flame-cs
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `cs.ftd` file will be
-downloaded.
+Change `-- component page` `colors` property `ftd.color-scheme colors:
+$ftd.default-colors` with `ftd.color-scheme colors: $dark-flame-cs.main`
 
-Add this file inside your `fastn` project and deploy or run `fastn serve` on
-your localhost. Access your localhost in the browser
-e.g.`http://127.0.0.1:8000/cs/` you will see page colors with
+replace this line of `FASTN/ds.ftd` file:
+
+-- ds.code: 
+lang: ftd
+
+\-- ftd.color-scheme colors: $ftd.default-colors
+
+-- ds.markdown:
+
+ with:
+
+-- ds.code:
+lang: ftd
+
+\-- ftd.color-scheme colors: $dark-flame-cs.main
+
+-- ds.markdown:
+
+Deploy or run `fastn serve` on your localhost. Access your localhost in the
+browser e.g.`http://127.0.0.1:8000/` you will see page colors with
 [Dark Flame CS](https://fastn-community.github.io/dark-flame-cs/)
 
 -- end: ds.page

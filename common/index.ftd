@@ -30,6 +30,10 @@
 light: https://www.fifthtry.com/-/fifthtry.com/images/dummy-site-logo.png
 dark: https://www.fifthtry.com/-/fifthtry.com/images/dummy-site-logo.png
 
+-- ftd.image-src fastn-logo:
+light: https://fastn.com/-/fastn.com/images/fastn.svg
+dark: https://fastn.com/-/fastn.com/images/fastn-dark.svg
+
 -- string brand-site-name: FifthTry
 
 -- string brand-caption: FifthTry

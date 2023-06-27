@@ -1,134 +1,74 @@
--- import: fastn-community.github.io/doc-site/assets
+-- import: fastn-community.github.io/doc-site/components
 
 
 
 
 
 -- ds.page: Changing Typography
+sidebar: true
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
-In this section, we will learn about changing the typography of `doc-site`.
+-- ds.page.right-sidebar:
 
-`doc-site` uses `fastn` default typography. If you wish to update it, 
+-- components.sidebar-index:
 
--- ds.h2: fastn Typography collection:
+-- end: ds.page.right-sidebar
 
-Choose a typography or font of your choice from our fastn-community.
-[Click here to search](https://github.com/orgs/fastn-community/repositories?q=typography&type=all&sort=).
+-- ds.page.body:
+
+Typography in the context of our `doc-site refers to the style, arrangement, and
+presentation of text on doc-site pages. It involves selecting and combining fonts,
+determining font sizes, line spacing, and other typographic elements to enhance
+readability, convey information effectively, and create a visually appealing
+design.
+
+`doc-site` uses `fastn` [Roboto Font Typography](https://fastn-community.github.io/roboto-typography/). 
+If you wish to update it, choose a typography from our 
+[fastn-community](https://fastn.com/featured/fonts-typography/) typographies.
 
 -- ds.h2: How to add a typography?
 
 To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
-typography dependency into it.
+color scheme dependency into it.
 
-In the below example, we are using
-https://fastn-community.github.io/roboto-typography/ typography.
+In the below example, we are using [Inter Typography](https://fastn-community.github.io/inter-typography/)
+typography.
 
-Add typography dependency into your `FASTN.ftd` file as shown in below example:
+Add typography dependency into your `FASTN.ftd` file as shown in below
+example:
+
+-- ds.code:
+lang: ftd
+
+\-- fastn.dependency: fastn-community.github.io/inter-typography
+
+-- ds.markdown:
+
+Now modify `FASTN/ds.ftd` module which is already added inside your `fastn`
+package.
+
+Replace below line of `FASTN/ds.ftd`
 
 -- ds.code:
 lang: ftd
 
-\-- fastn.dependency: fastn-community.github.io/doc-site
-\-- fastn.dependency: fastn-community.github.io/roboto-typography
-
--- ds.h3: How to create a global `my-ds` page module for `doc-site`?
-
-You can create a `ds.ftd` module inside your `fastn` package and create your
-custom `my-ds` page component.
-
-Let's learn how to create a module:
-
-Create a new file let’s say `ds.ftd`. 
-
-Here’s what your `ds.ftd` module would look like:
-
--- cb.code: ds.ftd module
-lang: ftd
-download: ds.ftd
-
-\-- import: fastn-community.github.io/doc-site as ds
-\-- import: fastn-community.github.io/roboto-typography
-
-\-- component page:
-children wrapper:
-optional caption title:
-optional body body:
-boolean sidebar: false
-
-\-- ds.page: $page.title
-site-logo: $fastn-assets.files.images.fastn.svg
-body: $page.body
-$sidebar: *$page.sidebar
-types: $roboto-typography.types
-
-\-- end: ds.page.banner
-
-\-- ds.page.extra-headers:
-
-\-- ds.h3: Heading in sidebar
-
-`<You can add any component like this inside sidebar.>`
-
-\-- end: ds.page.extra-headers
-
-\-- ftd.column:
-spacing.fixed.em: 0.8
-width: fill-container
-children: $page.wrapper
-
-\-- end: ftd.column
-
-\-- end: ds.page
-
-\-- end: page
+\-- import: fastn-community.github.io/roboto-typography as typo
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `ds.ftd` file will be
-downloaded. Import this file inside your new `.ftd` file.
-
-Then use the `my-ds` component to create a new page using it.
+ with:
 
 -- ds.code:
 lang: ftd
-download: typography.ftd
 
-\-- import: fastn-community.github.io/doc-site as ds
-\-- import: <your fastn package name>/my-ds
-
-\-- ds.page: This is page title
-
-This is body area. It contains multiple paragraphs.
-
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-praesentium voluptatum.
-
-\-- ds.h1: This is heading level 1
-
-This is heading level 1 optional body content.
-
-\-- ds.h2: This is heading level 2
-
-This is heading level 2 optional body content.
-
-\-- ds.h3: This is heading level 3
-
-This is heading level 3 optional body content.
-
-\-- end: ds.page
+\-- import: fastn-community.github.io/inter-typography as typo
 
 -- ds.markdown:
 
-Click on the download icon of the above code-block. `typography.ftd` file will
-be downloaded.
-
-Add this file inside your `fastn` project and deploy or run `fastn serve` on
-your localhost. Access your localhost in the browser
-e.g.`http://127.0.0.1:8000/typography/` you will see page text with
-[roboto-typography](https://fastn-community.github.io/roboto-typography/) font
-sizes in [Roboto](https://fastn-community.github.io/roboto-font/) font.
+Deploy or run `fastn serve` on your localhost. Access your localhost in the
+browser e.g.`http://127.0.0.1:8000/` you will see page colors with
+[Dark Flame CS](https://fastn-community.github.io/dark-flame-cs/)
 
 -- end: ds.page
