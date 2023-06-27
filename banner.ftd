@@ -120,6 +120,11 @@ max-height.fixed.px: 300
 download: ds.ftd
 
 \-- import: fastn-community.github.io/banner
+\-- import: fastn-community.github.io/footer
+\-- import: fastn-community.github.io/doc-site/common
+\-- import: fastn-community.github.io/roboto-typography as typo
+\-- import: fastn-community.github.io/doc-site
+export: author-bio,code,compact-text,featured-post,h0,h1,h2,h3,iframe,image,image-first,image-in-between,link,link-group,markdown,not-found-1,not-found-2,output,post,posts,rendered,tip,without-image,youtube
 
 \-- component page:
 children wrapper:
@@ -149,7 +154,7 @@ string site-url: $common.site-url
 
 \-- footer.fastn-footer:
 copyright: Copyright © 2023 - [FifthTry](https://www.fifthtry.com/)
-site-logo: $fastn-logo
+site-logo: $common.fastn-logo
 powered-by-text: Powered by
 powered-by-link: https://fastn.com/
 
