@@ -15,8 +15,8 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `-- ds.compact-text` component and 
-it's usage.
+`ds.compact-text` is a component with title and body. You can also add child
+components(as seen in below example) to `ds.compact-text`
 
 -- ds.h2: Example:
 

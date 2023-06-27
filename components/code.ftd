@@ -14,8 +14,6 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `-- ds.code` component and its usage.
-
 Code component is used to demonstrate the code snippet. If you want to show a
 code snippet to your users then you should use `-- ds.code` component.
 

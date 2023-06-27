@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/doc-site/components
 
--- ds.page: link & link-group
+-- ds.page: Link & Link-group
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
@@ -14,11 +14,8 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `-- ds.link` & `-- ds.link-group`
-component and its usage.
-
-Code component is used to demonstrate the code snippet. If you want to show a
-code snippet to your users then you should use `-- ds.code` component.
+`ds.link` and `ds.link-group` can be used to add link with title. You can also
+add child components inside `ds.link-group` component.
 
 -- ds.h2: Example:
 

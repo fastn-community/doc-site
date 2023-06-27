@@ -15,9 +15,7 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn about creating pages in `doc-site`.
-
-The `page` component empowers you to create **one-off standalone pages**. You
+The `ds.page` component empowers you to create **one-off standalone pages**. You
 can use other fastn components, or markdown.
 
 Let's learn how to use `ds.page` and its different properties.

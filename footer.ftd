@@ -1,11 +1,21 @@
+-- import: fastn-community.github.io/doc-site/components
+
+
+
 
 -- ds.page: Updating Footer
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+sidebar: true
 
-In this section, we will learn about adding a footer to your pages in
-`doc-site`.
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
+
+-- ds.page.body:
 
 `page` component has a `show-footer` boolean type property. You can add different
 footers using the `show-footer: true` property.

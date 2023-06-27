@@ -14,8 +14,7 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn about adding images inside the `page` of your
-`fastn` website.
+`ds.image` can be used to add images inside your fastn pages.
 
 -- ds.h2: How to add image?
 

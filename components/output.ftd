@@ -14,9 +14,6 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `-- ds.output` component and its
-usage.
-
 `ds.output` can be used to show a output container with title. You can show a
 output of a code example using this component or if you want to show a
 component with border covered with vertical padding 30px and horizontal padding

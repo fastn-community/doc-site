@@ -14,9 +14,6 @@ sidebar: true
 
 -- ds.page.body:
 
-In this section, we will learn more about `-- ds.not-found-2` component and its
-usage.
-
 `ds.not-found-2` represents to a error page, also known as a "500 Internal
 Server Error," is an HTTP status code that indicates a server-side error
 occurred while processing a request. When you encounter a 500 error page, it

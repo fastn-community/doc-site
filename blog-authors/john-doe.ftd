@@ -1,4 +1,3 @@
--- import: fastn-community.github.io/doc-site/assets
 -- import: fastn-community.github.io/doc-site/common
 
 -- common.author-meta john-doe: John Doe
@@ -18,6 +17,7 @@ velit esse.
 
 
 -- ds.page: 
+document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 
