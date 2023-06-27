@@ -92,7 +92,6 @@ if (condition) {
 -- ds.markdown:
 
 `-- ds.rendered` component is built using code-block package.
-[Click here](https://fastn-community.github.io/code-block/docs/rendered/) 
-to learn more about code-block usage and its properties.
+ To learn more about code-block usage and its properties - [Click here](https://fastn-community.github.io/code-block/docs/rendered/).
 
 -- end: ds.page

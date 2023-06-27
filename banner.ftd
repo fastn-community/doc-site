@@ -36,8 +36,8 @@ the user experience, increase engagement, and drive conversions.
 
 🌟 Ex.g. Look at the top of this page.
 
-[Click here](https://fastn-community.github.io/banner/) to learn more about banner
-component.
+To learn more about banner
+component - [Click here](https://fastn-community.github.io/banner/).
 
 A [banner](https://fastn-community.github.io/banner/) is typically a horizontal 
 bar that appears at the very top of a webpage, often referred to as a "top banner" 
@@ -222,7 +222,7 @@ Then deploy or run `fastn serve` on your localhost. Access your localhost in the
 browser e.g.`http://127.0.0.1:8000/` you will see all your pages with a
 banner on top of every page.
 
-[Click here](https://fastn-community.github.io/banner/) to learn more about banner
-component.
+To learn more about banner
+component - [Click here](https://fastn-community.github.io/banner/).
 
 -- end: ds.page

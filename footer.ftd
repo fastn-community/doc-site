@@ -153,8 +153,8 @@ Then deploy or run `fastn serve` on your localhost. Access your localhost in the
 browser e.g.`http://127.0.0.1:8000/` you will see all your pages with a
 `social-footer`.
 
-[Click here](https://fastn-community.github.io/footer/docs/social-footer/) to
-read social-footer documentation.
+To
+read social-footer documentation - [Click here](https://fastn-community.github.io/footer/docs/social-footer/).
 
 -- ds.code: Scroll down to view full code, click on download icon to download this code
 lang: ftd

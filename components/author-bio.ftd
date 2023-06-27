@@ -17,7 +17,7 @@ sidebar: true
 -- ds.page.body:
 
 `ds.author-bio` can be used to show blog/article author profile page. 
-[Click here](blog-authors/john-doe/) to see it in action.
+ To see it in action - [Click here] blog-authors/john-doe/).
 
 -- ds.h2: Example:
 
@@ -57,9 +57,9 @@ author: $john-doe
 
 -- ds.h3: Properties of `author-bio` component
 
-- **author** - `type: record` use `common.author-meta` record to create
-    author details as shown in below code snippet. 
-    [Click here](blog-authors/john-doe/) to see sample author bio page.
+- **author** - `type: record` use `common.author-meta` record to create author
+    details as shown in below code snippet. 
+    To see it in action - [Click here](blog-authors/john-doe/).
 
 -- ds.code:
 lang: ftd
