@@ -1,15 +1,22 @@
 -- import: fastn-community.github.io/doc-site/assets
 -- import: fastn-community.github.io/banner
+-- import: fastn-community.github.io/doc-site/components
 
 
 
 
 -- ds.page: Adding Banner
-sidebar: true
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 show-banner: true
+sidebar: true
+
+-- ds.page.right-sidebar:
+
+-- components.sidebar-index:
+
+-- end: ds.page.right-sidebar
 
 -- ds.page.banner:
 
@@ -57,7 +64,7 @@ download: page.ftd
 \-- import: fastn-community.github.io/banner
 
 \-- ds.page:
-sidebar: true
+show-banner: true
 
 \-- ds.page.banner:
 
