@@ -1,5 +1,52 @@
 # Doc-Site Change Log
 
+## June 28, 2023
+
+- [Updated write-up](https://github.com/fastn-community/doc-site/commit/d74736715d08094341be6200b98c7ad09aed7b3d)
+- [Added article links with skip](https://github.com/fastn-community/doc-site/commit/365a00b67d51a8115c9e1fc3cfa5dad2dd0a0dd5)
+- [Updated emoji with bullet](https://github.com/fastn-community/doc-site/commit/bfa096ad5391f07981de9067a08756bb35cad22f)
+- [Documentation Updated](https://github.com/fastn-community/doc-site/commit/d5fd683bb363c174794c583f776d2dd7de95e697)
+
+## June 27, 2023
+
+- [Updating docs as per review comments](https://github.com/fastn-community/doc-site/commit/cf3c8866a1541d860afeb205aca607d903b76f47)
+
+## June 26, 2023
+
+- [minor changes](https://github.com/fastn-community/doc-site/commit/de6bf9a63af4d94d8edaa10f646484a21367c924)
+- [my-ds replaced by ds](https://github.com/fastn-community/doc-site/commit/e707eaf41b7ac8588e5db2283a145391b9daef4b)
+
+## June 23, 2023
+
+- [Updated component links with link component](https://github.com/fastn-community/doc-site/commit/993fce77e63fcd94d024de97d6439f81279c08d5)
+- [Updated links with new links](https://github.com/fastn-community/doc-site/commit/50175e593ec142a330d01e6ad78cc66a91aa44ef)
+- [Updated page documentation](https://github.com/fastn-community/doc-site/commit/42da64013c36ae7f16c6af0d31dd500a43f59c8f)
+
+## June 22, 2023
+
+- [Updated components documentation](https://github.com/fastn-community/doc-site/commit/b4f3e3cc0420074d9d8bfde3adb70715a637b3f9)
+
+## June 21, 2023
+
+- [Added github URL](https://github.com/fastn-community/doc-site/commit/b9e76f67dd0bf886008f53398194512e91d61a39)
+- [Removed unwanted lines](https://github.com/fastn-community/doc-site/commit/6985c079ed8088dae12e7e479d3a223e115f378a)
+- [Removing unwanted dependency](https://github.com/fastn-community/doc-site/commit/7f0bc94bd8a6b95ba9f38980dfdf254a31087d4d)
+- [Build issue Fixes](https://github.com/fastn-community/doc-site/commit/85bd77a0567864b66dd3e0b1086cb31fa41d817f)
+- [My ds to ds](https://github.com/fastn-community/doc-site/commit/f608438cae5a84cd42214cb389d49d0023822f52)
+
+## June 16, 2023
+
+- [Updated index.ftd ](https://github.com/fastn-community/doc-site/commit/274b946434d24952c05871ded0d32bca287fe01c)
+
+## June 14, 2023
+
+- [Removed assets file and links](https://github.com/fastn-community/doc-site/commit/e03f1dc7dade286db81d34739d79bcaf0fa93890)
+- [Following FTD coding guidelines](https://github.com/fastn-community/doc-site/commit/d6236c2c52e78a794aaf04f63dcb5e5b96a9f702)
+- [Sidenav UI review and docs updated](https://github.com/fastn-community/doc-site/commit/6538bb134f9c97a843ffb39d70b1f05a36ab240b)
+- [Update README.md](https://github.com/fastn-community/doc-site/commit/b90807fad5b5ce8225c17b94a9cf9288cc7a1ba5)
+- [Added contribute link to README](https://github.com/fastn-community/doc-site/commit/38c2f8a9f2b9dd68cbba4435b30253c534894d95)
+- [Added contribute page](https://github.com/fastn-community/doc-site/commit/d5a3dff446f7b107a4411f8e3bed352f3ddb6a04)
+
 ## June 13, 2023
 
 - [Sidenav UI review and docs updated](https://github.com/fastn-community/doc-site/commit/6538bb134f9c97a843ffb39d70b1f05a36ab240b)
