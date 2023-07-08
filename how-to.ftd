@@ -25,19 +25,20 @@ and add page component inside it.
 
 -- ds.code:
 lang: ftd
+download: index.ftd
 
 \-- ds.page: Welcome to your fastn powered website.
-document-title: fastn midnight-storm Template. Build Your Own Website with Ease
-document-description: Simple, easy-to-use midnight-storm template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
-document-image: https://fastn-community.github.io/midnight-storm/-/fastn-community.github.io/midnight-storm/static/midnight-storm-og-image.jpg
+document-title: fastn Doc-Site Template. Build Your Own Website with Ease
+document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
+document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
 site-name: NULL
-github-url: https://github.com/fastn-community/midnight-storm/
+github-url: https://github.com/fastn-community/doc-site/
 github-icon: true
-color-scheme: fastn-community.github.io/midnight-typography
-typography: fastn-community.github.io/midnight-storm-cs
+color-scheme: fastn-community.github.io/dark-flame-cs
+typography: fastn-community.github.io/midnight-rush-typography
 
 Some body here is coming from `$page.body`
 
-
+\-- end: ds.page
 
 -- end: ds.page
