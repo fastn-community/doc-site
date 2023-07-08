@@ -33,6 +33,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 # Home: /index.html
 
 - Overview: index.html
+- How to use: /how-to/
 - Getting Started: /getting-started/
 - Configuring your site: /domain-setup/
 - Adding Favicon: /favicon/

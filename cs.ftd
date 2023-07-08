@@ -64,7 +64,7 @@ replace this line of `FASTN/ds.ftd` file:
 -- ds.code: 
 lang: ftd
 
-\-- ftd.color-scheme colors: $ftd.default-colors
+\-- ftd.color-scheme color-scheme: $ftd.default-colors
 
 -- ds.markdown:
 
@@ -73,7 +73,7 @@ lang: ftd
 -- ds.code:
 lang: ftd
 
-\-- ftd.color-scheme colors: $dark-flame-cs.main
+\-- ftd.color-scheme color-scheme: $dark-flame-cs.main
 
 -- ds.markdown:
 
