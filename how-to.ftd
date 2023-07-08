@@ -22,7 +22,6 @@ lang: ftd
 Create new ftd file into your [fastn](https://fastn.com/) package e.g. index.ftd
 and add page component inside it.
 
-
 -- ds.code:
 lang: ftd
 download: index.ftd
@@ -40,5 +39,8 @@ typography: fastn-community.github.io/midnight-rush-typography
 Some body here is coming from `$page.body`
 
 \-- end: ds.page
+
+
+-- ds.h3: [Click here](components/) to learn more about `doc-site` components
 
 -- end: ds.page
