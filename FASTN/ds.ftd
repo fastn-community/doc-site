@@ -1,6 +1,6 @@
 -- import: fastn-community.github.io/footer
 -- import: fastn-community.github.io/doc-site/common
--- import: fastn-community.github.io/roboto-typography as typo
+-- import: fastn-community.github.io/roboto-typography
 -- import: fastn-community.github.io/doc-site
 export: author-bio,code,compact-text,featured-post,h0,h1,h2,h3,iframe,image,image-first,image-in-between,link,link-group,markdown,not-found-1,not-found-2,output,post,posts,rendered,tip,without-image,youtube
 
@@ -15,7 +15,7 @@ optional ftd.image-src site-logo:
 boolean github-icon: true
 optional string github-url: https://github.com/fastn-community/doc-site/
 boolean full-width: false
-ftd.type-data typography: $typo.types
+ftd.type-data typography: $roboto-typography.types
 ftd.color-scheme color-scheme: $ftd.default-colors
 integer logo-width: $common.logo-width
 integer logo-height: $common.logo-height
