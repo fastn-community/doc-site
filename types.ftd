@@ -31,7 +31,7 @@ If you wish to update it, choose a typography from our
 -- ds.h2: How to add a typography?
 
 To add typography to your fastn web sites. Edit your `FASTN.ftd` file and add
-color scheme dependency into it.
+typography dependency into it.
 
 In the below example, we are using [Inter Typography](https://fastn-community.github.io/inter-typography/)
 typography.
@@ -46,15 +46,27 @@ lang: ftd
 
 -- ds.markdown:
 
-Now modify `FASTN/ds.ftd` module which is already added inside your fastn
+Now modify `FASTN/ds.ftd` module which is already added inside your `fastn`
 package.
 
-Replace below line of `FASTN/ds.ftd` file:
+Import `inter-typography` dependency into `FASTN/ds.ftd`
 
 -- ds.code:
 lang: ftd
 
-\-- import: fastn-community.github.io/roboto-typography as typo
+\-- import: fastn-community.github.io/inter-typography
+
+-- ds.markdown:
+
+Change `-- component page` `typography` property `ftd.type-data typography:
+$roboto-typography.types` with `ftd.type-data typography: $inter-typography.types`
+
+replace this line of `FASTN/ds.ftd` file:
+
+-- ds.code: 
+lang: ftd
+
+\-- ftd.type-data typography: $roboto-typography.types
 
 -- ds.markdown:
 
@@ -63,7 +75,7 @@ lang: ftd
 -- ds.code:
 lang: ftd
 
-\-- import: fastn-community.github.io/inter-typography as typo
+\-- ftd.type-data typography: $inter-typography.types
 
 -- ds.markdown:
 
