@@ -1,7 +1,6 @@
 -- import: fastn-community.github.io/doc-site/blog-authors/john-doe as author
 -- import: fastn-community.github.io/doc-site/components
 
-
 -- ds.page: author-bio
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
@@ -17,7 +16,7 @@ sidebar: true
 -- ds.page.body:
 
 `ds.author-bio` can be used to show blog/article author profile page. 
- To see it in action - [Click here] blog-authors/john-doe/).
+ To see it in action - [Click here](blog-authors/john-doe/).
 
 -- ds.h2: Example:
 
