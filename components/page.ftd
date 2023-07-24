@@ -21,6 +21,7 @@ can use other fastn components, or markdown.
 Let's learn how to use `ds.page` and its different properties.
 
 -- ds.code: Basic usage
+lang: ftd
 
 \-- ds.page: This is page title
 
@@ -101,6 +102,7 @@ change it with `true` if you want to use right-sidebar area to show page
 content with more width. 
 
 -- ds.code: Example `full-width: true`
+lang: ftd
 
 \-- ds.page: This is page title
 full-width: true
