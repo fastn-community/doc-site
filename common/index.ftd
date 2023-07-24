@@ -86,6 +86,79 @@ is-last: true
 
 
 
+-- record tags-list:
+caption title:
+string tag-link:
+
+-- tags-list list tags:
+
+-- tags-list: Programming
+tag-link: blog/
+
+-- tags-list: Data Science
+tag-link: blog/
+
+-- tags-list: Technology
+tag-link: blog/
+
+-- tags-list: Writing
+tag-link: blog/
+
+-- tags-list: AI/ML
+tag-link: blog/
+
+-- tags-list: UI/UX
+tag-link: blog/
+
+-- end: tags
+
+
+
+
+
+-- tags-list list topic:
+
+-- tags-list: Design Inspiration
+tag-link: blog/
+
+-- end: topic
+
+
+
+
+
+-- record social-media:
+ftd.image-src src:
+string link: /
+
+-- social-media list social-links:
+
+-- social-media:
+link: /
+src: $assets.files.static.fb.png
+
+-- social-media: 
+link: /
+src: $assets.files.static.figma.png
+
+-- social-media:
+link: /
+src: $assets.files.static.google.png
+
+-- social-media: 
+link: /
+src: $assets.files.static.chat.png
+
+-- social-media: 
+link: /
+src: $assets.files.static.social.png
+
+-- end: social-links
+
+
+
+
+
 -- record author-meta:
 caption title:
 string profile:
@@ -105,3 +178,5 @@ optional ftd.image-src post-image:
 optional body body:
 string post-url:
 author-meta author:
+social-media list social-list:
+tags-list list tags:

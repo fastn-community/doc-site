@@ -3009,6 +3009,226 @@ optional string link:
 
 
 
+-- component post-card:
+common.post-meta post-data:
+
+-- post-card-ui: $post-card.post-data.title
+timestamp: $post-card.post-data.published-on
+image: $post-card.post-data.post-image
+author: $post-card.post-data.author
+url: $post-card.post-data.post-url
+body: $post-card.post-data.body
+
+-- end: post-card
+
+
+
+
+
+
+
+
+
+
+-- component post-card-ui:
+optional caption title:
+optional string timestamp:
+body body:
+optional ftd.image-src image:
+common.author-meta author:
+string url:
+common.tags-list list tags:
+
+-- ftd.column:
+
+-- ftd.desktop:
+
+-- post-card-ui-desktop: $post-card-ui.title
+body: $post-card-ui.body
+timestamp: $post-card-ui.timestamp
+image: $post-card-ui.image
+author: $post-card-ui.author
+url: $post-card-ui.url
+tags: $post-card-ui.tags
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- post-card-ui-mobile: $post-card-ui.title
+timestamp: $post-card-ui.timestamp
+body: $post-card-ui.body
+image: $post-card-ui.image
+author: $post-card-ui.author
+url: $post-card-ui.url
+tags: $post-card-ui.tags
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: post-card-ui
+
+
+
+
+
+
+
+
+
+
+-- component post-card-ui-desktop:
+optional caption title:
+optional string timestamp:
+body body:
+optional ftd.image-src image:
+common.author-meta author:
+string url:
+common.tags-list list tags:
+
+-- ftd.column:
+border-width.px: 1
+border-color: $inherited.colors.border
+width.fixed.px: 360
+color: $inherited.colors.text
+margin-top.px : 44
+margin-bottom.px : 32
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $post-card-ui-desktop.image
+width: fill-container
+height: hug-content
+link: $post-card-ui-desktop.url
+
+-- ftd.column:
+padding-vertical.px: 24
+padding-horizontal.px: 24
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+link: $post-card-ui-desktop.url
+
+$post-card-ui-desktop.body
+
+-- ftd.row:
+padding-top.px: 32
+align-content: center
+spacing.fixed.px: 16
+
+-- ftd.image:
+if: { post-card-ui-desktop.author.image != NULL }
+src: $post-card-ui-desktop.author.image
+width.fixed.px: 44
+
+-- ftd.column:
+spacing.fixed.px: 4
+
+-- ftd.text: $post-card-ui-desktop.author.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+link: $post-card-ui-desktop.author.bio-url
+
+-- ftd.text: $post-card-ui-desktop.author.profile
+if: { $post-card-ui-desktop.author.profile != NULL }
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: post-card-ui-desktop
+
+
+
+
+
+
+
+
+
+
+-- component post-card-ui-mobile:
+optional caption title:
+optional string timestamp:
+body body:
+optional ftd.image-src image:
+common.author-meta author:
+string url:
+common.tags-list list tags:
+
+-- ftd.column:
+border-width.px: 1
+border-color: $inherited.colors.border
+width.fixed.px: 360
+color: $inherited.colors.text
+margin-top.px : 42
+margin-bottom.px : 32
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $post-card-ui-mobile.image
+width.fixed.px: 360
+link: $post-card-ui-mobile.url
+
+-- ftd.column:
+padding-vertical.px: 16
+padding-horizontal.px: 24
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$post-card-ui-mobile.body
+
+-- ftd.row:
+padding-top.px: 32
+align-content: center
+spacing.fixed.px: 16
+
+-- ftd.image:
+if: { post-card-ui-mobile.author.image != NULL }
+src: $post-card-ui-mobile.author.image
+width.fixed.px: 44
+
+-- ftd.column:
+spacing.fixed.px: 4
+
+-- ftd.text: $post-card-ui-mobile.author.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+link: $post-card-ui-mobile.author.bio-url
+
+-- ftd.text: $post-card-ui-mobile.author.profile
+if: { $post-card-ui-mobile.author.profile != NULL }
+role: $inherited.types.copy-small
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: post-card-ui-mobile
+
+
+
+
+
+
+
+
+
 -- ftd.color theme-color:
 dark: #1F5E6B
 light: #1F5E6B
