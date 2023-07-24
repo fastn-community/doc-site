@@ -23,7 +23,7 @@ sidebar: true
 
 -- ds.rendered.input:
 
-\-- common.post-meta meta1: Quo praesentium sapiente vel soluta assumenda et
+\-- common.post-meta post-data: Quo praesentium sapiente vel soluta assumenda et
 tag: Lorem ipsum
 author: $author.john-doe
 published-on: May 18, 6 min
@@ -31,7 +31,7 @@ post-image: $assets.files.static.image-placeholder.jpg
 post-url: blog-articles/category-1/sample-post-2 
 
 \-- ds.post-card:
-post-data: $sample-post-2.meta
+post-data: $post-data
 
 -- ds.rendered.output:
 
@@ -47,18 +47,17 @@ post-data: $sample-post-2.meta
 lang: ftd
 
 \-- ds.post-card:
-post-data: $sample-post-2.meta
+post-data: $post-data
 
 -- ds.h3: Properties of `post-card` component
 
 - **post-data** - `type: record` use `common.post-meta` record to create
     featured post of your blog post as shown in below code snippet. 
-    To see it in featured posts page - [Click here](index.html).
 
 -- ds.code:
 lang: ftd
 
-\-- common.post-meta meta1: Quo praesentium sapiente vel soluta assumenda et
+\-- common.post-meta post-data: Quo praesentium sapiente vel soluta assumenda et
 tag: Lorem ipsum
 author: $author.john-doe
 published-on: May 18, 6 min
