@@ -74,8 +74,6 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
   skip: true
   - post: /components/post/
   skip: true
-  - post-card: /components/post-card/
-  skip: true
   - posts: /components/posts/
   skip: true
   - rendered: /components/rendered/
