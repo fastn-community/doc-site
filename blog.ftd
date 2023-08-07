@@ -8,14 +8,11 @@
 
 
 
--- ds.page: Blog
+-- ds.page: 
 document-title: fastn Doc-Site Template. Build Your Own Website with Ease
 document-description: Simple, easy-to-use doc-site template to build your own documentation website, personal website, or blog. Change colours and typography effortlessly.
 document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
-
-We have developed featured article list, blog article & author's bio pages. 
-
-To learn more about posts page - [Click here](components/posts/).
+site-name: Doc Site Blog
 
 -- ds.posts:
 
