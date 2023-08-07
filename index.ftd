@@ -436,6 +436,8 @@ width: fill-container
 spacing.fixed.px: 10
 padding-horizontal.px if { !doc-page-desktop.full-width } : 25
 padding-horizontal.px if { doc-page-desktop.full-width && !ftd.is_empty(doc-page-desktop.toc) } : 25
+padding-horizontal.px if { doc-page-desktop.full-width  } : 48
+padding-vertical.px if { doc-page-desktop.full-width  } : 48
 align-content if { ftd.is_empty(doc-page-desktop.toc) }: center
 
 -- render-toc:
@@ -451,8 +453,9 @@ align-content: top-left
 min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
 min-height.fixed.calc: 100vh - 135px
 padding-horizontal.px if { !doc-page-desktop.full-width }: 34
-padding-vertical.px if { !doc-page-desktop.full-width }: 25
-padding-top.px if { doc-page-desktop.full-width }: 9
+padding-vertical.px if { !doc-page-desktop.full-width }: 26
+padding-horizontal.px if { doc-page-desktop.full-width }: 34
+padding-vertical.px if { doc-page-desktop.full-width }: 26
 
 -- ftd.text: $doc-page-desktop.title
 if: { doc-page-desktop.title != NULL }
