@@ -92,7 +92,7 @@ favicon: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/
 - Updating Footer: /footer/
 - SEO: /seo/
 
-- Blog: /blog/
+- Blog: /blog-articles/category-1/sample-post-2/
   - Post List: /post-list/
   - Sample Post: /blog-articles/category-1/sample-post-2/
   - Sample Author Bio: /blog-authors/john-doe/
