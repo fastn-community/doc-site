@@ -4,7 +4,7 @@
 
 -- ds.page: Contribute to doc-site
 document-description: Contribute to doc-site development and documentation
-document-image: https://fastn-community.github.io/doc-site/-/fastn-community.github.io/doc-site/static/doc-site-og-image.jpg
+document-image: https://fastn.com/-/fastn.com/images/fastn-logo.png
 
 `doc-site` is an [open source](https://opensource.guide/) fastn documentation
 site. It's built using [fastn](https://github.com/fastn-stack/fastn).
