@@ -103,7 +103,8 @@ ftd.ui list banner:
 boolean show-footer: $common.show-footer
 ftd.ui list footer:
 boolean github-icon: false
-optional string github-url: 
+optional string github-url:
+ftd.ui list header-logo-ui:
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -169,6 +170,7 @@ logo-height: $page.logo-height
 logo-width: $page.logo-width
 github-icon: $page.github-icon
 github-url: $page.github-url
+header-logo-ui: $page.header-logo-ui
 
 -- end: ftd.desktop
 
@@ -196,6 +198,7 @@ logo-height: $page.logo-height
 logo-width: $page.logo-width
 github-icon: $page.github-icon
 github-url: $page.github-url
+header-logo-ui: $page.header-logo-ui
 
 -- end: ftd.mobile
 
@@ -403,7 +406,8 @@ children wrapper:
 optional integer logo-width: 
 optional integer logo-height: 
 boolean github-icon: false
-optional string github-url: 
+optional string github-url:
+ftd.ui list header-logo-ui:
 
 -- ftd.column:
 width: fill-container
@@ -430,6 +434,7 @@ current-url: $doc-page-desktop.site-url
 menu-icon: $assets.files.static.header.hamburger-dark.svg
 github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
+logo-ui: $doc-page-desktop.header-logo-ui
 
 -- ftd.row:
 width: fill-container
@@ -541,7 +546,8 @@ boolean login-button:
 optional integer logo-width: 
 optional integer logo-height: 
 boolean github-icon: false
-optional string github-url: 
+optional string github-url:
+ftd.ui list header-logo-ui:
 
 -- ftd.column:
 width: fill-container
@@ -576,6 +582,7 @@ menu-icon: $assets.files.static.header.hamburger.svg
 parent-brand: $common.parent-brand
 github-icon: $doc-page-mobile.github-icon
 github-url: $doc-page-mobile.github-url
+logo-ui: $doc-page-mobile.header-logo-ui
 
 -- ftd.column:
 width: fill-container
