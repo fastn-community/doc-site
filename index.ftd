@@ -1399,6 +1399,7 @@ text: $without-image-half-card.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 link: $without-image-half-card.url
+line-clamp: 10
 
 -- end: ftd.column
 
