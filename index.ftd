@@ -1294,6 +1294,163 @@ spacing.fixed.px: 16
 
 
 
+-- component image-first:
+common.post-meta post-data:
+
+-- image-first-card: $image-first.post-data.title
+timestamp: $image-first.post-data.published-on
+author: $image-first.post-data.author
+image: $image-first.post-data.post-image
+url:  $image-first.post-data.post-url
+body: $image-first.post-data.body
+
+-- end: image-first
+
+
+
+
+
+
+
+
+
+
+
+-- component without-image-half:
+common.post-meta post-data:
+
+-- without-image-half-card: $without-image-half.post-data.title
+timestamp: $without-image-half.post-data.published-on
+author: $without-image-half.post-data.author
+url:  $without-image-half.post-data.post-url
+body: $without-image-half.post-data.body
+
+-- end: without-image-half
+
+
+
+
+
+
+
+
+
+
+-- component without-image-half-card:
+string url:
+string timestamp:
+caption title:
+common.author-meta author:
+body body:
+
+-- ftd.column:
+border-width.px: 1
+border-color: $inherited.colors.border
+padding-vertical.px: 24
+width: fill-container
+padding-horizontal.px: 24
+color: $inherited.colors.text
+margin-top.px : 20
+margin-bottom.px : 12
+spacing.fixed.px: 12
+border-radius.px: 6
+max-width.fixed.percent if { ftd.device == "desktop" }: 48
+min-height.fixed.px if { ftd.device != "mobile" }: 530
+
+-- ftd.column:
+link: $without-image-half-card.url
+spacing.fixed.px: 8
+
+-- ftd.text: $without-image-half-card.title
+role: $inherited.types.heading-small
+color: $inherited.colors.text-strong
+
+-- ftd.desktop:
+
+-- ftd.row:
+width: fill-container
+margin-top.px: 8
+
+-- ftd.row:
+spacing.fixed.px: 2
+
+-- ftd.text: $without-image-half-card.author.title
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.border
+link: $without-image-half-card.author.bio-url
+
+-- ftd.text: ,
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.border
+margin-right.px: 8
+
+-- end: ftd.row
+
+-- ftd.text: $without-image-half-card.timestamp
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.border
+
+-- end: ftd.row
+
+-- end: ftd.desktop
+
+-- ftd.text:
+text: $without-image-half-card.body
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+link: $without-image-half-card.url
+
+-- end: ftd.column
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 8
+margin-top.px: 8
+
+-- ftd.row:
+spacing.fixed.px: 2
+
+-- ftd.text: $without-image-half-card.author.title
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.border
+link: $without-image-half-card.author.bio-url
+
+-- ftd.text:,
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.border
+
+-- end: ftd.row
+
+-- ftd.text: $without-image-half-card.timestamp
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.border
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: without-image-half-card
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 -- component image-first:
