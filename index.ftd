@@ -2285,7 +2285,7 @@ width: fill-container
 caption title:
 string timestamp:
 common.author-meta author:
-ftd.image-src image:
+optional ftd.image-src image:
 string url:
 optional body body:
 
@@ -2311,6 +2311,7 @@ text-align: center
 
 -- ftd.image:
 src: $featured-post-meta-mobile.image
+if: { featured-post-meta-mobile.image != NULL }
 width: fill-container
 height: auto
 
