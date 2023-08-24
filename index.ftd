@@ -105,6 +105,7 @@ ftd.ui list footer:
 boolean github-icon: false
 optional string github-url:
 ftd.ui list header-logo-ui:
+optional ftd.raw-image-src favicon:
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -115,6 +116,7 @@ twitter-title if { page.document-title != NULL }: $page.document-title
 twitter-title: $page.title
 description: $page.document-description
 og-image: $page.document-image
+favicon: $page.favicon
 
 -- ftd.column:
 width: fill-container
