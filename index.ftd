@@ -1996,7 +1996,7 @@ body: $featured-post.post-data.body
 caption title:
 string timestamp:
 common.author-meta author:
-ftd.image-src image:
+optional ftd.image-src image:
 string url:
 optional body body:
 
@@ -2042,7 +2042,7 @@ body: $featured-post-card.body
 caption title:
 string timestamp:
 common.author-meta author:
-ftd.image-src image:
+optional ftd.image-src image:
 string url:
 optional body body:
 
@@ -2059,39 +2059,37 @@ border-radius.px: 8
 
 -- ftd.column:
 width: fill-container
-link: $featured-post-meta-desktop.url
+;; link: $featured-post-meta-desktop.url
 
 -- ftd.text: $featured-post-meta-desktop.title
 role: $inherited.types.heading-medium
 color: $inherited.colors.text-strong
 width: fill-container
 text-align: center
+link: $featured-post-meta-desktop.url
 
 -- ftd.row:
 width: fill-container
 margin-top.px: 32
 
--- ftd.column:
-width: fill-container
-
 -- ftd.image:
 src: $featured-post-meta-desktop.image
 width: fill-container
 height: auto
-
--- end: ftd.column
+if: { featured-post-meta-desktop.image != NULL }
 
 -- ftd.column:
 width: fill-container
-margin-left.px: 24
+margin-left.px: 25
 spacing.fixed.px: 12
 
 -- ftd.text:
-if: {featured-post-meta-desktop.body != NULL}
+if: { featured-post-meta-desktop.body != NULL }
 text: $featured-post-meta-desktop.body
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 width: fill-container
+link: $featured-post-meta-desktop.url
 
 -- ftd.text: $featured-post-meta-desktop.author.title
 role: $inherited.types.fine-print
