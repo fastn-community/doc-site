@@ -123,7 +123,7 @@ width: fill-container
 background.solid: $inherited.colors.background.base
 
 -- ftd.column:
-if: { page.show-banner}
+if: { page.show-banner }
 width: fill-container
 children: $page.banner
 align-content: center
@@ -133,7 +133,7 @@ align-content: center
 -- ftd.column:
 
 -- floater:
-if: {common.show-floater}
+if: { common.show-floater }
 sidebar-brand-logo: $page.sidebar-brand-logo
 cross-icon: $page.cross-icon
 side-logo: $page.side-logo
@@ -819,7 +819,7 @@ pr.toc-item list footer-toc:
 
 -- ftd.column:
 width: fill-container
-background.solid:$inherited.colors.background.base
+background.solid: $inherited.colors.background.base
 padding-horizontal.px: 20
 padding-vertical.px: 50
 spacing: space-between
@@ -878,16 +878,10 @@ $on-mouse-leave$: $ftd.set-bool($a = $toc-instance.hover, v = false)
 
 -- end: ftd.row
 
--- ftd.column:
-margin-left.px: 12
-padding-left.px: 10
-padding-top.rem: 0
-
 -- childrens:
 $loop$: $toc-instance.toc.children as $obj
 toc: $obj
 
--- end: ftd.column
 
 -- end: ftd.column
 
@@ -915,7 +909,7 @@ spacing.fixed.px: 8
 ;; background.solid if { childrens.toc.is-active }: $inherited.colors.background.step-1
 ;; background.solid if { childrens.hover && !childrens.toc.is-open }: $inherited.colors.background.step-2
 background.solid if { childrens.hover }: $inherited.colors.background.step-2
-padding-horizontal.px: 12
+padding-left.px: 32
 padding-vertical.px: 6
 border-radius.px: 4
 margin-bottom.px: 6
