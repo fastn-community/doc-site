@@ -871,8 +871,8 @@ width: auto
 link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.copy-small
-color: $inherited.colors.text
-color if { toc-instance.toc.is-active || toc-instance.toc-clone.is-open }: $inherited.colors.cta-primary.base
+color: $inherited.colors.text-strong
+color if { toc-instance.toc.is-active }: $inherited.colors.cta-primary.base
 width: fill-container
 $on-mouse-enter$: $ftd.set-bool($a = $toc-instance.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $toc-instance.hover, v = false)
@@ -926,7 +926,7 @@ link if { childrens.toc.url != NULL } : $childrens.toc.url
 text: $childrens.toc.title
 role: $inherited.types.copy-small
 color: $inherited.colors.text
-color if { childrens.toc.is-active || childrens.toc.is-open }: $inherited.colors.cta-primary.base
+color if { childrens.toc.is-active }: $inherited.colors.cta-primary.base
 $on-mouse-enter$: $ftd.set-bool($a = $childrens.hover, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $childrens.hover, v = false)
 
