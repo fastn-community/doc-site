@@ -456,6 +456,7 @@ width.fixed.percent: 60
 width if { doc-page-desktop.full-width }: fill-container
 max-width.fixed.px if { ftd.is_empty(doc-page-desktop.toc) && !doc-page-desktop.full-width}: 800
 max-width if { doc-page-desktop.full-width }: fill-container
+width if { !doc-page-desktop.right-sidebar }: fill-container
 align-content: top-left
 min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
 min-height.fixed.calc: 100vh - 135px
@@ -477,7 +478,6 @@ if: { common.is-reader }
 if: { !common.is-reader }
 width: fill-container
 spacing.fixed.px: 24
-margin-top.px: 24
 
 -- tf.markdown:
 if: { doc-page-desktop.body != NULL }
@@ -496,10 +496,11 @@ width.fixed.percent: 100
 -- end: ftd.column
 
 -- ftd.column:
+if: { doc-page-desktop.right-sidebar}
 width.fixed.percent: 20
 min-width.fixed.percent: 20
 height.fixed.percent: 100
-if: {doc-page-desktop.right-sidebar}
+
 
 -- right-sidebar:
 extra-headers: $doc-page-desktop.extra-headers
