@@ -872,6 +872,7 @@ link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
+style: bold
 color if { toc-instance.toc.is-active }: $inherited.colors.cta-primary.base
 width: fill-container
 $on-mouse-enter$: $ftd.set-bool($a = $toc-instance.hover, v = true)
