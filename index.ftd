@@ -440,12 +440,14 @@ logo-ui: $doc-page-desktop.header-logo-ui
 
 -- ftd.row:
 width: fill-container
+max-width.fixed.px: $common.max-width
 spacing.fixed.px: 10
 padding-horizontal.px if { !doc-page-desktop.full-width } : 25
 padding-horizontal.px if { doc-page-desktop.full-width && !ftd.is_empty(doc-page-desktop.toc) } : 25
 padding-horizontal.px if { doc-page-desktop.full-width  } : 48
 padding-vertical.px if { doc-page-desktop.full-width  } : 48
 align-content if { ftd.is_empty(doc-page-desktop.toc) }: center
+align-self: center
 
 -- render-toc:
 if: { !ftd.is_empty(doc-page-desktop.toc) }
@@ -872,6 +874,7 @@ link if { toc-instance.toc.url != NULL }: $toc-instance.toc.url
 text: $toc-instance.toc.title
 role: $inherited.types.copy-small
 color: $inherited.colors.text-strong
+style: bold
 color if { toc-instance.toc.is-active }: $inherited.colors.cta-primary.base
 width: fill-container
 $on-mouse-enter$: $ftd.set-bool($a = $toc-instance.hover, v = true)
@@ -1020,7 +1023,7 @@ pr.toc-item list toc-obj:
 sticky: true
 top.px: 0
 left.px: 24
-min-width.fixed.percent: 20
+min-width.fixed.px: 300
 min-height.fixed.calc: 100vh - 0px
 height.fixed.vh: 100
 overflow-y: auto
