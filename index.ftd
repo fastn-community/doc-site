@@ -205,6 +205,8 @@ logo-width: $page.logo-width
 github-icon: $page.github-icon
 github-url: $page.github-url
 header-logo-ui: $page.header-logo-ui
+search: $page.search
+search-url: $page.search-url
 
 -- end: ftd.mobile
 
@@ -559,6 +561,8 @@ optional integer logo-height:
 boolean github-icon: false
 optional string github-url:
 ftd.ui list header-logo-ui:
+boolean search: false
+optional string search-url:
 
 -- ftd.column:
 width: fill-container
@@ -594,6 +598,8 @@ parent-brand: $common.parent-brand
 github-icon: $doc-page-mobile.github-icon
 github-url: $doc-page-mobile.github-url
 logo-ui: $doc-page-mobile.header-logo-ui
+search: $doc-page-mobile.search
+search-url: $doc-page-mobile.search-url
 
 -- ftd.column:
 width: fill-container
