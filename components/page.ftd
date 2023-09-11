@@ -193,5 +193,16 @@ value is `false` change it with `true` and add `ds.page.banner` to show it
 inside `ds.page` component. To learn how to add banner
 into your pages - [Click here](banner/).
 
+-- collapse.collapse: **search** - *type:* `boolean` 
+remove-gap: true
+
+It's used to enable search button inside header. It will be shown as a last item
+in top section of doc-site header.
+
+-- collapse.collapse: **search-url** - *type:* `string` 
+remove-gap: true
+
+It's used to add search page url for search button. 
+
 -- end: ds.page
 
