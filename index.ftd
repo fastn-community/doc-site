@@ -106,6 +106,8 @@ boolean github-icon: false
 optional string github-url:
 ftd.ui list header-logo-ui:
 optional ftd.raw-image-src favicon:
+boolean search: false
+optional string search-url:
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -173,6 +175,8 @@ logo-width: $page.logo-width
 github-icon: $page.github-icon
 github-url: $page.github-url
 header-logo-ui: $page.header-logo-ui
+search: $page.search
+search-url: $page.search-url
 
 -- end: ftd.desktop
 
@@ -410,6 +414,8 @@ optional integer logo-height:
 boolean github-icon: false
 optional string github-url:
 ftd.ui list header-logo-ui:
+boolean search: false
+optional string search-url:
 
 -- ftd.column:
 width: fill-container
@@ -437,6 +443,8 @@ menu-icon: $assets.files.static.header.hamburger-dark.svg
 github-icon: $doc-page-desktop.github-icon
 github-url: $doc-page-desktop.github-url
 logo-ui: $doc-page-desktop.header-logo-ui
+search: $doc-page-desktop.search
+search-url: $doc-page-desktop.search-url
 
 -- ftd.row:
 width: fill-container
