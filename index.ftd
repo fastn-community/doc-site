@@ -480,6 +480,7 @@ align-content: top-left
 min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
 min-height.fixed.calc: 100vh - 135px
 padding-left.px if { !doc-page-desktop.full-width }: 24
+padding-right.px if { !doc-page-desktop.full-width }: 24
 padding-vertical.px if { !doc-page-desktop.full-width }: 24
 padding-left.px if { doc-page-desktop.full-width }: 24
 padding-vertical.px if { doc-page-desktop.full-width }: 24
