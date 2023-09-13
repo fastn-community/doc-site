@@ -509,11 +509,9 @@ if: { doc-page-desktop.body != NULL }
 $doc-page-desktop.body
 
 -- ftd.column:
-if: { !ftd.is_empty(doc-page-desktop.wrapper) }
 children: $doc-page-desktop.wrapper
 spacing.fixed.px: 24
 width: fill-container
-min-height.fixed.calc: 100vh
 
 -- end: ftd.column
 
@@ -668,11 +666,9 @@ if: {doc-page-mobile.body != NULL}
 $doc-page-mobile.body
 
 -- ftd.column:
-if: { !ftd.is_empty(doc-page-mobile.wrapper) }
 children: $doc-page-mobile.wrapper
 spacing.fixed.px: 32
 width.fixed.percent: 100
-min-height.fixed.calc: 100vh
 
 -- end: ftd.column
 
