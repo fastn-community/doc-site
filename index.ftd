@@ -213,6 +213,7 @@ github-url: $page.github-url
 header-logo-ui: $page.header-logo-ui
 search: $page.search
 search-url: $page.search-url
+fluid-wrap: $page.fluid-wrap
 
 -- end: ftd.mobile
 
@@ -583,6 +584,7 @@ optional string github-url:
 ftd.ui list header-logo-ui:
 boolean search: false
 optional string search-url:
+ftd.ui list fluid-wrap:
 
 -- ftd.column:
 width: fill-container
@@ -625,7 +627,6 @@ search-url: $doc-page-mobile.search-url
 width: fill-container
 padding-horizontal.px: 24
 padding-vertical.px: 24
-min-height.fixed.calc: 100vh
 
 -- ftd.column:
 width: fill-container
@@ -711,6 +712,12 @@ padding-horizontal.px: 24
 children: $doc-page-mobile.extra-headers
 
 -- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $doc-page-mobile.fluid-wrap
 
 -- end: ftd.column
 
