@@ -110,6 +110,7 @@ boolean search: false
 optional string search-url:
 boolean fluid-width: true
 optional ftd.resizing max-width:
+ftd.ui list fluid-wrap:
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -181,6 +182,7 @@ search: $page.search
 search-url: $page.search-url
 fluid-width: $page.fluid-width
 max-width: $page.max-width
+fluid-wrap: $page.fluid-wrap
 
 -- end: ftd.desktop
 
@@ -424,6 +426,7 @@ boolean search: false
 optional string search-url:
 boolean fluid-width: 
 optional ftd.resizing max-width:
+ftd.ui list fluid-wrap:
 
 -- ftd.column:
 width: fill-container
@@ -478,7 +481,7 @@ max-width if { doc-page-desktop.full-width }: fill-container
 width if { !doc-page-desktop.right-sidebar }: fill-container
 align-content: top-left
 min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
-min-height.fixed.calc: 100vh - 135px
+min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh - 135px
 padding-left.px if { !doc-page-desktop.full-width }: 24
 padding-right.px if { !doc-page-desktop.full-width }: 24
 padding-vertical.px if { !doc-page-desktop.full-width }: 24
@@ -507,7 +510,7 @@ $doc-page-desktop.body
 -- ftd.column:
 children: $doc-page-desktop.wrapper
 spacing.fixed.px: 24
-width.fixed.percent: 100
+width: fill-container
 
 -- end: ftd.column
 
@@ -521,13 +524,18 @@ width.fixed.percent: 20
 min-width.fixed.percent: 20
 height.fixed.percent: 100
 
-
 -- right-sidebar:
 extra-headers: $doc-page-desktop.extra-headers
 
 -- end: ftd.column
 
 -- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $doc-page-desktop.fluid-wrap
 
 -- end: ftd.column
 
