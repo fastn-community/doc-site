@@ -108,6 +108,8 @@ ftd.ui list header-logo-ui:
 optional ftd.raw-image-src favicon:
 boolean search: false
 optional string search-url:
+boolean fluid-width: true
+optional ftd.resizing max-width:
 
 -- ftd.document:
 title if { page.document-title != NULL }: $page.document-title
@@ -177,6 +179,8 @@ github-url: $page.github-url
 header-logo-ui: $page.header-logo-ui
 search: $page.search
 search-url: $page.search-url
+fluid-width: $page.fluid-width
+max-width: $page.max-width
 
 -- end: ftd.desktop
 
@@ -418,9 +422,12 @@ optional string github-url:
 ftd.ui list header-logo-ui:
 boolean search: false
 optional string search-url:
+boolean fluid-width: 
+optional ftd.resizing max-width:
 
 -- ftd.column:
 width: fill-container
+align-content: center
 
 -- apps-switcher.app-switcher:
 if: { ftd.is_empty(doc-page-desktop.apps) }
@@ -447,14 +454,16 @@ github-url: $doc-page-desktop.github-url
 logo-ui: $doc-page-desktop.header-logo-ui
 search: $doc-page-desktop.search
 search-url: $doc-page-desktop.search-url
+fluid-width: $doc-page-desktop.fluid-width
+max-width.fixed.px: $doc-page-desktop.max-width
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $doc-page-desktop.max-width
+align-content: center
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 10
-padding-horizontal.px if { !doc-page-desktop.full-width } : 25
-padding-horizontal.px if { doc-page-desktop.full-width && !ftd.is_empty(doc-page-desktop.toc) } : 25
-padding-horizontal.px if { doc-page-desktop.full-width  } : 48
-padding-vertical.px if { doc-page-desktop.full-width  } : 48
 align-content if { ftd.is_empty(doc-page-desktop.toc) }: center
 
 -- render-toc:
@@ -470,10 +479,10 @@ width if { !doc-page-desktop.right-sidebar }: fill-container
 align-content: top-left
 min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
 min-height.fixed.calc: 100vh - 135px
-padding-horizontal.px if { !doc-page-desktop.full-width }: 34
-padding-vertical.px if { !doc-page-desktop.full-width }: 26
-padding-horizontal.px if { doc-page-desktop.full-width }: 34
-padding-vertical.px if { doc-page-desktop.full-width }: 26
+padding-left.px if { !doc-page-desktop.full-width }: 24
+padding-vertical.px if { !doc-page-desktop.full-width }: 24
+padding-left.px if { doc-page-desktop.full-width }: 24
+padding-vertical.px if { doc-page-desktop.full-width }: 24
 
 -- ftd.text: $doc-page-desktop.title
 if: { doc-page-desktop.title != NULL }
@@ -518,6 +527,8 @@ extra-headers: $doc-page-desktop.extra-headers
 -- end: ftd.column
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- footer:
 if: { !ftd.is_empty(doc-page-desktop.footer-toc) }
