@@ -213,6 +213,7 @@ github-url: $page.github-url
 header-logo-ui: $page.header-logo-ui
 search: $page.search
 search-url: $page.search-url
+fluid-wrap: $page.fluid-wrap
 
 -- end: ftd.mobile
 
@@ -508,9 +509,11 @@ if: { doc-page-desktop.body != NULL }
 $doc-page-desktop.body
 
 -- ftd.column:
+if: { !ftd.is_empty(doc-page-desktop.wrapper) }
 children: $doc-page-desktop.wrapper
 spacing.fixed.px: 24
 width: fill-container
+min-height.fixed.calc: 100vh
 
 -- end: ftd.column
 
@@ -583,6 +586,7 @@ optional string github-url:
 ftd.ui list header-logo-ui:
 boolean search: false
 optional string search-url:
+ftd.ui list fluid-wrap:
 
 -- ftd.column:
 width: fill-container
@@ -625,7 +629,6 @@ search-url: $doc-page-mobile.search-url
 width: fill-container
 padding-horizontal.px: 24
 padding-vertical.px: 24
-min-height.fixed.calc: 100vh
 
 -- ftd.column:
 width: fill-container
@@ -665,9 +668,11 @@ if: {doc-page-mobile.body != NULL}
 $doc-page-mobile.body
 
 -- ftd.column:
+if: { !ftd.is_empty(doc-page-mobile.wrapper) }
 children: $doc-page-mobile.wrapper
 spacing.fixed.px: 32
 width.fixed.percent: 100
+min-height.fixed.calc: 100vh
 
 -- end: ftd.column
 
@@ -711,6 +716,12 @@ padding-horizontal.px: 24
 children: $doc-page-mobile.extra-headers
 
 -- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+children: $doc-page-mobile.fluid-wrap
 
 -- end: ftd.column
 
