@@ -65,7 +65,7 @@ Our all documentation sites use this `doc-site` theme.
 optional caption title:
 optional string document-title:
 optional string document-description:
-ftd.raw-image-src document-image: https://fastn.com/-/fastn.com/images/fastn-logo.png
+optional ftd.raw-image-src document-image: 
 optional body body:
 optional ftd.image-src site-logo:
 integer logo-width: $common.logo-width
@@ -120,7 +120,7 @@ og-title: $page.title
 twitter-title if { page.document-title != NULL }: $page.document-title
 twitter-title: $page.title
 description: $page.document-description
-og-image: $page.document-image
+og-image if { page.document-image != NULL }: $page.document-image
 favicon: $page.favicon
 
 -- ftd.column:
