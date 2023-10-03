@@ -109,6 +109,8 @@ optional ftd.raw-image-src favicon:
 boolean search: false
 optional string search-url:
 boolean fluid-width: true
+optional string get-started-url:
+boolean right-section: false
 optional ftd.resizing max-width:
 ftd.ui list fluid-wrap:
 
@@ -180,6 +182,8 @@ github-url: $page.github-url
 header-logo-ui: $page.header-logo-ui
 search: $page.search
 search-url: $page.search-url
+get-started-url: $page.get-started-url
+right-section: $page.right-section
 fluid-width: $page.fluid-width
 max-width: $page.max-width
 fluid-wrap: $page.fluid-wrap
@@ -425,7 +429,9 @@ optional string github-url:
 ftd.ui list header-logo-ui:
 boolean search: false
 optional string search-url:
+optional string get-started-url:
 boolean fluid-width: 
+boolean right-section: false 
 optional ftd.resizing max-width:
 ftd.ui list fluid-wrap:
 
@@ -458,8 +464,10 @@ github-url: $doc-page-desktop.github-url
 logo-ui: $doc-page-desktop.header-logo-ui
 search: $doc-page-desktop.search
 search-url: $doc-page-desktop.search-url
+get-started-url: $doc-page-desktop.get-started-url
 fluid-width: $doc-page-desktop.fluid-width
 max-width.fixed.px: $doc-page-desktop.max-width
+right-section: $doc-page-desktop.right-section
 
 -- ftd.column:
 width: fill-container
