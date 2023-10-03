@@ -483,7 +483,7 @@ width if { !doc-page-desktop.right-sidebar }: fill-container
 align-content: top-left
 min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh
 min-height.fixed.calc if { !ftd.is_empty(doc-page-desktop.toc) }: 100vh - 135px
-padding-left.px if { !doc-page-desktop.full-width }: 24
+padding-left.px if { !doc-page-desktop.full-width }: 48
 padding-right.px if { !doc-page-desktop.full-width }: 24
 padding-vertical.px if { !doc-page-desktop.full-width }: 24
 padding-left.px if { doc-page-desktop.full-width }: 24
