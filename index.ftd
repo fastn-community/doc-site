@@ -127,6 +127,7 @@ favicon: $page.favicon
 
 -- ftd.column:
 width: fill-container
+height: fill-container
 background.solid: $inherited.colors.background.base
 
 -- ftd.column:
