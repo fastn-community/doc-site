@@ -1220,6 +1220,8 @@ width: fill-container
 image: $post.meta.post-image
 author: $post.meta.author
 timestamp: $post.meta.published-on
+last-edited-on: $post.meta.last-edited-on
+read-time: $post.meta.read-time
 
 $post.meta.body
 
@@ -1247,6 +1249,8 @@ optional ftd.image-src image:
 common.author-meta author:
 string timestamp:
 optional body body:
+optional string last-edited-on:
+optional string read-time:
 
 -- ftd.column:
 color: $inherited.colors.text
@@ -1267,6 +1271,9 @@ width: fill-container
 color: $inherited.colors.cta-primary.border
 link: $article-card.author.bio-url
 
+-- ftd.column:
+width: hug-content
+
 -- ftd.row:
 spacing.fixed.px: 12
 
@@ -1281,6 +1288,27 @@ white-space: nowrap
 color: $inherited.colors.cta-primary.border
 
 -- end: ftd.row
+
+-- ftd.row:
+if: { article-card.read-time != NULL }
+spacing.fixed.px: 6
+
+-- ftd.image: $assets.files.static.blog-read-icon.svg
+width.fixed.px: 20
+
+-- ftd.text: $article-card.read-time
+role: $inherited.types.copy-regular
+white-space: nowrap
+color: $inherited.colors.cta-primary.border
+
+-- ftd.text: read
+role: $inherited.types.copy-regular
+white-space: nowrap
+color: $inherited.colors.cta-primary.border
+
+-- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.row
 
