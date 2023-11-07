@@ -180,5 +180,4 @@ string post-url:
 author-meta author:
 social-media list social-list:
 tags-list list tags:
-optional string last-edited-on:
 optional string read-time:

@@ -1220,7 +1220,6 @@ width: fill-container
 image: $post.meta.post-image
 author: $post.meta.author
 timestamp: $post.meta.published-on
-last-edited-on: $post.meta.last-edited-on
 read-time: $post.meta.read-time
 
 $post.meta.body
@@ -1249,7 +1248,6 @@ optional ftd.image-src image:
 common.author-meta author:
 string timestamp:
 optional body body:
-optional string last-edited-on:
 optional string read-time:
 
 -- ftd.column:
