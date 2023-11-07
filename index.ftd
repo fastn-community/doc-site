@@ -1290,6 +1290,8 @@ color: $inherited.colors.cta-primary.border
 -- ftd.row:
 if: { article-card.read-time != NULL }
 spacing.fixed.px: 6
+align-content: center
+align-self: end
 
 -- ftd.image: $assets.files.static.blog-read-icon.svg
 width.fixed.px: 20
