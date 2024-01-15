@@ -879,6 +879,7 @@ post-data: $sample-post-3.meta
 
 
 
+
 @font-face { unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 font-style: italic;
 font-weight: 100;
@@ -2481,7 +2482,6 @@ let fifthtry_github_io_product_switcher__title_image = function (parent, inherit
       }, parenti0);
     });
     parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
-    parenti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(__args__.bg_hover), inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
       rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
@@ -2489,6 +2489,8 @@ let fifthtry_github_io_product_switcher__title_image = function (parent, inherit
       rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(16), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.PaddingRight, fastn_dom.Length.Px(24), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.PaddingBottom, fastn_dom.Length.Px(24), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderTopLeftRadius, fastn_dom.Length.Px(8), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderBottomLeftRadius, fastn_dom.Length.Px(8), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.formula([__args__.body_text_color,
       inherited.get("colors").get("text_strong"),
       __args__.index,
@@ -2508,8 +2510,6 @@ let fifthtry_github_io_product_switcher__title_image = function (parent, inherit
           return (fastn_utils.getter(global.fifthtry_github_io_product_switcher__var_current_product) == fastn_utils.getter(__args__.index));
         }()) {
           return fastn_dom.BackgroundStyle.Solid(__args__.bg_color);
-        } else {
-          return fastn_dom.BackgroundStyle.Solid(__args__.bg_hover);
         }
       }
       ), inherited);
@@ -2594,8 +2594,7 @@ let fifthtry_github_io_product_switcher__copy_list = function (parent, inherited
     }, function (root) {
       let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Column);
       rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.BorderTopLeftRadius, fastn_dom.Length.Px(8), inherited);
-      rooti0.setProperty(fastn_dom.PropertyKind.BorderTopRightRadius, fastn_dom.Length.Px(8), inherited);
+      rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(8), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(__args__.bg_color), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.MinHeight, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(288)), inherited);
       rooti0.setProperty(fastn_dom.PropertyKind.Link, __args__.url, inherited);
@@ -2642,6 +2641,7 @@ let fifthtry_github_io_product_switcher__product_list = function (parent, inheri
     __args__ = fastn_utils.getArgs(__args__, args);
     let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Row);
     parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
+    parenti0.setProperty(fastn_dom.PropertyKind.ZIndex, 1, inherited);
     parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
       let rooti0 = fifthtry_github_io_product_switcher__title_list(root, inherited, {
         brand: __args__.brand,
@@ -2673,6 +2673,17 @@ let fifthtry_github_io_product_switcher__product_list = function (parent, inheri
   }
 }
 global["fifthtry_github_io_product_switcher__product_list"] = fifthtry_github_io_product_switcher__product_list;
+fastn_utils.createNestedObject(global, "fifthtry_github_io_product_switcher__ps_shadow", fastn.recordInstance({
+  x_offset: fastn_dom.Length.Px( - 2),
+  y_offset: fastn_dom.Length.Px(8),
+  blur: fastn_dom.Length.Px(10),
+  spread: fastn_dom.Length.Px(0),
+  color: fastn.recordInstance({
+    dark: "#a9a7a5ba",
+    light: "#a9a7a5ba"
+  }),
+  inset: false
+}));
 let fifthtry_github_io_product_switcher__switcher_desktop = function (parent, inherited, args)
 {
   let __fastn_super_package_name__ = __fastn_package_name__;
@@ -2796,9 +2807,11 @@ let fifthtry_github_io_product_switcher__switcher_desktop = function (parent, in
               }
             }
             ), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.ZIndex, 999, inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn_dom.BackgroundStyle.Solid(__args__.bg_hover), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MinHeight, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(255)), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MinWidth, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(460)), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Shadow, global.fifthtry_github_io_product_switcher__ps_shadow, inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([function (root, inherited) {
               let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Row);
               rooti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.FillContainer, inherited);
